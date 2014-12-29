@@ -1,0 +1,21 @@
+Circuit: *
+
+.OP point found by inspection.
+
+Date: Mon Dec 29 12:41:38 2014
+Total elapsed time: 0.077 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2528
+traniter = 2528
+tranpoints = 1149
+accept = 1129
+rejected = 20
+matrix size = 11
+fillins = 4
+solver = Normal
+Matrix Compiler1: 1220 object code size  0.8/0.4/[0.2]
+Matrix Compiler2: off
+

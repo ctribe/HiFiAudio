@@ -1,0 +1,34 @@
+*
+V1 N001 0 SINE(0 170V 60) Rser=.00001
+D1 N002 +VCC D
+D2 -VEE N002 D
+D3 -VEE N006 D
+D4 N006 +VCC D
+Lp N001 0 50µ
+Ls1 N004 N002 1µ
+Ls2 N006 N004 1µ
+C1 +VCC 0 10000µ
+C2 +VCC 0 10000µ
+C3 +VCC 0 1µ
+C4 0 -VEE 10000µ
+C5 0 -VEE 10000µ
+C6 0 -VEE 1µ
+C7 N005 -VEE .1µ
+C8 +VCC N003 .1µ
+R1 +VCC 0 2k
+R2 0 -VEE 2k
+R3 N003 0 1
+R4 0 N005 1
+C9 +VCC 0 .1µ
+C10 0 -VEE .1µ
+R5 0 N004 100
+C11 N002 0 .1µ
+C12 0 N006 .1µ
+.model D D
+.lib /Users/camerontribe/Library/Application Support/LTspice/lib/cmp/standard.dio
+K Lp Ls1 Ls2 .99
+.tran 100ms
+* Power Supply for HiFi Audio Amplifier
+* Cameron Tribe & Jaime Rodriguez\nDesign from SNAA057B\nDecember, 2014
+.backanno
+.end
