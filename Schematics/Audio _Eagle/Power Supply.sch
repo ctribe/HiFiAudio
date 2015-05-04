@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -13776,7 +13776,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="AGND1" library="supply1" deviceset="AGND" device=""/>
 <part name="AGND2" library="supply1" deviceset="AGND" device=""/>
-<part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U$5" library="Headers" deviceset="1X2HEADER_100MIL" device=""/>
 <part name="SW1" library="switch-coto" deviceset="CT10-XXXX-" device="A2"/>
 <part name="U$4" library="Headers" deviceset="1X2HEADER_100MIL" device=""/>
@@ -13791,6 +13790,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="AGND3" library="supply1" deviceset="AGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13860,7 +13860,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <instance part="GND2" gate="1" x="20.32" y="157.48"/>
 <instance part="AGND1" gate="VR1" x="50.8" y="157.48"/>
 <instance part="AGND2" gate="VR1" x="96.52" y="111.76"/>
-<instance part="GND3" gate="1" x="17.78" y="96.52"/>
 <instance part="U$5" gate="G$1" x="81.28" y="172.72"/>
 <instance part="SW1" gate="G$1" x="104.14" y="175.26" rot="R90"/>
 <instance part="U$4" gate="G$1" x="40.64" y="58.42"/>
@@ -13875,6 +13874,7 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <instance part="GND8" gate="1" x="71.12" y="33.02"/>
 <instance part="GND9" gate="1" x="50.8" y="25.4"/>
 <instance part="GND10" gate="1" x="58.42" y="25.4"/>
+<instance part="AGND3" gate="VR1" x="17.78" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -13930,11 +13930,6 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="119.38" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
 <junction x="45.72" y="119.38"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="116.84" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="A"/>
@@ -14118,6 +14113,11 @@ Source: http://catalog.osram-os.com .. LA_LR_LS_LY_P47F_Pb_free.pdf</description
 <pinref part="AGND2" gate="VR1" pin="AGND"/>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="119.38" x2="198.12" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="3"/>
+<wire x1="17.78" y1="116.84" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="AGND3" gate="VR1" pin="AGND"/>
 </segment>
 </net>
 <net name="N$5" class="0">
