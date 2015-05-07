@@ -3,7 +3,7 @@ function Filters()
 fig=findall(0,'type','figure'); %find all figures
 delete(fig); %delete all figures
 
-figure1 = figure('Visible','on','Position', [2000 200 1175 500],'color','white');
+figure1 = figure('Visible','on','Position', [200 200 1175 500],'color','white');
 
 %this panle will hold the switch matrix and DUT relevant info.
 hLPHP   = uipanel('units','pixels','visible','on','Title',...
