@@ -66,6 +66,14 @@
 <hole x="3.81" y="74.93" drill="2.8"/>
 <hole x="96.52" y="74.93" drill="2.8"/>
 <hole x="96.52" y="3.81" drill="2.8"/>
+<dimension x1="0" y1="78.73" x2="0" y2="0" x3="-5.08" y3="39.365" textsize="1.778" layer="48" unit="inch"/>
+<dimension x1="0" y1="78.73" x2="99.06" y2="78.74" x3="49.5294875" y3="83.81474375" textsize="1.778" layer="48" unit="inch"/>
+<dimension x1="3.81" y1="74.93" x2="96.52" y2="74.93" x3="50.165" y3="91.44" textsize="1.778" layer="48" unit="inch"/>
+<dimension x1="3.81" y1="74.93" x2="3.81" y2="3.81" x3="-12.7" y3="39.37" textsize="1.778" layer="48" unit="inch"/>
+<dimension x1="77.47" y1="64.77" x2="99.92375" y2="62.422590625" x3="88.696875" y3="95.758140625" textsize="1.778" layer="48" dtype="horizontal"/>
+<dimension x1="100" y1="78.73" x2="78.74" y2="58.42" x3="111.76" y3="68.575" textsize="1.778" layer="48" dtype="vertical"/>
+<dimension x1="77.47" y1="21.59" x2="85.09" y2="0" x3="111.76" y3="10.795" textsize="1.778" layer="48" dtype="vertical"/>
+<dimension x1="96.52" y1="74.93" x2="59.69" y2="58.42" x3="78.105" y3="102.87" textsize="1.778" layer="48" dtype="horizontal" unit="inch"/>
 </plain>
 <libraries>
 <library name="rcl">
