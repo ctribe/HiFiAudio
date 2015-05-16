@@ -2831,18 +2831,6 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="-91.44" x2="21.59" y2="-132.08" width="0" layer="19" extent="1-1"/>
 <wire x1="34.29" y1="-55.88" x2="34.29" y2="-91.44" width="0" layer="19" extent="1-1"/>
 <wire x1="8.89" y1="7.62" x2="34.29" y2="-55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="15.24" x2="8.89" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="30.48" x2="8.89" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="22.6421" y1="29.427896875" x2="8.89" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="49.53" y1="26.67" x2="22.6421" y2="29.427896875" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="26.67" x2="49.53" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="57.15" y1="53.34" x2="57.15" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8" y1="53.34" x2="57.15" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="77.47" y1="52.07" x2="57.15" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="95.25" y1="39.37" x2="77.47" y2="52.07" width="0" layer="19" extent="1-1"/>
-<wire x1="17.78" y1="59.69" x2="8.89" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="64.77" x2="17.78" y2="59.69" width="0" layer="19" extent="1-1"/>
-<wire x1="8.89" y1="72.39" x2="8.89" y2="64.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="C7" pad="1"/>
