@@ -1,0 +1,22 @@
+Circuit: * /Users/camerontribe/Documents/Projects/HiFiAudio/Schematics/Power Supply.asc
+
+WARNING: Less than two connections to node N007.  This node is used by Q1.
+.OP point found by inspection.
+
+Date: Tue May 19 03:35:57 2015
+Total elapsed time: 0.082 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2740
+traniter = 2740
+tranpoints = 1233
+accept = 1180
+rejected = 53
+matrix size = 23
+fillins = 4
+solver = Normal
+Matrix Compiler1: 2300 object code size  1.4/0.8/[0.3]
+Matrix Compiler2: off
+
