@@ -15182,6 +15182,14 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <text x="3.854" y="4.032" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SMT_PAD_3MM">
+<smd name="PAD" x="0" y="0" dx="3" dy="3" layer="1"/>
+<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
+<package name="SMT_PAD_5MM">
+<smd name="PAD" x="0" y="0" dx="5" dy="5" layer="1"/>
+<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -15198,6 +15206,16 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="2" x="5.08" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="1" x="5.08" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
+<symbol name="SMT_PAD_3MM">
+<text x="-0.635" y="0.635" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="94"/>
+<pin name="PAD" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SMT_PAD_5MM">
+<text x="-0.635" y="0.635" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="94"/>
+<pin name="PAD" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="INDUCTOR">
@@ -15209,6 +15227,36 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMT_PAD_3MM">
+<gates>
+<gate name="G$1" symbol="SMT_PAD_3MM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMT_PAD_3MM">
+<connects>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMT_PAD_5MM">
+<gates>
+<gate name="G$1" symbol="SMT_PAD_5MM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMT_PAD_5MM">
+<connects>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15351,164 +15399,6 @@ Control</text>
 </deviceset>
 </devicesets>
 </library>
-<library name="T06_LockBox">
-<packages>
-<package name="PAD-1.0/0.5">
-<description>Plated through hole (pad) 0.5mm drill, 1mm annular diameter</description>
-<circle x="0" y="0" radius="0.57" width="0.1" layer="51"/>
-<pad name="PAD" x="0" y="0" drill="0.5" diameter="1"/>
-<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-</package>
-<package name="PAD-1.5X1.5">
-<description>SMT Pad 1.5 x 1.5 mm</description>
-<smd name="PAD" x="0" y="0" dx="1.5" dy="1.5" layer="1"/>
-<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-</package>
-<package name="PAD-1.5X1.0">
-<description>SMT Pad 1.5 x 1.0 mm</description>
-<smd name="PAD" x="0" y="0" dx="1.5" dy="1" layer="1"/>
-<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-</package>
-<package name="PAD-1.5X1.3">
-<description>SMT Pad 1.5 x 1.3 mm</description>
-<smd name="PAD" x="0" y="0" dx="1.5" dy="1.3" layer="1"/>
-<text x="-1.37" y="0.724" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-</package>
-<package name="PIN_POGO_SS30">
-<description>Pogo Pin Series SS-30 &lt;br&gt; 
-IDI &lt;br&gt;  
-1/2" long, .020"body &lt;br&gt;
-http://www.idinet.com/_FileLibrary/PDF/pg38.pdf &lt;br&gt;
-In use with boards from sunstone. Fit is good.</description>
-<pad name="PAD" x="0" y="0" drill="0.508" diameter="0.8128"/>
-<text x="-1" y="1" size="0.8" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<circle x="0" y="0" radius="0.508" width="0.127" layer="21"/>
-</package>
-<package name="PIN_POGO_SS50">
-<description>Pogo Pin Series SS-50 &lt;br&gt; 
-IDI &lt;br&gt;  
-0.61" long, 0.027"body. &lt;br&gt;
-http://www.idinet.com/_FileLibrary/PDF/pg43.pdf &lt;br&gt;
-In use with boards from sunstone. Fit is good.</description>
-<pad name="PAD" x="0" y="0" drill="0.7" diameter="1.016"/>
-</package>
-<package name="PIN_POGO_R100_RECEPTACLE">
-<description>Desire .074 hole, but .08 is closest standard drill.</description>
-<pad name="PAD" x="0" y="0" drill="2.032" diameter="2.54"/>
-</package>
-<package name="PIN_POGO_S100">
-<description>Desired Hole is 0.054inch, next larger standard hole is 0.061"&lt;br&gt;
-Note: Pin sits too loose, and is hard to solder without board damage</description>
-<pad name="PAD" x="0" y="0" drill="1.5494"/>
-</package>
-<package name="PIN_POGO_R0_RECEPTACLE">
-<description>Use of receptacle allows easy bent pin replacement. &lt;br&gt;
-Broken pins may require receptacle replacement</description>
-<pad name="PAD" x="0" y="0" drill="1.016"/>
-</package>
-<package name="PIN_POGO_S0">
-<description>IDI S0 Pogo Pins, use receptacles if easy replacement is required. Pin is 0.027" diameter, hole is 0.029" (standard available drill).</description>
-<pad name="PAD" x="0" y="0" drill="0.7366"/>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD+NAME">
-<text x="-0.635" y="0.635" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<rectangle x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" layer="94"/>
-<pin name="PAD" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PAD+SQUARE" prefix="J">
-<description>Pad connection</description>
-<gates>
-<gate name="PAD" symbol="PAD+NAME" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-1.0/0.5" package="PAD-1.0/0.5">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1.5X1.5" package="PAD-1.5X1.5">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1.5X1.0" package="PAD-1.5X1.0">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-1.5X1.3" package="PAD-1.5X1.3">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-SS30" package="PIN_POGO_SS30">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-SS50" package="PIN_POGO_SS50">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-R100-RECEPTACLE" package="PIN_POGO_R100_RECEPTACLE">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-S100" package="PIN_POGO_S100">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-R0-RECEPTACLE" package="PIN_POGO_R0_RECEPTACLE">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="POGO-S0" package="PIN_POGO_S0">
-<connects>
-<connect gate="PAD" pin="PAD" pad="PAD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15606,7 +15496,19 @@ Broken pins may require receptacle replacement</description>
 <part name="R45" library="resistor" deviceset="R-US_" device="0207/7" value="500"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="025-024X044" value="22pF"/>
 <part name="R46" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
-<part name="J1" library="T06_LockBox" deviceset="PAD+SQUARE" device="-1.5X1.3"/>
+<part name="B_R_E" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
+<part name="B_R_B" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
+<part name="B_R_C" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
+<part name="R47" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
+<part name="R48" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
+<part name="P_B" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="P_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="P_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="N_B" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="N_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="N_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="R49" library="resistor" deviceset="R-US_" device="0207/7" value="0.1"/>
+<part name="R50" library="resistor" deviceset="R-US_" device="0207/7" value="0.1"/>
 </parts>
 <sheets>
 <sheet>
@@ -15617,6 +15519,9 @@ Broken pins may require receptacle replacement</description>
 <text x="43.18" y="-10.16" size="2.54" layer="97">BASS LEFT CHANNEL</text>
 <text x="45.72" y="-45.72" size="2.54" layer="97">TREBLE LEFT CHANNEL</text>
 <text x="45.72" y="-83.82" size="2.54" layer="97">MIDS LEFT CHANNEL</text>
+<text x="419.1" y="101.6" size="1.778" layer="97">Vbe multiplier</text>
+<text x="459.74" y="111.76" size="1.778" layer="97">MOSFET_P</text>
+<text x="459.74" y="66.04" size="1.778" layer="97">MOSFET_N</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="15.24" y="35.56" rot="R90"/>
@@ -15720,7 +15625,19 @@ Broken pins may require receptacle replacement</description>
 <instance part="R45" gate="G$1" x="408.94" y="83.82" rot="R90"/>
 <instance part="C21" gate="G$1" x="396.24" y="78.74" rot="R270"/>
 <instance part="R46" gate="G$1" x="441.96" y="93.98" rot="R90"/>
-<instance part="J1" gate="PAD" x="416.56" y="127"/>
+<instance part="B_R_E" gate="G$1" x="426.72" y="86.36" rot="R180"/>
+<instance part="B_R_B" gate="G$1" x="426.72" y="91.44" rot="R180"/>
+<instance part="B_R_C" gate="G$1" x="426.72" y="99.06" rot="R180"/>
+<instance part="R47" gate="G$1" x="414.02" y="68.58" rot="R180"/>
+<instance part="R48" gate="G$1" x="414.02" y="114.3" rot="R180"/>
+<instance part="P_B" gate="G$1" x="454.66" y="114.3" rot="R180"/>
+<instance part="P_S" gate="G$1" x="454.66" y="119.38" rot="R180"/>
+<instance part="P_D" gate="G$1" x="454.66" y="109.22" rot="R180"/>
+<instance part="N_B" gate="G$1" x="454.66" y="68.58" rot="R180"/>
+<instance part="N_D" gate="G$1" x="454.66" y="73.66" rot="R180"/>
+<instance part="N_S" gate="G$1" x="454.66" y="63.5" rot="R180"/>
+<instance part="R49" gate="G$1" x="452.12" y="99.06" rot="R90"/>
+<instance part="R50" gate="G$1" x="452.12" y="86.36" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16360,6 +16277,9 @@ Broken pins may require receptacle replacement</description>
 <pinref part="C20" gate="G$1" pin="2"/>
 <wire x1="408.94" y1="99.06" x2="421.64" y2="99.06" width="0.1524" layer="91"/>
 <junction x="408.94" y="99.06"/>
+<pinref part="B_R_C" gate="G$1" pin="PAD"/>
+<wire x1="424.18" y1="99.06" x2="421.64" y2="99.06" width="0.1524" layer="91"/>
+<junction x="421.64" y="99.06"/>
 </segment>
 </net>
 <net name="N$68" class="0">
@@ -16370,6 +16290,10 @@ Broken pins may require receptacle replacement</description>
 <pinref part="C20" gate="G$1" pin="1"/>
 <wire x1="421.64" y1="88.9" x2="421.64" y2="91.44" width="0.1524" layer="91"/>
 <junction x="408.94" y="88.9"/>
+<wire x1="421.64" y1="88.9" x2="424.18" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="B_R_B" gate="G$1" pin="PAD"/>
+<wire x1="424.18" y1="88.9" x2="424.18" y2="91.44" width="0.1524" layer="91"/>
+<junction x="421.64" y="88.9"/>
 </segment>
 </net>
 <net name="N$69" class="0">
@@ -16400,6 +16324,7 @@ Broken pins may require receptacle replacement</description>
 <wire x1="424.18" y1="86.36" x2="416.56" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="86.36" x2="416.56" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="416.56" y1="78.74" x2="408.94" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="B_R_E" gate="G$1" pin="PAD"/>
 </segment>
 </net>
 <net name="N$66" class="0">
@@ -16407,6 +16332,62 @@ Broken pins may require receptacle replacement</description>
 <pinref part="U8" gate="G$1" pin="COMP"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <wire x1="388.62" y1="78.74" x2="391.16" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$70" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="P_OUT"/>
+<wire x1="388.62" y1="83.82" x2="389.73099375" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="389.73099375" y1="83.82" x2="389.73099375" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="389.73099375" y1="68.58" x2="408.94" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$71" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="OSENSE"/>
+<pinref part="R48" gate="G$1" pin="2"/>
+<wire x1="388.62" y1="114.3" x2="408.94" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="R48" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="114.3" x2="441.96" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<wire x1="441.96" y1="114.3" x2="441.96" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="P_B" gate="G$1" pin="PAD"/>
+<wire x1="441.96" y1="114.3" x2="452.12" y2="114.3" width="0.1524" layer="91"/>
+<junction x="441.96" y="114.3"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<pinref part="R46" gate="G$1" pin="1"/>
+<wire x1="441.96" y1="88.9" x2="441.96" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="1"/>
+<wire x1="441.96" y1="68.58" x2="419.1" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="N_B" gate="G$1" pin="PAD"/>
+<wire x1="452.12" y1="68.58" x2="441.96" y2="68.58" width="0.1524" layer="91"/>
+<junction x="441.96" y="68.58"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="P_D" gate="G$1" pin="PAD"/>
+<pinref part="R49" gate="G$1" pin="2"/>
+<wire x1="452.12" y1="109.22" x2="452.12" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="R50" gate="G$1" pin="1"/>
+<pinref part="N_D" gate="G$1" pin="PAD"/>
+<wire x1="452.12" y1="81.28" x2="452.12" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R50" gate="G$1" pin="2"/>
+<wire x1="452.12" y1="73.66" x2="452.12" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="1"/>
+<wire x1="452.12" y1="91.44" x2="452.12" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

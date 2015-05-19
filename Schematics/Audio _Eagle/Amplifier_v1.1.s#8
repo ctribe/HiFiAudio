@@ -15495,20 +15495,28 @@ Control</text>
 <part name="R44" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
 <part name="R45" library="resistor" deviceset="R-US_" device="0207/7" value="500"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="025-024X044" value="22pF"/>
-<part name="R46" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
+<part name="R46" library="resistor" deviceset="R-US_" device="0207/7" value="12k"/>
 <part name="B_R_E" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
 <part name="B_R_B" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
 <part name="B_R_C" library="Amplifier_Parts" deviceset="SMT_PAD_3MM" device=""/>
 <part name="R47" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
 <part name="R48" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
 <part name="P_B" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
-<part name="P_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="P_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="P_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_B" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
-<part name="N_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
+<part name="N_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="R49" library="resistor" deviceset="R-US_" device="0207/7" value="0.1"/>
 <part name="R50" library="resistor" deviceset="R-US_" device="0207/7" value="0.1"/>
+<part name="C22" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
+<part name="C23" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
+<part name="C24" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
+<part name="C25" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
+<part name="R51" library="resistor" deviceset="R-US_" device="0207/7" value="10"/>
+<part name="C26" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
+<part name="C27" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
+<part name="R52" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
 </parts>
 <sheets>
 <sheet>
@@ -15520,8 +15528,8 @@ Control</text>
 <text x="45.72" y="-45.72" size="2.54" layer="97">TREBLE LEFT CHANNEL</text>
 <text x="45.72" y="-83.82" size="2.54" layer="97">MIDS LEFT CHANNEL</text>
 <text x="419.1" y="101.6" size="1.778" layer="97">Vbe multiplier</text>
-<text x="459.74" y="111.76" size="1.778" layer="97">MOSFET_P</text>
-<text x="459.74" y="66.04" size="1.778" layer="97">MOSFET_N</text>
+<text x="459.74" y="111.76" size="1.778" layer="97">MOSFET_n</text>
+<text x="459.74" y="66.04" size="1.778" layer="97">MOSFET_p</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="15.24" y="35.56" rot="R90"/>
@@ -15631,13 +15639,21 @@ Control</text>
 <instance part="R47" gate="G$1" x="414.02" y="68.58" rot="R180"/>
 <instance part="R48" gate="G$1" x="414.02" y="114.3" rot="R180"/>
 <instance part="P_B" gate="G$1" x="454.66" y="114.3" rot="R180"/>
-<instance part="P_S" gate="G$1" x="454.66" y="119.38" rot="R180"/>
-<instance part="P_D" gate="G$1" x="454.66" y="109.22" rot="R180"/>
+<instance part="P_D" gate="G$1" x="454.66" y="119.38" rot="R180"/>
+<instance part="P_S" gate="G$1" x="454.66" y="109.22" rot="R180"/>
 <instance part="N_B" gate="G$1" x="454.66" y="68.58" rot="R180"/>
-<instance part="N_D" gate="G$1" x="454.66" y="73.66" rot="R180"/>
-<instance part="N_S" gate="G$1" x="454.66" y="63.5" rot="R180"/>
+<instance part="N_S" gate="G$1" x="454.66" y="73.66" rot="R180"/>
+<instance part="N_D" gate="G$1" x="454.66" y="63.5" rot="R180"/>
 <instance part="R49" gate="G$1" x="452.12" y="99.06" rot="R90"/>
 <instance part="R50" gate="G$1" x="452.12" y="86.36" rot="R90"/>
+<instance part="C22" gate="G$1" x="444.5" y="121.92" rot="R180"/>
+<instance part="C23" gate="G$1" x="444.5" y="60.96"/>
+<instance part="C24" gate="G$1" x="431.8" y="121.92" rot="R180"/>
+<instance part="C25" gate="G$1" x="434.34" y="58.42" rot="R180"/>
+<instance part="R51" gate="G$1" x="469.9" y="86.36" rot="R90"/>
+<instance part="C26" gate="G$1" x="469.9" y="73.66" rot="R180"/>
+<instance part="C27" gate="G$1" x="335.28" y="116.84"/>
+<instance part="R52" gate="G$1" x="335.28" y="129.54" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -16374,7 +16390,7 @@ Control</text>
 </net>
 <net name="N$74" class="0">
 <segment>
-<pinref part="P_D" gate="G$1" pin="PAD"/>
+<pinref part="P_S" gate="G$1" pin="PAD"/>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="452.12" y1="109.22" x2="452.12" y2="104.14" width="0.1524" layer="91"/>
 </segment>
@@ -16382,12 +16398,100 @@ Control</text>
 <net name="N$75" class="0">
 <segment>
 <pinref part="R50" gate="G$1" pin="1"/>
-<pinref part="N_D" gate="G$1" pin="PAD"/>
+<pinref part="N_S" gate="G$1" pin="PAD"/>
 <wire x1="452.12" y1="81.28" x2="452.12" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R50" gate="G$1" pin="2"/>
 <wire x1="452.12" y1="73.66" x2="452.12" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="452.12" y1="91.44" x2="452.12" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R51" gate="G$1" pin="2"/>
+<wire x1="469.9" y1="91.44" x2="452.12" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$76" class="0">
+<segment>
+<pinref part="P_D" gate="G$1" pin="PAD"/>
+<pinref part="C22" gate="G$1" pin="+"/>
+<wire x1="452.12" y1="119.38" x2="444.5" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="444.5" y1="119.38" x2="431.8" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$77" class="0">
+<segment>
+<pinref part="N_D" gate="G$1" pin="PAD"/>
+<pinref part="C23" gate="G$1" pin="+"/>
+<wire x1="452.12" y1="63.5" x2="444.5" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="2"/>
+<wire x1="444.5" y1="63.5" x2="434.34" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$78" class="0">
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<pinref part="C22" gate="G$1" pin="-"/>
+<wire x1="431.8" y1="127" x2="444.5" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<pinref part="C25" gate="G$1" pin="1"/>
+<pinref part="C23" gate="G$1" pin="-"/>
+<wire x1="434.34" y1="55.88" x2="444.5" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$80" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="-VEE"/>
+<pinref part="C2" gate="G$1" pin="-"/>
+<wire x1="365.76" y1="60.96" x2="360.68" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="60.96" x2="360.68" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="365.76" y1="60.96" x2="373.38" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="60.96" x2="373.38" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$81" class="0">
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<wire x1="373.38" y1="50.8" x2="360.68" y2="50.8" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$82" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="+VCC"/>
+<pinref part="C16" gate="G$1" pin="+"/>
+<wire x1="365.76" y1="132.08" x2="360.68" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="132.08" x2="360.68" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="C18" gate="G$1" pin="1"/>
+<wire x1="365.76" y1="132.08" x2="373.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="373.38" y1="132.08" x2="373.38" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$83" class="0">
+<segment>
+<pinref part="C16" gate="G$1" pin="-"/>
+<pinref part="C18" gate="G$1" pin="2"/>
+<wire x1="360.68" y1="142.24" x2="373.38" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$84" class="0">
+<segment>
+<pinref part="C26" gate="G$1" pin="2"/>
+<pinref part="R51" gate="G$1" pin="1"/>
+<wire x1="469.9" y1="78.74" x2="469.9" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$85" class="0">
+<segment>
+<pinref part="U8" gate="G$1" pin="MUTE"/>
+<wire x1="340.36" y1="121.92" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R52" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="121.92" x2="335.28" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C27" gate="G$1" pin="+"/>
+<wire x1="335.28" y1="121.92" x2="335.28" y2="119.38" width="0.1524" layer="91"/>
+<junction x="335.28" y="121.92"/>
 </segment>
 </net>
 </nets>

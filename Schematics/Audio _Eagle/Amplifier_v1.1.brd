@@ -1326,6 +1326,34 @@ type 0204, grid 2.5 mm</description>
 <wire x1="9" y1="-5" x2="-9" y2="-5" width="0.127" layer="21"/>
 <wire x1="-9" y1="-5" x2="-9" y2="3" width="0.127" layer="21"/>
 </package>
+<package name="LM337">
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="4" x="0" y="2.38" dx="5.8" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1.6" dy="3" layer="1"/>
+<smd name="3" x="2.28" y="-4.8" dx="1.6" dy="3" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
+</package>
 </packages>
 </library>
 <library name="texas">
@@ -1378,6 +1406,43 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="v-reg">
+<description>&lt;b&gt;Voltage Regulators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DPACK">
+<description>&lt;b&gt;DPAK&lt;/b&gt;&lt;p&gt;
+PLASTIC PACKAGE CASE 369C-01&lt;br&gt;
+Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="4" x="0" y="2.38" dx="5.8" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1.6" dy="3" layer="1"/>
+<smd name="3" x="2.28" y="-4.8" dx="1.6" dy="3" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
 </package>
 </packages>
 </library>
@@ -1675,20 +1740,22 @@ design rules under a new name.</description>
 <element name="U$1" library="Amplifier_Parts" package="TONE_POT_2GANG" value="TONE_POT_2GANG" x="-99.06" y="-407.67"/>
 <element name="U$13" library="Amplifier_Parts" package="TONE_POT_2GANG" value="TONE_POT_2GANG" x="-99.06" y="-416.56"/>
 <element name="U$14" library="Amplifier_Parts" package="TONE_POT_2GANG" value="TONE_POT_2GANG" x="-99.06" y="-425.45"/>
-<element name="C29" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-440.69"/>
-<element name="C31" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-454.66"/>
-<element name="C33" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-476.25"/>
-<element name="C35" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-476.25"/>
-<element name="C37" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-497.84"/>
-<element name="C39" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-497.84"/>
-<element name="C41" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-519.43"/>
-<element name="C43" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-519.43"/>
-<element name="C45" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-541.02"/>
-<element name="C47" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-541.02"/>
-<element name="C49" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-562.61"/>
-<element name="C51" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-562.61"/>
-<element name="C53" library="rcl" package="C025-024X044" value="10uF" x="-106.68" y="-584.2"/>
-<element name="C55" library="rcl" package="C025-024X044" value="10uF" x="-100.33" y="-584.2"/>
+<element name="C29" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-440.69"/>
+<element name="C31" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-454.66"/>
+<element name="C33" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-476.25"/>
+<element name="C35" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-476.25"/>
+<element name="C37" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-497.84"/>
+<element name="C39" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-497.84"/>
+<element name="C41" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-519.43"/>
+<element name="C43" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-519.43"/>
+<element name="C45" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-541.02"/>
+<element name="C47" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-541.02"/>
+<element name="C49" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-562.61"/>
+<element name="C51" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-562.61"/>
+<element name="C53" library="rcl" package="C025-024X044" value="0.1uF" x="-106.68" y="-584.2"/>
+<element name="C55" library="rcl" package="C025-024X044" value="0.1uF" x="-100.33" y="-584.2"/>
+<element name="IC8" library="v-reg" package="DPACK" value="LM317MABDTRK" x="-115.57" y="-580.39"/>
+<element name="IC9" library="Amplifier_Parts" package="LM337" value="LM337" x="-127" y="-580.39"/>
 </elements>
 <signals>
 <signal name="N$1">
