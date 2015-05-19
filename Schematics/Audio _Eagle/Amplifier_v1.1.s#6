@@ -3210,46 +3210,6 @@ type 0309, grid 2.5 mm</description>
 Beckman, Copal, Piher, Spectrol, Schukat&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="3RP/1610G">
-<description>&lt;b&gt;16mm Potentiometer&lt;/b&gt; two level&lt;p&gt;
-Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
-<wire x1="-8.35" y1="-3.7" x2="8.35" y2="-3.7" width="0.2032" layer="21"/>
-<wire x1="-8.35" y1="-5.7" x2="-7.25" y2="-5.7" width="0.2032" layer="21"/>
-<wire x1="-8.35" y1="-3.7" x2="-8.35" y2="-5.7" width="0.2032" layer="21"/>
-<wire x1="-7.25" y1="-5.7" x2="-7.25" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-8.35" y1="-1.7" x2="8.35" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="-2.9" y1="-10.2" x2="-2.9" y2="-13.7" width="0.2032" layer="21"/>
-<wire x1="2.9" y1="-13.7" x2="2.9" y2="-10.2" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-3.8" x2="-3.4" y2="-9.9" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-9.9" x2="-2.9" y2="-10.2" width="0.2032" layer="21"/>
-<wire x1="2.9" y1="-10.2" x2="3.4" y2="-9.9" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-9.9" x2="3.4" y2="-3.8" width="0.2032" layer="21"/>
-<wire x1="-2.9" y1="-10.2" x2="2.9" y2="-10.2" width="0.2032" layer="21"/>
-<wire x1="-2.9" y1="-13.7" x2="2.9" y2="-13.7" width="0.2032" layer="21"/>
-<wire x1="-8.35" y1="-3.7" x2="-8.35" y2="7.6" width="0.2032" layer="21"/>
-<wire x1="8.35" y1="-3.7" x2="8.35" y2="7.6" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-9.525" x2="3.3" y2="-9" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-9.025" x2="3.3" y2="-8.5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-8.525" x2="3.3" y2="-8" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-8.025" x2="3.3" y2="-7.5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-7.525" x2="3.3" y2="-7" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-7.025" x2="3.3" y2="-6.5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-6.525" x2="3.3" y2="-6" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-6.025" x2="3.3" y2="-5.5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-5.525" x2="3.3" y2="-5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-5.025" x2="3.3" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="-4.525" x2="3.3" y2="-4" width="0.2032" layer="21"/>
-<wire x1="-3.075" y1="-10.025" x2="3.3" y2="-9.5" width="0.2032" layer="21"/>
-<wire x1="-8.35" y1="7.6" x2="8.35" y2="7.6" width="0.2032" layer="21"/>
-<pad name="1-1" x="-5" y="0" drill="1.2" diameter="2.1844"/>
-<pad name="1-2" x="0" y="0" drill="1.2" diameter="2.1844"/>
-<pad name="1-3" x="5" y="0" drill="1.2" diameter="2.1844"/>
-<pad name="2-1" x="-5" y="5" drill="1.2" diameter="2.1844"/>
-<pad name="2-2" x="0" y="5" drill="1.2" diameter="2.1844"/>
-<pad name="2-3" x="5" y="5" drill="1.2" diameter="2.1844"/>
-<text x="-8.255" y="8.255" size="1.27" layer="25">&gt;NAME</text>
-<text x="-4.445" y="1.905" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="B25P">
 <description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;&lt;p&gt;
 Beckman Helitrim 25</description>
@@ -4840,25 +4800,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </package>
 </packages>
 <symbols>
-<symbol name="POT_EU-">
-<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.1597" y1="1.2939" x2="-3.1989" y2="2.4495" width="0.1524" layer="94"/>
-<wire x1="-3.1989" y1="2.4495" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
-<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="TPOT">
 <wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
@@ -4878,29 +4819,6 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="3RP/1610G" prefix="R" uservalue="yes">
-<description>&lt;b&gt;16mm Potentiometer&lt;/b&gt; two level&lt;p&gt;
-Source: http://www.alphapotentiometers.net/html/16mm_pot_2.html</description>
-<gates>
-<gate name="/1" symbol="POT_EU-" x="-5.08" y="0" addlevel="always"/>
-<gate name="/2" symbol="POT_EU-" x="10.16" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="3RP/1610G">
-<connects>
-<connect gate="/1" pin="A" pad="1-1"/>
-<connect gate="/1" pin="E" pad="1-3"/>
-<connect gate="/1" pin="S" pad="1-2"/>
-<connect gate="/2" pin="A" pad="2-1"/>
-<connect gate="/2" pin="E" pad="2-3"/>
-<connect gate="/2" pin="S" pad="2-2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRIM_EU-" prefix="R" uservalue="yes">
 <description>&lt;b&gt;POTENTIOMETER&lt;/b&gt;</description>
 <gates>
@@ -15201,6 +15119,18 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <hole x="-1.15" y="3.3" drill="3.3"/>
 <hole x="13.15" y="3.3" drill="3.3"/>
 </package>
+<package name="VOL_POT_2GANG">
+<pad name="1_3" x="5" y="-2" drill="1.3"/>
+<pad name="1_2" x="0" y="-2" drill="1.3"/>
+<pad name="1_1" x="-5" y="-2" drill="1.3"/>
+<pad name="2_1" x="-5" y="3" drill="1.3"/>
+<pad name="2_2" x="0" y="3" drill="1.3"/>
+<pad name="2_3" x="5" y="3" drill="1.3"/>
+<wire x1="-7" y1="-4" x2="7" y2="-4" width="0.127" layer="21"/>
+<wire x1="7" y1="-4" x2="7" y2="5" width="0.127" layer="21"/>
+<wire x1="7" y1="5" x2="-7" y2="5" width="0.127" layer="21"/>
+<wire x1="-7" y1="5" x2="-7" y2="-4" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -15245,6 +15175,25 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <pin name="1_1" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="1_3" x="-7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 <pin name="1_2" x="-2.54" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="VOL_POT_2GANG">
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-3.1989" y2="2.4495" width="0.1524" layer="94"/>
+<wire x1="-3.1989" y1="2.4495" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1_1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1_3" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="1_2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15301,6 +15250,27 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </gates>
 <devices>
 <device name="" package="TONE_POT_2GANG">
+<connects>
+<connect gate="G$1" pin="1_1" pad="1_1"/>
+<connect gate="G$1" pin="1_2" pad="1_2"/>
+<connect gate="G$1" pin="1_3" pad="1_3"/>
+<connect gate="G$2" pin="1_1" pad="2_1"/>
+<connect gate="G$2" pin="1_2" pad="2_2"/>
+<connect gate="G$2" pin="1_3" pad="2_3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VOL_POT_2GANG">
+<gates>
+<gate name="G$1" symbol="VOL_POT_2GANG" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="VOL_POT_2GANG" x="17.78" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="VOL_POT_2GANG">
 <connects>
 <connect gate="G$1" pin="1_1" pad="1_1"/>
 <connect gate="G$1" pin="1_2" pad="1_2"/>
@@ -15463,7 +15433,6 @@ Control</text>
 <part name="U1" library="NE5532" deviceset="NE5532" device=""/>
 <part name="R1" library="resistor" deviceset="R-US_" device="0207/7"/>
 <part name="R2" library="resistor" deviceset="R-US_" device="0207/7"/>
-<part name="R3" library="pot" deviceset="3RP/1610G" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-024X044"/>
 <part name="R4" library="resistor" deviceset="R-US_" device="0207/7"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="025-024X044"/>
@@ -15566,6 +15535,9 @@ Control</text>
 <part name="C27" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="R52" library="resistor" deviceset="R-US_" device="0207/7" value="1.2k"/>
 <part name="U$13" library="Amplifier_Parts" deviceset="TONE_POT_2GANG" device=""/>
+<part name="U$14" library="Amplifier_Parts" deviceset="TONE_POT_2GANG" device=""/>
+<part name="U$15" library="Amplifier_Parts" deviceset="TONE_POT_2GANG" device=""/>
+<part name="U$16" library="Amplifier_Parts" deviceset="VOL_POT_2GANG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15587,8 +15559,6 @@ Control</text>
 <instance part="U1" gate="G$3" x="-40.64" y="2.54"/>
 <instance part="R1" gate="G$1" x="22.86" y="-5.08" rot="R270"/>
 <instance part="R2" gate="G$1" x="10.16" y="17.78" rot="R90"/>
-<instance part="R3" gate="/1" x="30.48" y="-30.48" rot="R180"/>
-<instance part="R3" gate="/2" x="0" y="43.18"/>
 <instance part="C1" gate="G$1" x="15.24" y="60.96" rot="R180"/>
 <instance part="R4" gate="G$1" x="93.98" y="101.6"/>
 <instance part="C3" gate="G$1" x="101.6" y="93.98" rot="R180"/>
@@ -15699,7 +15669,13 @@ Control</text>
 <instance part="C27" gate="G$1" x="335.28" y="116.84"/>
 <instance part="R52" gate="G$1" x="335.28" y="129.54" rot="R270"/>
 <instance part="U$13" gate="G$1" x="187.96" y="111.76" rot="R270"/>
-<instance part="U$13" gate="G$2" x="187.96" y="76.2" rot="R270"/>
+<instance part="U$13" gate="G$2" x="185.42" y="-5.08" rot="R270"/>
+<instance part="U$14" gate="G$1" x="187.96" y="76.2" rot="R270"/>
+<instance part="U$14" gate="G$2" x="185.42" y="-40.64" rot="R270"/>
+<instance part="U$15" gate="G$1" x="185.42" y="35.56" rot="R270"/>
+<instance part="U$15" gate="G$2" x="182.88" y="-81.28" rot="R270"/>
+<instance part="U$16" gate="G$1" x="0" y="43.18"/>
+<instance part="U$16" gate="G$2" x="30.48" y="-30.48" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -15711,23 +15687,23 @@ Control</text>
 <wire x1="10.16" y1="22.86" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="27.94" x2="10.16" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="R3" gate="/2" pin="A"/>
 <wire x1="0" y1="25.4" x2="0" y2="38.1" width="0.1524" layer="91"/>
 <junction x="10.16" y="25.4"/>
+<pinref part="U$16" gate="G$1" pin="1_1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R3" gate="/2" pin="E"/>
 <pinref part="U1" gate="G$1" pin="P$3"/>
 <wire x1="0" y1="48.26" x2="0" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="0" y1="53.34" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R3" gate="/2" pin="S"/>
 <wire x1="5.08" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="43.18" x2="5.08" y2="53.34" width="0.1524" layer="91"/>
 <junction x="5.08" y="53.34"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="53.34" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$1" pin="1_3"/>
+<pinref part="U$16" gate="G$1" pin="1_2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -15735,25 +15711,25 @@ Control</text>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$2" pin="P$1"/>
 <wire x1="22.86" y1="-10.16" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R3" gate="/1" pin="A"/>
 <wire x1="22.86" y1="-12.7" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-25.4" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-12.7" x2="22.86" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="22.86" y="-12.7"/>
+<pinref part="U$16" gate="G$2" pin="1_1"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R3" gate="/1" pin="E"/>
 <wire x1="30.48" y1="-35.56" x2="30.48" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$2" pin="P$3"/>
 <wire x1="30.48" y1="-40.64" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="R3" gate="/1" pin="S"/>
 <wire x1="25.4" y1="-40.64" x2="17.78" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="-30.48" x2="25.4" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="-40.64"/>
 <pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="-40.64" x2="17.78" y2="-43.18" width="0.1524" layer="91"/>
+<pinref part="U$16" gate="G$2" pin="1_3"/>
+<pinref part="U$16" gate="G$2" pin="1_2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -16249,15 +16225,15 @@ Control</text>
 <wire x1="203.2" y1="78.74" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="78.74" x2="203.2" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$2" pin="1_3"/>
-<pinref part="U$13" gate="G$2" pin="1_2"/>
+<pinref part="U$14" gate="G$1" pin="1_3"/>
+<pinref part="U$14" gate="G$1" pin="1_2"/>
 </segment>
 </net>
 <net name="N$56" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="83.82" x2="175.26" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U$13" gate="G$2" pin="1_1"/>
+<pinref part="U$14" gate="G$1" pin="1_1"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -16267,12 +16243,15 @@ Control</text>
 <wire x1="200.66" y1="38.1" x2="200.66" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="43.18" x2="190.5" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="38.1" x2="200.66" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="1_3"/>
+<pinref part="U$15" gate="G$1" pin="1_2"/>
 </segment>
 </net>
 <net name="N$58" class="0">
 <segment>
 <pinref part="R36" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="43.18" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="1_1"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -16282,12 +16261,15 @@ Control</text>
 <wire x1="200.66" y1="2.54" x2="200.66" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="-2.54" x2="200.66" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-2.54" x2="200.66" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$2" pin="1_3"/>
+<pinref part="U$13" gate="G$2" pin="1_2"/>
 </segment>
 </net>
 <net name="N$60" class="0">
 <segment>
 <pinref part="R37" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="2.54" x2="172.72" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="U$13" gate="G$2" pin="1_1"/>
 </segment>
 </net>
 <net name="N$61" class="0">
@@ -16297,12 +16279,15 @@ Control</text>
 <wire x1="200.66" y1="-33.02" x2="200.66" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="-38.1" x2="200.66" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="-38.1" x2="200.66" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$2" pin="1_3"/>
+<pinref part="U$14" gate="G$2" pin="1_2"/>
 </segment>
 </net>
 <net name="N$62" class="0">
 <segment>
 <pinref part="R38" gate="G$1" pin="2"/>
 <wire x1="180.34" y1="-33.02" x2="172.72" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$2" pin="1_1"/>
 </segment>
 </net>
 <net name="N$63" class="0">
@@ -16312,12 +16297,15 @@ Control</text>
 <wire x1="198.12" y1="-73.66" x2="198.12" y2="-78.74" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="-78.74" x2="198.12" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-78.74" x2="198.12" y2="-78.74" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$2" pin="1_3"/>
+<pinref part="U$15" gate="G$2" pin="1_2"/>
 </segment>
 </net>
 <net name="N$64" class="0">
 <segment>
 <pinref part="R39" gate="G$1" pin="2"/>
 <wire x1="177.8" y1="-73.66" x2="170.18" y2="-73.66" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$2" pin="1_1"/>
 </segment>
 </net>
 <net name="N$65" class="0">
