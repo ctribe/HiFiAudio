@@ -14407,6 +14407,20 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
+<package name="MOLEX_6P">
+<pad name="P$2" x="-2.15" y="2.42" drill="1.8"/>
+<pad name="P$3" x="2.15" y="2.42" drill="1.8"/>
+<pad name="P$4" x="-2.15" y="8.12" drill="1.8"/>
+<pad name="P$5" x="2.15" y="8.12" drill="1.8"/>
+<hole x="-2.15" y="-5.08" drill="3"/>
+<wire x1="-5.08" y1="10.16" x2="8.89" y2="10.16" width="0.127" layer="51"/>
+<wire x1="8.89" y1="-8.89" x2="-5.08" y2="-8.89" width="0.127" layer="51"/>
+<wire x1="-5.08" y1="-8.89" x2="-5.08" y2="10.16" width="0.127" layer="51"/>
+<pad name="P$1" x="6.45" y="2.42" drill="1.8"/>
+<pad name="P$6" x="6.45" y="8.12" drill="1.8"/>
+<hole x="6.45" y="-5.08" drill="3"/>
+<wire x1="8.89" y1="10.16" x2="8.89" y2="-8.89" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -14484,6 +14498,21 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="IN" x="-7.62" y="2.54" visible="off" length="short" direction="in"/>
 <pin name="ADJ" x="0" y="-5.08" visible="off" length="short" direction="in" rot="R90"/>
 <pin name="OUT" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="MOLEX_6P">
+<wire x1="-3.81" y1="5.08" x2="-5.08" y2="5.08" width="0.6096" layer="94"/>
+<text x="-2.54" y="4.318" size="1.524" layer="95">&gt;NAME</text>
+<pin name="S" x="-7.62" y="5.08" visible="off" length="short" direction="pas"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.6096" layer="94"/>
+<pin name="S1" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="-3.81" y1="-5.08" x2="-5.08" y2="-5.08" width="0.6096" layer="94"/>
+<pin name="S2" x="-7.62" y="-5.08" visible="off" length="short" direction="pas"/>
+<wire x1="-3.81" y1="-10.16" x2="-5.08" y2="-10.16" width="0.6096" layer="94"/>
+<pin name="S3" x="-7.62" y="-10.16" visible="off" length="short" direction="pas"/>
+<wire x1="-3.81" y1="-15.24" x2="-5.08" y2="-15.24" width="0.6096" layer="94"/>
+<pin name="S4" x="-7.62" y="-15.24" visible="off" length="short" direction="pas"/>
+<wire x1="-3.81" y1="-20.32" x2="-5.08" y2="-20.32" width="0.6096" layer="94"/>
+<pin name="S5" x="-7.62" y="-20.32" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14585,6 +14614,26 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="ADJ" pad="1"/>
 <connect gate="G$1" pin="IN" pad="4"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOLEX_6P">
+<gates>
+<gate name="G$1" symbol="MOLEX_6P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_6P">
+<connects>
+<connect gate="G$1" pin="S" pad="P$1"/>
+<connect gate="G$1" pin="S1" pad="P$2"/>
+<connect gate="G$1" pin="S2" pad="P$3"/>
+<connect gate="G$1" pin="S3" pad="P$4"/>
+<connect gate="G$1" pin="S4" pad="P$5"/>
+<connect gate="G$1" pin="S5" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15414,6 +15463,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="SUPPLY2" library="supply2" deviceset="V-" device=""/>
 <part name="GND36" library="supply2" deviceset="GND" device=""/>
 <part name="P+4" library="supply2" deviceset="V+" device=""/>
+<part name="U$17" library="Amplifier_Parts" deviceset="MOLEX_6P" device=""/>
+<part name="GND37" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15427,7 +15478,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <text x="66.04" y="38.1" size="2.54" layer="97">BASS RIGHT CHANNEL</text>
 <text x="63.5" y="15.24" size="2.54" layer="97">TREBLE RIGHT CHANNEL</text>
 <text x="63.5" y="2.54" size="2.54" layer="97" rot="MR180">MIDS RIGHT CHANNEL</text>
-<text x="469.9" y="78.74" size="1.778" layer="97">change
+<text x="474.98" y="81.28" size="1.778" layer="97">change
 footprint</text>
 <text x="457.2" y="96.52" size="1.778" layer="97">the foot print
 need to change</text>
@@ -15512,7 +15563,7 @@ need to change</text>
 <instance part="C24" gate="G$1" x="431.8" y="121.92" rot="R180"/>
 <instance part="C25" gate="G$1" x="434.34" y="58.42" rot="R180"/>
 <instance part="R51" gate="G$1" x="469.9" y="86.36" rot="R90"/>
-<instance part="C26" gate="G$1" x="469.9" y="73.66" rot="R180"/>
+<instance part="C26" gate="G$1" x="469.9" y="76.2" rot="R180"/>
 <instance part="C27" gate="G$1" x="335.28" y="116.84" smashed="yes">
 <attribute name="NAME" x="336.296" y="117.475" size="1.778" layer="95"/>
 <attribute name="VALUE" x="336.296" y="112.649" size="1.778" layer="96"/>
@@ -15628,7 +15679,7 @@ need to change</text>
 <instance part="GND24" gate="GND" x="381" y="48.26" smashed="yes">
 <attribute name="VALUE" x="379.095" y="45.085" size="1.778" layer="96"/>
 </instance>
-<instance part="GND25" gate="GND" x="472.44" y="71.12" rot="R90"/>
+<instance part="GND25" gate="GND" x="469.9" y="71.12"/>
 <instance part="GND26" gate="GND" x="63.5" y="162.56"/>
 <instance part="P+2" gate="1" x="452.12" y="129.54"/>
 <instance part="SUPPLY3" gate="GND" x="439.42" y="53.34"/>
@@ -15702,6 +15753,10 @@ need to change</text>
 <attribute name="VALUE" x="353.695" y="128.905" size="1.778" layer="96"/>
 </instance>
 <instance part="P+4" gate="1" x="365.76" y="144.78"/>
+<instance part="U$17" gate="G$1" x="505.46" y="86.36"/>
+<instance part="GND37" gate="GND" x="495.3" y="83.82" smashed="yes">
+<attribute name="VALUE" x="490.855" y="85.725" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16038,13 +16093,15 @@ need to change</text>
 <pinref part="R56" gate="G$1" pin="1"/>
 <wire x1="482.6" y1="149.86" x2="416.56" y2="149.86" width="0.1524" layer="91"/>
 <junction x="482.6" y="139.7"/>
+<pinref part="U$17" gate="G$1" pin="S"/>
+<wire x1="497.84" y1="91.44" x2="482.6" y2="91.44" width="0.1524" layer="91"/>
+<junction x="482.6" y="91.44"/>
 </segment>
 </net>
 <net name="N$84" class="0">
 <segment>
 <pinref part="C26" gate="G$1" pin="2"/>
 <pinref part="R51" gate="G$1" pin="1"/>
-<wire x1="469.9" y1="78.74" x2="469.9" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$85" class="0">
@@ -16711,6 +16768,11 @@ need to change</text>
 <segment>
 <pinref part="C16" gate="G$1" pin="-"/>
 <pinref part="GND36" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$17" gate="G$1" pin="S1"/>
+<wire x1="497.84" y1="86.36" x2="495.3" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="GND37" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
