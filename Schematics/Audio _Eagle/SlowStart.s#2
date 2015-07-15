@@ -9900,7 +9900,6 @@ type 0309, grid 2.5 mm</description>
 <text x="0" y="58.42" size="1.778" layer="97">Vac-</text>
 <text x="81.28" y="71.12" size="1.778" layer="97">Vac+</text>
 <text x="58.42" y="43.18" size="1.778" layer="97">Vac-</text>
-<text x="-10.16" y="73.66" size="1.778" layer="97">fuse will go here</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="5.08" y="40.64" rot="R90"/>

@@ -246,6 +246,10 @@
 <hole x="6.45" y="-5.08" drill="3"/>
 <wire x1="8.89" y1="10.16" x2="8.89" y2="-8.89" width="0.127" layer="51"/>
 </package>
+<package name="FUSE_PADS">
+<pad name="P$1" x="-26.67" y="0" drill="4.826"/>
+<pad name="P$2" x="25.4" y="0" drill="4.826"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BRIDGE_RECTIFIER">
@@ -436,6 +440,10 @@
 <pin name="S4" x="-7.62" y="-15.24" visible="off" length="short" direction="pas"/>
 <wire x1="-3.81" y1="-20.32" x2="-5.08" y2="-20.32" width="0.6096" layer="94"/>
 <pin name="S5" x="-7.62" y="-20.32" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="FUSE">
+<pin name="P$1" x="-2.54" y="0" length="middle" rot="R180"/>
+<pin name="P$2" x="2.54" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -654,6 +662,22 @@
 <connect gate="G$1" pin="S3" pad="P$4"/>
 <connect gate="G$1" pin="S4" pad="P$5"/>
 <connect gate="G$1" pin="S5" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FUSE">
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FUSE_PADS">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
