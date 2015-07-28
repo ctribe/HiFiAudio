@@ -5903,8 +5903,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="8.89" y1="10.16" x2="8.89" y2="-8.89" width="0.127" layer="51"/>
 </package>
 <package name="FUSE_PADS">
-<pad name="P$1" x="-5.08" y="0" drill="4.826" diameter="6.4516"/>
-<pad name="P$2" x="5.08" y="0" drill="4.826" diameter="6.4516"/>
+<pad name="P$1" x="-12.7" y="0" drill="4.826" diameter="6.4516"/>
+<pad name="P$2" x="12.7" y="0" drill="4.826" diameter="6.4516"/>
 </package>
 </packages>
 <symbols>
@@ -5947,8 +5947,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="S5" x="-7.62" y="-20.32" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="FUSE">
-<pin name="P$1" x="-7.62" y="0" length="middle"/>
-<pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
+<pin name="P$1" x="-2.54" y="0" length="middle" rot="R180"/>
+<pin name="P$2" x="2.54" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9926,11 +9926,6 @@ type 0309, grid 2.5 mm</description>
 <text x="81.28" y="71.12" size="1.778" layer="97">Vac+</text>
 <text x="58.42" y="43.18" size="1.778" layer="97">Vac-</text>
 <text x="-10.16" y="73.66" size="1.778" layer="97">fuse will go here</text>
-<text x="81.28" y="33.02" size="1.778" layer="97">mute</text>
-<text x="78.74" y="81.28" size="1.778" layer="97">* high current expected 
-in Vac+/- Earth 
-GND will not conduct
- high curent</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="5.08" y="40.64" rot="R90"/>
@@ -9987,12 +9982,12 @@ GND will not conduct
 <pinref part="D3" gate="G$1" pin="A"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="5.08" y1="10.16" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="S"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="60.96" x2="-15.24" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="60.96" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>
 <junction x="5.08" y="7.62"/>
-<pinref part="U$2" gate="G$1" pin="S2"/>
-<wire x1="-17.78" y1="71.12" x2="-15.24" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="71.12" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="2"/>
@@ -10147,6 +10142,13 @@ GND will not conduct
 <wire x1="53.34" y1="7.62" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="S3"/>
+<wire x1="12.7" y1="66.04" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="-17.78" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="S4"/>
@@ -10164,21 +10166,11 @@ GND will not conduct
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
-<wire x1="-2.54" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="66.04" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="S"/>
-<wire x1="-10.16" y1="60.96" x2="-17.78" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
-<wire x1="12.7" y1="66.04" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="S5"/>
-<wire x1="12.7" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="S2"/>
+<wire x1="-17.78" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="71.12" x2="-2.54" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -10186,10 +10178,4 @@ GND will not conduct
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
