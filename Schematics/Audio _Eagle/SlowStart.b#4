@@ -2697,6 +2697,7 @@ design rules under a new name.</description>
 <contactref element="C16" pad="2"/>
 <contactref element="LED2" pad="K"/>
 <contactref element="R2" pad="1"/>
+<contactref element="U$2" pad="P$3"/>
 <wire x1="42.237509375" y1="56.249159375" x2="47.644925" y2="72.474284375" width="0" layer="19" extent="1-1"/>
 <wire x1="36.930628125" y1="57.378159375" x2="42.237509375" y2="56.249159375" width="0" layer="19" extent="1-1"/>
 <wire x1="31.117421875" y1="60.894665625" x2="36.930628125" y2="57.378159375" width="0" layer="19" extent="1-1"/>
@@ -2705,6 +2706,7 @@ design rules under a new name.</description>
 <wire x1="47.79229375" y1="31.0346125" x2="49.953821875" y2="36.292103125" width="0" layer="19" extent="1-1"/>
 <wire x1="62.27295" y1="33.10123125" x2="49.953821875" y2="36.292103125" width="0" layer="19" extent="1-1"/>
 <wire x1="17.927771875" y1="54.38415" x2="31.117421875" y2="60.894665625" width="0" layer="19" extent="1-1"/>
+<wire x1="9.01" y1="44.06" x2="17.927771875" y2="54.38415" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R6" pad="2"/>

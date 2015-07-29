@@ -5927,6 +5927,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="P$1" x="-5.08" y="0" drill="4.826" diameter="6.4516"/>
 <pad name="P$2" x="5.08" y="0" drill="4.826" diameter="6.4516"/>
 </package>
+<package name="SCREW_TERMINAL_5">
+<pad name="P$2" x="-7.56" y="2" drill="2"/>
+<pad name="P$3" x="0.69" y="2" drill="2"/>
+<pad name="P$4" x="-15.81" y="2" drill="2"/>
+<pad name="P$5" x="8.94" y="2" drill="2"/>
+<pad name="P$6" x="17.19" y="2" drill="2"/>
+<wire x1="-21" y1="-1.3" x2="22" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="22" y1="-1.3" x2="22" y2="11.7" width="0.127" layer="21"/>
+<wire x1="22" y1="11.7" x2="-21" y2="11.7" width="0.127" layer="21"/>
+<wire x1="-21" y1="11.7" x2="-21" y2="-1.3" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RELAY_SPST">
@@ -5970,6 +5981,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <symbol name="FUSE">
 <pin name="P$1" x="-7.62" y="0" length="middle"/>
 <pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SCREW_TERMINAL_5">
+<text x="2.54" y="11.938" size="1.524" layer="95">&gt;NAME</text>
+<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
+<pin name="S1" x="-2.54" y="7.62" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<pin name="S2" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<pin name="S3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-7.62" x2="0" y2="-7.62" width="0.6096" layer="94"/>
+<pin name="S4" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-12.7" x2="0" y2="-12.7" width="0.6096" layer="94"/>
+<pin name="S5" x="-2.54" y="-12.7" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6020,6 +6044,25 @@ In this library the device names are the same as the pin names of the symbols, t
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCREW_TERMINAL_5">
+<gates>
+<gate name="G$1" symbol="SCREW_TERMINAL_5" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SCREW_TERMINAL_5">
+<connects>
+<connect gate="G$1" pin="S1" pad="P$2"/>
+<connect gate="G$1" pin="S2" pad="P$3"/>
+<connect gate="G$1" pin="S3" pad="P$4"/>
+<connect gate="G$1" pin="S4" pad="P$5"/>
+<connect gate="G$1" pin="S5" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9937,7 +9980,7 @@ type 0309, grid 2.5 mm</description>
 <part name="PE3" library="supply1" deviceset="PE" device=""/>
 <part name="PE4" library="supply1" deviceset="PE" device=""/>
 <part name="PE5" library="supply1" deviceset="PE" device=""/>
-<part name="P1" library="Amplifier_Parts" deviceset="MOLEX_6P" device=""/>
+<part name="U$2" library="Amplifier_Parts" deviceset="SCREW_TERMINAL_5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9991,9 +10034,7 @@ GND will not conduct
 <instance part="PE3" gate="M" x="30.48" y="0"/>
 <instance part="PE4" gate="M" x="43.18" y="0"/>
 <instance part="PE5" gate="M" x="81.28" y="50.8" rot="R270"/>
-<instance part="P1" gate="G$1" x="-25.4" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="-17.78" y="59.182" size="1.524" layer="95" rot="R180"/>
-</instance>
+<instance part="U$2" gate="G$1" x="-20.32" y="68.58" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10026,7 +10067,7 @@ GND will not conduct
 <wire x1="-17.78" y1="76.2" x2="-15.24" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="76.2" x2="-15.24" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="PE1" gate="M" pin="PE"/>
-<pinref part="P1" gate="G$1" pin="S3"/>
+<pinref part="U$2" gate="G$1" pin="S4"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -10079,7 +10120,7 @@ GND will not conduct
 <pinref part="U$1" gate="G$1" pin="COM"/>
 <wire x1="27.94" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
 <label x="0" y="58.42" size="1.778" layer="95"/>
-<pinref part="P1" gate="G$1" pin="S1"/>
+<pinref part="U$2" gate="G$1" pin="S2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -10182,15 +10223,7 @@ GND will not conduct
 <wire x1="-2.54" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="66.04" x2="-10.16" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="60.96" x2="-17.78" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="S"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
-<wire x1="12.7" y1="66.04" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="86.36" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="P1" gate="G$1" pin="S5"/>
+<pinref part="U$2" gate="G$1" pin="S1"/>
 </segment>
 </net>
 <net name="VAC+" class="0">
@@ -10202,7 +10235,15 @@ GND will not conduct
 <pinref part="U$3" gate="G$1" pin="S2"/>
 <wire x1="73.66" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <label x="55.88" y="96.52" size="1.778" layer="95"/>
-<pinref part="P1" gate="G$1" pin="S2"/>
+<pinref part="U$2" gate="G$1" pin="S3"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
+<wire x1="12.7" y1="66.04" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="S5"/>
+<wire x1="12.7" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

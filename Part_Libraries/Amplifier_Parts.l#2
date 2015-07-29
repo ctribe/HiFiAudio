@@ -247,8 +247,8 @@
 <wire x1="8.89" y1="10.16" x2="8.89" y2="-8.89" width="0.127" layer="51"/>
 </package>
 <package name="FUSE_PADS">
-<pad name="P$1" x="-12.7" y="0" drill="4.826" diameter="6.4516"/>
-<pad name="P$2" x="12.7" y="0" drill="4.826" diameter="6.4516"/>
+<pad name="P$1" x="-5.08" y="0" drill="4.826" diameter="6.4516"/>
+<pad name="P$2" x="5.08" y="0" drill="4.826" diameter="6.4516"/>
 </package>
 </packages>
 <symbols>
@@ -444,6 +444,19 @@
 <symbol name="FUSE">
 <pin name="P$1" x="-7.62" y="0" length="middle"/>
 <pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="SCREW_TERMINAL_5">
+<text x="2.54" y="11.938" size="1.524" layer="95">&gt;NAME</text>
+<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
+<pin name="S1" x="-2.54" y="7.62" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<pin name="S2" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<pin name="S3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-7.62" x2="0" y2="-7.62" width="0.6096" layer="94"/>
+<pin name="S4" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
+<wire x1="1.27" y1="-12.7" x2="0" y2="-12.7" width="0.6096" layer="94"/>
+<pin name="S5" x="-2.54" y="-12.7" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -649,7 +662,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX_6P">
+<deviceset name="MOLEX_6P" prefix="P">
 <gates>
 <gate name="G$1" symbol="MOLEX_6P" x="0" y="0"/>
 </gates>
