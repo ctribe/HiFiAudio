@@ -1395,6 +1395,20 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </package>
 </packages>
 </library>
+<library name="Power Resistors">
+<packages>
+<package name="2-1623788-1">
+<wire x1="-6.5" y1="4.5" x2="6.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="4.5" x2="6.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="4.5" x2="-6.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-4.5" x2="6.5" y2="-4.5" width="0.127" layer="21"/>
+<text x="-6" y="7.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6" y="5.5" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$3" x="-2.5" y="0" drill="0.9"/>
+<pad name="P$4" x="2.5" y="0" drill="0.9"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1633,8 +1647,6 @@ design rules under a new name.</description>
 <element name="N_B" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-100.33" y="-111.76"/>
 <element name="N_S" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-100.33" y="-118.11"/>
 <element name="N_D" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-100.33" y="-124.46"/>
-<element name="R49" library="rcl" package="0204V" value="0.1" x="-99.06" y="-130.81"/>
-<element name="R50" library="rcl" package="0204V" value="0.1" x="-99.06" y="-135.89"/>
 <element name="C22" library="rcl" package="E2,5-6" value="100uF" x="-100.33" y="-140.97"/>
 <element name="C23" library="rcl" package="E2,5-6" value="100uF" x="-100.33" y="-148.59"/>
 <element name="C24" library="rcl" package="C025-024X044" value="0.1uF" x="-101.6" y="-154.94"/>
@@ -1707,8 +1719,6 @@ design rules under a new name.</description>
 <element name="N_B1" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-125.73" y="-728.98"/>
 <element name="N_S1" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-152.4" y="-735.33"/>
 <element name="N_D1" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-119.38" y="-728.98"/>
-<element name="R64" library="rcl" package="0204V" value="0.1" x="-125.73" y="-722.63"/>
-<element name="R65" library="rcl" package="0204V" value="0.1" x="-120.65" y="-722.63"/>
 <element name="C57" library="rcl" package="E2,5-6" value="100uF" x="-151.13" y="-702.31"/>
 <element name="C58" library="rcl" package="E2,5-6" value="100uF" x="-138.43" y="-702.31"/>
 <element name="C59" library="rcl" package="C025-024X044" value="0.1uF" x="-119.38" y="-708.66"/>
@@ -1747,8 +1757,6 @@ design rules under a new name.</description>
 <element name="N_B2" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-125.73" y="-782.32"/>
 <element name="N_S2" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-152.4" y="-788.67"/>
 <element name="N_D2" library="Amplifier_Parts" package="SMT_PAD_5MM" value="SMT_PAD_5MM" x="-119.38" y="-782.32"/>
-<element name="R79" library="rcl" package="0204V" value="0.1" x="-125.73" y="-775.97"/>
-<element name="R80" library="rcl" package="0204V" value="0.1" x="-120.65" y="-775.97"/>
 <element name="C72" library="rcl" package="E2,5-6" value="100uF" x="-151.13" y="-755.65"/>
 <element name="C73" library="rcl" package="E2,5-6" value="100uF" x="-138.43" y="-755.65"/>
 <element name="C74" library="rcl" package="C025-024X044" value="0.1uF" x="-119.38" y="-762"/>
@@ -1811,6 +1819,27 @@ design rules under a new name.</description>
 <element name="R92" library="rcl" package="0204V" value="" x="-151.13" y="-880.11"/>
 <element name="U$22" library="Amplifier_Parts" package="MOLEX_6P" value="MOLEX_6P" x="-165.1" y="-881.38"/>
 <element name="R39" library="rcl" package="0204V" value="" x="-166.37" y="-894.08"/>
+<element name="PR1" library="Power Resistors" package="2-1623788-1" value="0.1" x="-177.8" y="-890.27">
+<attribute name="MAX_POWER" value="5W" x="-177.8" y="-890.27" size="1.778" layer="27" display="off"/>
+<attribute name="POWER_LEVEL" value="5W" x="-177.8" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PR2" library="Power Resistors" package="2-1623788-1" value="0.1" x="-191.77" y="-890.27">
+<attribute name="POWER_LEVEL" value="5W" x="-191.77" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PR3" library="Power Resistors" package="2-1623788-1" value="0.1" x="-205.74" y="-890.27">
+<attribute name="POWER_LEVEL" value="5W" x="-205.74" y="-890.27" size="1.778" layer="27" display="off"/>
+<attribute name="MAX_POWER" value="5W" x="-205.74" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PR4" library="Power Resistors" package="2-1623788-1" value="0.1" x="-219.71" y="-890.27">
+<attribute name="POWER_LEVEL" value="5W" x="-219.71" y="-890.27" size="1.778" layer="27" display="off"/>
+<attribute name="MAX_POWER" value="5W" x="-219.71" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PR5" library="Power Resistors" package="2-1623788-1" value="0.1" x="-233.68" y="-890.27">
+<attribute name="POWER_LEVEL" value="5W" x="-233.68" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
+<element name="PR6" library="Power Resistors" package="2-1623788-1" value="0.1" x="-247.65" y="-890.27">
+<attribute name="POWER_LEVEL" value="5W" x="-247.65" y="-890.27" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2198,21 +2227,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$74">
 <contactref element="P_S" pad="PAD"/>
-<contactref element="R49" pad="2"/>
-<wire x1="-100.33" y1="-105.41" x2="-97.79" y2="-130.81" width="0" layer="19" extent="1-1"/>
+<contactref element="PR4" pad="P$4"/>
+<wire x1="-217.21" y1="-890.27" x2="-100.33" y2="-105.41" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$75">
-<contactref element="R50" pad="2"/>
-<contactref element="R49" pad="1"/>
 <contactref element="R51" pad="2"/>
 <contactref element="U8" pad="8"/>
 <contactref element="R56" pad="1"/>
 <contactref element="U$17" pad="P$1"/>
-<wire x1="-100.33" y1="-130.81" x2="-97.79" y2="-135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-97.79" y1="-167.64" x2="-97.79" y2="-135.89" width="0" layer="19" extent="1-1"/>
-<wire x1="-87.225" y1="-2.54" x2="-100.33" y2="-130.81" width="0" layer="19" extent="1-1"/>
-<wire x1="-143.41" y1="-677.03" x2="-97.79" y2="-167.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-130.81" y1="-685.8" x2="-143.41" y2="-677.03" width="0" layer="19" extent="1-1"/>
+<contactref element="PR3" pad="P$4"/>
+<contactref element="PR4" pad="P$3"/>
+<wire x1="-203.24" y1="-890.27" x2="-222.21" y2="-890.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-130.81" y1="-685.8" x2="-203.24" y2="-890.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-143.41" y1="-677.03" x2="-130.81" y2="-685.8" width="0" layer="19" extent="1-1"/>
+<wire x1="-97.79" y1="-167.64" x2="-143.41" y2="-677.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-87.225" y1="-2.54" x2="-97.79" y2="-167.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$84">
 <contactref element="C26" pad="2"/>
@@ -2515,21 +2544,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$71">
 <contactref element="P_S1" pad="PAD"/>
-<contactref element="R64" pad="2"/>
-<wire x1="-124.46" y1="-722.63" x2="-133.35" y2="-735.33" width="0" layer="19" extent="1-1"/>
+<contactref element="PR1" pad="P$4"/>
+<wire x1="-175.3" y1="-890.27" x2="-133.35" y2="-735.33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$76">
-<contactref element="R65" pad="2"/>
-<contactref element="R64" pad="1"/>
 <contactref element="R66" pad="2"/>
 <contactref element="U1" pad="8"/>
 <contactref element="R71" pad="1"/>
 <contactref element="U$17" pad="P$3"/>
-<wire x1="-127" y1="-722.63" x2="-132.08" y2="-728.98" width="0" layer="19" extent="1-1"/>
-<wire x1="-119.38" y1="-722.63" x2="-127" y2="-722.63" width="0" layer="19" extent="1-1"/>
-<wire x1="-114.3" y1="-722.63" x2="-119.38" y2="-722.63" width="0" layer="19" extent="1-1"/>
-<wire x1="-146.915" y1="-708.66" x2="-127" y2="-722.63" width="0" layer="19" extent="1-1"/>
+<contactref element="PR1" pad="P$3"/>
+<contactref element="PR2" pad="P$4"/>
+<wire x1="-114.3" y1="-722.63" x2="-132.08" y2="-728.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-146.915" y1="-708.66" x2="-132.08" y2="-728.98" width="0" layer="19" extent="1-1"/>
 <wire x1="-147.71" y1="-677.03" x2="-146.915" y2="-708.66" width="0" layer="19" extent="1-1"/>
+<wire x1="-180.3" y1="-890.27" x2="-132.08" y2="-728.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-189.27" y1="-890.27" x2="-180.3" y2="-890.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$77">
 <contactref element="C61" pad="2"/>
@@ -2640,21 +2669,21 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$95">
 <contactref element="P_S2" pad="PAD"/>
-<contactref element="R79" pad="2"/>
-<wire x1="-124.46" y1="-775.97" x2="-133.35" y2="-788.67" width="0" layer="19" extent="1-1"/>
+<contactref element="PR5" pad="P$4"/>
+<wire x1="-231.18" y1="-890.27" x2="-133.35" y2="-788.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$96">
-<contactref element="R80" pad="2"/>
-<contactref element="R79" pad="1"/>
 <contactref element="R81" pad="2"/>
 <contactref element="U2" pad="8"/>
 <contactref element="R86" pad="1"/>
 <contactref element="U$17" pad="P$5"/>
-<wire x1="-127" y1="-775.97" x2="-132.08" y2="-782.32" width="0" layer="19" extent="1-1"/>
-<wire x1="-119.38" y1="-775.97" x2="-127" y2="-775.97" width="0" layer="19" extent="1-1"/>
-<wire x1="-114.3" y1="-775.97" x2="-119.38" y2="-775.97" width="0" layer="19" extent="1-1"/>
-<wire x1="-146.915" y1="-762" x2="-127" y2="-775.97" width="0" layer="19" extent="1-1"/>
+<contactref element="PR5" pad="P$3"/>
+<contactref element="PR6" pad="P$4"/>
+<wire x1="-114.3" y1="-775.97" x2="-132.08" y2="-782.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-146.915" y1="-762" x2="-132.08" y2="-782.32" width="0" layer="19" extent="1-1"/>
 <wire x1="-147.71" y1="-671.33" x2="-146.915" y2="-762" width="0" layer="19" extent="1-1"/>
+<wire x1="-236.18" y1="-890.27" x2="-132.08" y2="-782.32" width="0" layer="19" extent="1-1"/>
+<wire x1="-245.15" y1="-890.27" x2="-236.18" y2="-890.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$97">
 <contactref element="C76" pad="2"/>
@@ -2951,19 +2980,19 @@ design rules under a new name.</description>
 <contactref element="U$22" pad="P$2"/>
 </signal>
 <signal name="N$106">
-<contactref element="R65" pad="1"/>
 <contactref element="N_S1" pad="PAD"/>
-<wire x1="-121.92" y1="-722.63" x2="-152.4" y2="-735.33" width="0" layer="19" extent="1-1"/>
+<contactref element="PR2" pad="P$3"/>
+<wire x1="-194.27" y1="-890.27" x2="-152.4" y2="-735.33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$109">
 <contactref element="N_S2" pad="PAD"/>
-<contactref element="R80" pad="1"/>
-<wire x1="-121.92" y1="-775.97" x2="-152.4" y2="-788.67" width="0" layer="19" extent="1-1"/>
+<contactref element="PR6" pad="P$3"/>
+<wire x1="-250.15" y1="-890.27" x2="-152.4" y2="-788.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$110">
 <contactref element="N_S" pad="PAD"/>
-<contactref element="R50" pad="1"/>
-<wire x1="-100.33" y1="-118.11" x2="-100.33" y2="-135.89" width="0" layer="19" extent="1-1"/>
+<contactref element="PR3" pad="P$3"/>
+<wire x1="-208.24" y1="-890.27" x2="-100.33" y2="-118.11" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

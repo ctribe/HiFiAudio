@@ -11217,6 +11217,14 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <rectangle x1="-1.4" y1="-1.6" x2="-1.1" y2="1.6" layer="51"/>
 <rectangle x1="1.1" y1="-1.6" x2="1.4" y2="1.6" layer="51" rot="R180"/>
 </package>
+<package name="3.5MM_8MM">
+<wire x1="-10.414" y1="0" x2="-10.414" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-9.779" y1="-0.635" x2="-11.049" y2="-0.635" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="8" width="0.254" layer="21"/>
+<pad name="+" x="-1.75" y="0" drill="0.6"/>
+<pad name="-" x="1.75" y="0" drill="0.6" shape="octagon"/>
+<text x="-2.286" y="10.922" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -13558,6 +13566,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="" package="3.5MM_8MM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="R-US_" prefix="R" uservalue="yes">
@@ -14562,7 +14579,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOLEX_6P">
+<deviceset name="MOLEX_6P" prefix="P">
 <gates>
 <gate name="G$1" symbol="MOLEX_6P" x="0" y="0"/>
 </gates>
@@ -15018,6 +15035,87 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
+<library name="Power Resistors">
+<packages>
+<package name="2-1623788-1">
+<wire x1="-6.5" y1="4.5" x2="6.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="6.5" y1="4.5" x2="6.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="4.5" x2="-6.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-6.5" y1="-4.5" x2="6.5" y2="-4.5" width="0.127" layer="21"/>
+<text x="-6" y="7.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6" y="5.5" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P$3" x="-2.5" y="0" drill="0.9"/>
+<pad name="P$4" x="2.5" y="0" drill="0.9"/>
+</package>
+</packages>
+<symbols>
+<symbol name="RES">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SQM" prefix="PR" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RES" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2-1623788-1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$3"/>
+<connect gate="G$1" pin="2" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="POWER_LEVEL" value="5W"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="AWG Holes">
+<packages>
+<package name="12AWG_HOLE">
+<pad name="P$1" x="0" y="0" drill="1.27"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SINGLEHOLE">
+<pin name="P$1" x="0" y="0" visible="pin" length="point" direction="pas"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="18AWG" prefix="P">
+<gates>
+<gate name="G$1" symbol="SINGLEHOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="12AWG_HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -15077,8 +15175,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="N_B" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_S" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_D" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
-<part name="R49" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
-<part name="R50" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
 <part name="C22" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C23" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C24" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -15181,8 +15277,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="N_B1" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_S1" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_D1" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
-<part name="R64" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
-<part name="R65" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
 <part name="C57" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C58" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C59" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -15236,8 +15330,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="N_B2" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_S2" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
 <part name="N_D2" library="Amplifier_Parts" deviceset="SMT_PAD_5MM" device=""/>
-<part name="R79" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
-<part name="R80" library="rcl" deviceset="R-US_" device="0204/2V" value="0.1"/>
 <part name="C72" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C73" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="C74" library="rcl" deviceset="C-EU" device="025-024X044" value="0.1uF"/>
@@ -15334,6 +15426,13 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="P-1" library="supply1" deviceset="-12V" device=""/>
 <part name="R39" library="rcl" deviceset="R-US_" device="0204/2V"/>
+<part name="PR1" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="PR2" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="PR3" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="PR4" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="PR5" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="PR6" library="Power Resistors" deviceset="SQM" device=""/>
+<part name="P1" library="AWG Holes" deviceset="18AWG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15346,22 +15445,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="485.14" y="243.84" size="1.778" layer="97">MOSFET_p</text>
 <text x="500.38" y="259.08" size="1.778" layer="97">change
 footprint</text>
-<text x="482.6" y="274.32" size="1.778" layer="97">the foot print
-need to change</text>
 <text x="444.5" y="139.7" size="1.778" layer="97">Vbe multiplier</text>
 <text x="485.14" y="149.86" size="1.778" layer="97">MOSFET_n</text>
 <text x="485.14" y="104.14" size="1.778" layer="97">MOSFET_p</text>
 <text x="500.38" y="119.38" size="1.778" layer="97">change
 footprint</text>
-<text x="482.6" y="134.62" size="1.778" layer="97">the foot print
-need to change</text>
 <text x="444.5" y="20.32" size="1.778" layer="97">Vbe multiplier</text>
 <text x="485.14" y="30.48" size="1.778" layer="97">MOSFET_n</text>
 <text x="485.14" y="-15.24" size="1.778" layer="97">MOSFET_p</text>
 <text x="500.38" y="0" size="1.778" layer="97">change
 footprint</text>
-<text x="482.6" y="15.24" size="1.778" layer="97">the foot print
-need to change</text>
 <text x="464.82" y="335.28" size="6.4516" layer="97">Right Amp</text>
 <text x="462.28" y="198.12" size="6.4516" layer="97">Bass Amp</text>
 <text x="459.74" y="76.2" size="6.4516" layer="97">Left Amp</text>
@@ -15374,6 +15467,9 @@ need to change</text>
 <text x="500.38" y="266.7" size="1.778" layer="97">altleast .5W</text>
 <text x="500.38" y="5.08" size="1.778" layer="97">altleast .5W</text>
 <text x="25.4" y="137.16" size="1.778" layer="97">Mute</text>
+<wire x1="93.98" y1="185.42" x2="71.12" y2="170.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="71.12" y1="170.18" x2="71.12" y2="43.18" width="0.1524" layer="97" style="shortdash"/>
+<wire x1="71.12" y1="43.18" x2="93.98" y2="58.42" width="0.1524" layer="97" style="shortdash"/>
 </plain>
 <instances>
 <instance part="R2" gate="G$1" x="68.58" y="180.34"/>
@@ -15446,8 +15542,6 @@ need to change</text>
 <instance part="N_B" gate="G$1" x="480.06" y="246.38" rot="R180"/>
 <instance part="N_S" gate="G$1" x="480.06" y="251.46" rot="R180"/>
 <instance part="N_D" gate="G$1" x="480.06" y="241.3" rot="R180"/>
-<instance part="R49" gate="G$1" x="477.52" y="276.86" rot="R90"/>
-<instance part="R50" gate="G$1" x="477.52" y="264.16" rot="R90"/>
 <instance part="C22" gate="G$1" x="469.9" y="299.72" rot="R180"/>
 <instance part="C23" gate="G$1" x="469.9" y="236.22" rot="R180"/>
 <instance part="C24" gate="G$1" x="457.2" y="299.72" rot="R180"/>
@@ -15615,8 +15709,6 @@ need to change</text>
 <instance part="N_B1" gate="G$1" x="480.06" y="106.68" rot="R180"/>
 <instance part="N_S1" gate="G$1" x="480.06" y="111.76" rot="R180"/>
 <instance part="N_D1" gate="G$1" x="480.06" y="101.6" rot="R180"/>
-<instance part="R64" gate="G$1" x="477.52" y="137.16" rot="R90"/>
-<instance part="R65" gate="G$1" x="477.52" y="124.46" rot="R90"/>
 <instance part="C57" gate="G$1" x="469.9" y="160.02" rot="R180"/>
 <instance part="C58" gate="G$1" x="469.9" y="96.52" rot="R180"/>
 <instance part="C59" gate="G$1" x="457.2" y="160.02" rot="R180"/>
@@ -15725,8 +15817,6 @@ need to change</text>
 <instance part="N_B2" gate="G$1" x="480.06" y="-12.7" rot="R180"/>
 <instance part="N_S2" gate="G$1" x="480.06" y="-7.62" rot="R180"/>
 <instance part="N_D2" gate="G$1" x="480.06" y="-17.78" rot="R180"/>
-<instance part="R79" gate="G$1" x="477.52" y="17.78" rot="R90"/>
-<instance part="R80" gate="G$1" x="477.52" y="5.08" rot="R90"/>
 <instance part="C72" gate="G$1" x="469.9" y="40.64" rot="R180"/>
 <instance part="C73" gate="G$1" x="469.9" y="-22.86" rot="R180"/>
 <instance part="C74" gate="G$1" x="457.2" y="40.64" rot="R180"/>
@@ -15860,6 +15950,13 @@ need to change</text>
 <instance part="P+1" gate="1" x="43.18" y="149.86"/>
 <instance part="P-1" gate="1" x="43.18" y="109.22"/>
 <instance part="R39" gate="G$1" x="304.8" y="73.66" rot="R90"/>
+<instance part="PR1" gate="G$1" x="477.52" y="17.78" rot="R90"/>
+<instance part="PR2" gate="G$1" x="477.52" y="5.08" rot="R90"/>
+<instance part="PR3" gate="G$1" x="477.52" y="124.46" rot="R90"/>
+<instance part="PR4" gate="G$1" x="477.52" y="137.16" rot="R90"/>
+<instance part="PR5" gate="G$1" x="477.52" y="264.16" rot="R90"/>
+<instance part="PR6" gate="G$1" x="477.52" y="276.86" rot="R90"/>
+<instance part="P1" gate="G$1" x="454.66" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -16116,18 +16213,15 @@ need to change</text>
 <net name="N$74" class="0">
 <segment>
 <pinref part="P_S" gate="G$1" pin="PAD"/>
-<pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="477.52" y1="287.02" x2="477.52" y2="281.94" width="0.1524" layer="91"/>
+<pinref part="PR6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$75" class="0">
 <segment>
-<pinref part="R50" gate="G$1" pin="2"/>
-<pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="269.24" x2="477.52" y2="271.78" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="2"/>
 <wire x1="495.3" y1="269.24" x2="477.52" y2="269.24" width="0.1524" layer="91"/>
-<junction x="477.52" y="269.24"/>
 <wire x1="508" y1="317.5" x2="508" y2="269.24" width="0.1524" layer="91"/>
 <wire x1="508" y1="269.24" x2="495.3" y2="269.24" width="0.1524" layer="91"/>
 <junction x="495.3" y="269.24"/>
@@ -16143,6 +16237,9 @@ need to change</text>
 <pinref part="U$17" gate="G$1" pin="S"/>
 <wire x1="581.66" y1="269.24" x2="508" y2="269.24" width="0.1524" layer="91"/>
 <junction x="508" y="269.24"/>
+<pinref part="PR5" gate="G$1" pin="2"/>
+<junction x="477.52" y="269.24"/>
+<pinref part="PR6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$84" class="0">
@@ -17074,18 +17171,15 @@ need to change</text>
 <net name="N$71" class="0">
 <segment>
 <pinref part="P_S1" gate="G$1" pin="PAD"/>
-<pinref part="R64" gate="G$1" pin="2"/>
 <wire x1="477.52" y1="147.32" x2="477.52" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="PR4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$76" class="0">
 <segment>
-<pinref part="R65" gate="G$1" pin="2"/>
-<pinref part="R64" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="129.54" x2="477.52" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="R66" gate="G$1" pin="2"/>
 <wire x1="495.3" y1="129.54" x2="477.52" y2="129.54" width="0.1524" layer="91"/>
-<junction x="477.52" y="129.54"/>
 <wire x1="508" y1="177.8" x2="508" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="508" y1="129.54" x2="495.3" y2="129.54" width="0.1524" layer="91"/>
 <junction x="495.3" y="129.54"/>
@@ -17103,6 +17197,9 @@ need to change</text>
 <wire x1="520.7" y1="129.54" x2="508" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="581.66" y1="259.08" x2="520.7" y2="259.08" width="0.1524" layer="91"/>
 <wire x1="520.7" y1="259.08" x2="520.7" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="PR3" gate="G$1" pin="2"/>
+<junction x="477.52" y="129.54"/>
+<pinref part="PR4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$77" class="0">
@@ -17278,18 +17375,16 @@ need to change</text>
 <net name="N$95" class="0">
 <segment>
 <pinref part="P_S2" gate="G$1" pin="PAD"/>
-<pinref part="R79" gate="G$1" pin="2"/>
 <wire x1="477.52" y1="27.94" x2="477.52" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="PR1" gate="G$1" pin="2"/>
+<junction x="477.52" y="22.86"/>
 </segment>
 </net>
 <net name="N$96" class="0">
 <segment>
-<pinref part="R80" gate="G$1" pin="2"/>
-<pinref part="R79" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="10.16" x2="477.52" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R81" gate="G$1" pin="2"/>
 <wire x1="495.3" y1="10.16" x2="477.52" y2="10.16" width="0.1524" layer="91"/>
-<junction x="477.52" y="10.16"/>
 <wire x1="508" y1="58.42" x2="508" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="508" y1="10.16" x2="495.3" y2="10.16" width="0.1524" layer="91"/>
 <junction x="495.3" y="10.16"/>
@@ -17307,6 +17402,9 @@ need to change</text>
 <junction x="508" y="10.16"/>
 <pinref part="U$17" gate="G$1" pin="S4"/>
 <wire x1="528.32" y1="248.92" x2="581.66" y2="248.92" width="0.1524" layer="91"/>
+<pinref part="PR2" gate="G$1" pin="2"/>
+<junction x="477.52" y="10.16"/>
+<pinref part="PR1" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$97" class="0">
@@ -17791,22 +17889,22 @@ need to change</text>
 <net name="N$106" class="0">
 <segment>
 <pinref part="N_S1" gate="G$1" pin="PAD"/>
-<pinref part="R65" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="119.38" x2="477.52" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="PR3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$109" class="0">
 <segment>
 <pinref part="N_S2" gate="G$1" pin="PAD"/>
-<pinref part="R80" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="0" x2="477.52" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="PR2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$110" class="0">
 <segment>
 <pinref part="N_S" gate="G$1" pin="PAD"/>
-<pinref part="R50" gate="G$1" pin="1"/>
 <wire x1="477.52" y1="259.08" x2="477.52" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="PR5" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
