@@ -9930,6 +9930,9 @@ GND will not conduct
 <text x="-29.729371875" y="75.2281125" size="1.778" layer="97">GND</text>
 <text x="-36.1696" y="60.2996" size="1.778" layer="97">Vac+fuse</text>
 <text x="-36.0172" y="85.8012" size="1.778" layer="97">Vac+fuse</text>
+<text x="78.74" y="71.12" size="1.778" layer="97">* we may possibly add
+the diode bridge rectifier here
+for the SMPS</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="5.08" y="40.64" rot="R90"/>
