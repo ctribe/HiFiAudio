@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.000000123031" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -108,10 +108,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="100" y2="0" width="0" layer="20"/>
-<wire x1="100" y1="0" x2="100" y2="80" width="0" layer="20"/>
-<wire x1="100" y1="80" x2="0" y2="80" width="0" layer="20"/>
-<wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="99.06" y2="0" width="0" layer="20"/>
+<wire x1="99.06" y1="0" x2="99.06" y2="76.2" width="0" layer="20"/>
+<wire x1="99.06" y1="76.2" x2="0" y2="76.2" width="0" layer="20"/>
+<wire x1="0" y1="76.2" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="resistor">
@@ -2698,15 +2698,13 @@ design rules under a new name.</description>
 <contactref element="LED2" pad="K"/>
 <contactref element="R2" pad="1"/>
 <contactref element="P1" pad="P$4"/>
-<wire x1="79.833978125" y1="55.1643875" x2="90.35215" y2="47.877403125" width="0" layer="19" extent="1-1"/>
-<wire x1="86.629234375" y1="34.044678125" x2="90.35215" y2="47.877403125" width="0" layer="19" extent="1-1"/>
-<wire x1="86.999503125" y1="20.540834375" x2="86.629234375" y2="34.044678125" width="0" layer="19" extent="1-1"/>
-<wire x1="71.058725" y1="32.53728125" x2="86.629234375" y2="34.044678125" width="0" layer="19" extent="1-1"/>
-<wire x1="57.592303125" y1="30.808921875" x2="71.058725" y2="32.53728125" width="0" layer="19" extent="1-1"/>
-<wire x1="49.953821875" y1="36.292103125" x2="57.592303125" y2="30.808921875" width="0" layer="19" extent="1-1"/>
-<wire x1="44.175" y1="49.60925625" x2="49.953821875" y2="36.292103125" width="0" layer="19" extent="1-1"/>
-<wire x1="36.930628125" y1="57.378159375" x2="44.175" y2="49.60925625" width="0" layer="19" extent="1-1"/>
-<wire x1="-11.1035" y1="14.439090625" x2="36.930628125" y2="57.378159375" width="0" layer="19" extent="1-1"/>
+<polygon width="0.4064" layer="16" isolate="1.27">
+<vertex x="0" y="0"/>
+<vertex x="99.06" y="0"/>
+<vertex x="99.06" y="76.2"/>
+<vertex x="0" y="76.2"/>
+</polygon>
+<wire x1="36.930628125" y1="57.378159375" x2="-11.1035" y2="14.439090625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R6" pad="2"/>
@@ -2733,11 +2731,11 @@ design rules under a new name.</description>
 <contactref element="R9" pad="2"/>
 <contactref element="C17" pad="2"/>
 <contactref element="U$1" pad="NO"/>
-<wire x1="15.8171" y1="30.03140625" x2="70.35879375" y2="58.208578125" width="0" layer="19" extent="1-1"/>
-<wire x1="43.622303125" y1="15.568921875" x2="15.8171" y2="30.03140625" width="0" layer="19" extent="1-1"/>
+<wire x1="43.622303125" y1="15.568921875" x2="70.35879375" y2="58.208578125" width="0" layer="19" extent="1-1"/>
 <wire x1="32.789928125" y1="1.40155" x2="43.622303125" y2="15.568921875" width="0" layer="19" extent="1-1"/>
 <wire x1="24.427478125" y1="1.382734375" x2="32.789928125" y2="1.40155" width="0" layer="19" extent="1-1"/>
 <wire x1="16.760721875" y1="1.443171875" x2="24.427478125" y2="1.382734375" width="0" layer="19" extent="1-1"/>
+<wire x1="15.8171" y1="30.03140625" x2="16.760721875" y2="1.443171875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="D1" pad="C"/>
@@ -2747,15 +2745,16 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="COIL-"/>
 <wire x1="44.175" y1="47.06925625" x2="89.993978125" y2="55.1643875" width="0" layer="19" extent="1-1"/>
 <wire x1="36.930628125" y1="44.678159375" x2="44.175" y2="47.06925625" width="0" layer="19" extent="1-1"/>
-<wire x1="47.432303125" y1="30.808921875" x2="36.930628125" y2="44.678159375" width="0" layer="19" extent="1-1"/>
 <wire x1="32.2445875" y1="57.778621875" x2="36.930628125" y2="44.678159375" width="0" layer="19" extent="1-1"/>
+<wire x1="47.432303125" y1="30.808921875" x2="44.175" y2="47.06925625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R7" pad="1"/>
 <contactref element="R6" pad="1"/>
 <contactref element="D2" pad="C"/>
-<wire x1="30.992825" y1="36.724159375" x2="32.2445875" y2="42.538621875" width="0" layer="19" extent="1-1"/>
-<wire x1="25.174603125" y1="38.211271875" x2="30.992825" y2="36.724159375" width="0" layer="19" extent="1-1"/>
+<wire x1="25.174603125" y1="38.211271875" x2="29.5057125" y2="38.211271875" width="0.4064" layer="16"/>
+<wire x1="29.5057125" y1="38.211271875" x2="30.992825" y2="36.724159375" width="0.4064" layer="16"/>
+<wire x1="29.5057125" y1="38.211271875" x2="32.2445875" y2="42.538621875" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$12">
 <contactref element="D2" pad="A"/>
@@ -2764,11 +2763,11 @@ design rules under a new name.</description>
 <contactref element="C15" pad="1"/>
 <contactref element="R1" pad="2"/>
 <contactref element="U$3" pad="P$5"/>
-<wire x1="71.058725" y1="29.99728125" x2="70.35879375" y2="53.908578125" width="0" layer="19" extent="1-1"/>
-<wire x1="25.174603125" y1="50.911271875" x2="71.058725" y2="29.99728125" width="0" layer="19" extent="1-1"/>
-<wire x1="82.73215" y1="47.877403125" x2="25.174603125" y2="50.911271875" width="0" layer="19" extent="1-1"/>
-<wire x1="83.8919" y1="13.5430375" x2="82.73215" y2="47.877403125" width="0" layer="19" extent="1-1"/>
-<wire x1="71.759503125" y1="20.540834375" x2="83.8919" y2="13.5430375" width="0" layer="19" extent="1-1"/>
+<wire x1="70.35879375" y1="53.908578125" x2="82.73215" y2="47.877403125" width="0" layer="19" extent="1-1"/>
+<wire x1="71.058725" y1="29.99728125" x2="82.73215" y2="47.877403125" width="0" layer="19" extent="1-1"/>
+<wire x1="71.759503125" y1="20.540834375" x2="71.058725" y2="29.99728125" width="0" layer="19" extent="1-1"/>
+<wire x1="83.8919" y1="13.5430375" x2="71.759503125" y2="20.540834375" width="0" layer="19" extent="1-1"/>
+<wire x1="25.174603125" y1="50.911271875" x2="70.35879375" y2="53.908578125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="LED2" pad="A"/>

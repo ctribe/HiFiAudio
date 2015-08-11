@@ -1,4 +1,7 @@
 http://www.diyaudio.com/forums/power-supplies/253901-220-2x50v-whit-ir2153-pcb-2.html
 http://320volt.com/en/etd34-ve-ir2153-ile-simetrik-cikisli-smps/
 https://restovarius.wordpress.com/2014/09/12/smps-dengan-ir2153-dalam-pengembangan/
+http://danyk.cz/proud_en.html
+http://wcmagnetics.com/wp-content/uploads/2015/02/appnote11.28.10.pdf
+http://sound.westhost.com/project89.htm
 http://www.homemade-circuits.com/2014/06/smps-2-x-50v-350w-circuit-for-audio.html

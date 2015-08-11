@@ -1,0 +1,12 @@
+use this file to list all the tasks we need to resolve
+
+- need to decide on source resisitors on pushpull
+	i already picked some out. they are in the digikey cart------- Cameron 
+- need to decide if we are only going to have one bass filter and distribute the output to all PAs
+	we may be able to sum both channels before filtering (only neccesary if both channels do not carry bass- unlikely)
+	doidn this we elimante 1 opamp (with bypass components) and the filters will only need to wire 1 set of the double
+	gang pot 
+- need to decide on connectors so schematic moves forward
+- need to start filling in all component values
+- need a BOM with digikey part nunmbers and prices
+- start design of SMPS

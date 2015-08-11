@@ -112,7 +112,7 @@
 <wire x1="99.06" y1="0" x2="99.06" y2="76.2" width="0" layer="20"/>
 <wire x1="99.06" y1="76.2" x2="0" y2="76.2" width="0" layer="20"/>
 <wire x1="0" y1="76.2" x2="0" y2="0" width="0" layer="20"/>
-<text x="82.55" y="3.556" size="1.778" layer="21">Slow Start
+<text x="82.55" y="3.556" size="1.778" layer="21" font="vector">Slow Start
 CM + CT</text>
 </plain>
 <libraries>
