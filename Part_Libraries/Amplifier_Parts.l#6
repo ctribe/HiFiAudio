@@ -281,6 +281,35 @@
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SCREW_TERMINAL_5">
+<pad name="P$2" x="-7.56" y="2" drill="2"/>
+<pad name="P$3" x="0.69" y="2" drill="2"/>
+<pad name="P$4" x="-15.81" y="2" drill="2"/>
+<pad name="P$5" x="8.94" y="2" drill="2"/>
+<pad name="P$6" x="17.19" y="2" drill="2"/>
+<wire x1="-21" y1="-1.3" x2="22" y2="-1.3" width="0.127" layer="21"/>
+<wire x1="22" y1="-1.3" x2="22" y2="11.7" width="0.127" layer="21"/>
+<wire x1="22" y1="11.7" x2="-21" y2="11.7" width="0.127" layer="21"/>
+<wire x1="-21" y1="11.7" x2="-21" y2="-1.3" width="0.127" layer="21"/>
+</package>
+<package name="IRS2153D">
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BRIDGE_RECTIFIER">
@@ -780,6 +809,25 @@
 <connect gate="G$1" pin="VB" pad="8"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 <connect gate="G$1" pin="VS" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCREW_TERMINAL_5">
+<gates>
+<gate name="G$1" symbol="SCREW_TERMINAL_5" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="SCREW_TERMINAL_5">
+<connects>
+<connect gate="G$1" pin="S1" pad="P$2"/>
+<connect gate="G$1" pin="S2" pad="P$3"/>
+<connect gate="G$1" pin="S3" pad="P$4"/>
+<connect gate="G$1" pin="S4" pad="P$5"/>
+<connect gate="G$1" pin="S5" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
