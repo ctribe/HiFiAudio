@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -153,8 +153,8 @@
 </package>
 <package name="INDUCTOR">
 <circle x="0" y="0" radius="5.15" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.7" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="0" drill="0.7" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.7" rot="R90"/>
+<pad name="2" x="2.5" y="0" drill="0.7" rot="R90"/>
 <text x="3.854" y="4.032" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -281,6 +281,7 @@
 <text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<<<<<<< Updated upstream
 <package name="HEAT_SINK">
 </package>
 <package name="VS-ETL1506-M3">
@@ -308,6 +309,21 @@
 <wire x1="5" y1="19" x2="8" y2="19" width="0.127" layer="21"/>
 <pad name="P$3" x="-5.08" y="6.45" drill="2.36" diameter="4"/>
 <pad name="P$4" x="5.08" y="6.45" drill="2.36" diameter="4"/>
+=======
+<package name="3PIN_MICROFIT">
+<pad name="1" x="2.9972" y="0" drill="1.016"/>
+<pad name="2" x="0" y="0" drill="1.016"/>
+<pad name="3" x="-2.9972" y="0" drill="1.016"/>
+<hole x="-5.1562" y="4.318" drill="2.413"/>
+<hole x="5.1562" y="4.318" drill="2.413"/>
+<wire x1="-6.323240625" y1="-0.777709375" x2="6.324409375" y2="-0.777709375" width="0.127" layer="21"/>
+<wire x1="6.324409375" y1="-0.777709375" x2="6.324409375" y2="-0.708834375" width="0.127" layer="21"/>
+<wire x1="6.35" y1="8.382" x2="5.334" y2="9.398" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="8.382" x2="-5.334" y2="9.398" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="9.398" x2="5.334" y2="9.398" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-0.762" x2="-6.35" y2="8.382" width="0.127" layer="21"/>
+<wire x1="6.35" y1="-0.762" x2="6.35" y2="8.382" width="0.127" layer="21"/>
+>>>>>>> Stashed changes
 </package>
 </packages>
 <symbols>
@@ -399,18 +415,18 @@
 <pin name="COM" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="INDUCTOR">
-<wire x1="5.08" y1="5.08" x2="6.35" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="5.08" y1="2.54" x2="6.35" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="5.08" y1="2.54" x2="6.35" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="5.08" y1="0" x2="6.35" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="5.08" y1="0" x2="6.35" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="5.08" y1="-2.54" x2="6.35" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
-<wire x1="5.08" y1="-2.54" x2="6.35" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
-<wire x1="5.08" y1="-5.08" x2="6.35" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
-<text x="3.81" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="8.89" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="2" x="5.08" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="1" x="5.08" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 </symbol>
 <symbol name="MOLEX_4P">
 <wire x1="-6.35" y1="2.54" x2="-7.62" y2="2.54" width="0.6096" layer="94"/>
@@ -534,6 +550,7 @@
 <pin name="LO" x="20.32" y="-12.7" length="middle" rot="R180"/>
 <circle x="-5.08" y="10.16" radius="2.54" width="0.254" layer="94"/>
 </symbol>
+<<<<<<< Updated upstream
 <symbol name="HEAT_SINK">
 </symbol>
 <symbol name="VS-ETL1506-M3">
@@ -546,6 +563,17 @@
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+=======
+<symbol name="3_PIN_MINIFIT">
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" length="short" direction="pas" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+>>>>>>> Stashed changes
 </symbol>
 </symbols>
 <devicesets>
@@ -634,7 +662,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="INDUCTOR">
+<deviceset name="INDUCTOR" prefix="L">
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -828,6 +856,7 @@
 </device>
 </devices>
 </deviceset>
+<<<<<<< Updated upstream
 <deviceset name="VS-ETL1506-M3">
 <gates>
 <gate name="G$1" symbol="VS-ETL1506-M3" x="0" y="0"/>
@@ -837,6 +866,18 @@
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+=======
+<deviceset name="MOLEX_RT_3PIN_MINIFIT" prefix="J">
+<gates>
+<gate name="G$1" symbol="3_PIN_MINIFIT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3PIN_MICROFIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+>>>>>>> Stashed changes
 </connects>
 <technologies>
 <technology name=""/>
