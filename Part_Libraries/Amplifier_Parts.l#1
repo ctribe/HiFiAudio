@@ -204,6 +204,7 @@
 <wire x1="7" y1="-4" x2="7" y2="5" width="0.127" layer="51"/>
 <wire x1="7" y1="5" x2="-7" y2="5" width="0.127" layer="51"/>
 <wire x1="-7" y1="5" x2="-7" y2="-4" width="0.127" layer="51"/>
+<text x="-6.35" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="LM337">
 <wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
