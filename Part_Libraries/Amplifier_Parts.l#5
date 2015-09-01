@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -361,7 +361,7 @@
 <wire x1="-27.25" y1="-48.42" x2="-27.25" y2="7.78" width="0.127" layer="21"/>
 <wire x1="-27.25" y1="-48.42" x2="27.25" y2="-48.42" width="0.127" layer="21"/>
 </package>
-<package name="IRFP9240">
+<package name="IRFP240">
 <wire x1="-6.985" y1="-5.08" x2="6.985" y2="-5.08" width="0.1524" layer="21"/>
 <wire x1="6.985" y1="-5.08" x2="7.366" y2="-4.699" width="0.1524" layer="21"/>
 <wire x1="-6.985" y1="-5.08" x2="-7.366" y2="-4.699" width="0.1524" layer="21"/>
@@ -720,7 +720,7 @@
 <pin name="S15+1" x="7.62" y="-10.16" visible="off" length="point"/>
 <pin name="S15-1" x="7.62" y="-15.24" visible="off" length="point"/>
 </symbol>
-<symbol name="IRFP9240">
+<symbol name="IRFP240">
 <wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-3.6576" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
@@ -754,6 +754,8 @@
 <vertex x="0.762" y="-0.254"/>
 <vertex x="1.778" y="-0.254"/>
 </polygon>
+<pin name="P$1" x="5.08" y="-2.54" visible="off" length="point" direction="nc"/>
+<pin name="P$2" x="5.08" y="-5.08" visible="off" length="point" direction="nc"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1144,15 +1146,17 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRFP9240">
+<deviceset name="IRFP240" prefix="T">
 <gates>
-<gate name="G$1" symbol="IRFP9240" x="0" y="0"/>
+<gate name="G$1" symbol="IRFP240" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IRFP9240">
+<device name="" package="IRFP240">
 <connects>
 <connect gate="G$1" pin="D" pad="D"/>
 <connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="P$1" pad="P$3"/>
+<connect gate="G$1" pin="P$2" pad="P$4"/>
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>

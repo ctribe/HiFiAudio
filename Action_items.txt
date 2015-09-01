@@ -3,6 +3,5 @@ use this file to list all the tasks we need to resolve
 - need a BOM with digikey part numbers and prices
 - start design of SMPS
 - create eagle parts
-	MOSFET for SMPS with heatsink
-	common mode choke
+	check footprint on 390Ohm R on slow start
 

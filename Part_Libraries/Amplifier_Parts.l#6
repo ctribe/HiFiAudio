@@ -382,6 +382,24 @@
 <pad name="S" x="5.588" y="-2.921" drill="1.6" shape="long" rot="R90"/>
 <text x="-7.62" y="-6.858" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.524" y="-6.858" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-8.140846875" y1="0.181071875" x2="8.159153125" y2="0.181071875" width="0.127" layer="21"/>
+<wire x1="8.159153125" y1="16.441071875" x2="8.159153125" y2="0.181071875" width="0.127" layer="21"/>
+<wire x1="-8.140846875" y1="16.441071875" x2="-8.140846875" y2="0.181071875" width="0.127" layer="21"/>
+<wire x1="-7.990846875" y1="16.181071875" x2="-5.990846875" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="-5.990846875" y1="16.181071875" x2="-5.990846875" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="-5.990846875" y1="4.181071875" x2="-2.990846875" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="-2.990846875" y1="4.181071875" x2="-2.990846875" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="-2.990846875" y1="16.181071875" x2="-0.990846875" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="-0.990846875" y1="16.181071875" x2="-0.990846875" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="-0.990846875" y1="4.181071875" x2="1.009153125" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="1.009153125" y1="4.181071875" x2="1.009153125" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="1.009153125" y1="16.181071875" x2="3.009153125" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="3.009153125" y1="16.181071875" x2="3.009153125" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="3.009153125" y1="4.181071875" x2="5.009153125" y2="4.181071875" width="0.127" layer="21"/>
+<wire x1="5.009153125" y1="4.181071875" x2="5.009153125" y2="16.181071875" width="0.127" layer="21"/>
+<wire x1="5.009153125" y1="16.181071875" x2="8.009153125" y2="16.181071875" width="0.127" layer="21"/>
+<pad name="P$3" x="-5.070846875" y="3.631071875" drill="2.36" diameter="4"/>
+<pad name="P$4" x="5.089153125" y="3.631071875" drill="2.36" diameter="4"/>
 </package>
 </packages>
 <symbols>
@@ -702,7 +720,7 @@
 <pin name="S15+1" x="7.62" y="-10.16" visible="off" length="point"/>
 <pin name="S15-1" x="7.62" y="-15.24" visible="off" length="point"/>
 </symbol>
-<symbol name="IRFP9240">
+<symbol name="IRFP240">
 <wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-3.6576" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
@@ -736,6 +754,8 @@
 <vertex x="0.762" y="-0.254"/>
 <vertex x="1.778" y="-0.254"/>
 </polygon>
+<pin name="P$1" x="5.08" y="-2.54" visible="off" length="point" direction="nc"/>
+<pin name="P$2" x="5.08" y="-5.08" visible="off" length="point" direction="nc"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1119,6 +1139,25 @@
 <connect gate="G$1" pin="SEC15-" pad="P$20"/>
 <connect gate="G$1" pin="SEC30-" pad="P$15"/>
 <connect gate="G$1" pin="SEC30V+" pad="P$11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRFP240" prefix="T">
+<gates>
+<gate name="G$1" symbol="IRFP240" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IRFP9240">
+<connects>
+<connect gate="G$1" pin="D" pad="D"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="P$1" pad="P$3"/>
+<connect gate="G$1" pin="P$2" pad="P$4"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
