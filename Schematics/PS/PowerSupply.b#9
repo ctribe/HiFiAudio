@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -49,7 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -2794,6 +2794,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2917,11 +2920,15 @@ design rules under a new name.</description>
 <element name="U$6" library="Amplifier_Parts" package="GBPC3510W" value="GBPC3510W" x="-16.256" y="-28.448"/>
 <element name="L1" library="inductors" package="RKZ4" value="RKZ4" x="-8.636" y="-68.072"/>
 <element name="C3" library="resistor" package="C050-050X075" value="" x="-25.4" y="-92.456"/>
+<<<<<<< Updated upstream:Schematics/PS/PowerSupply.b#9
 <element name="R5" library="resistor" package="0617/22" value="" x="-22.098" y="-98.806"/>
 <element name="R12" library="resistor" package="0617/22" value="" x="-22.098" y="-107.188"/>
 <element name="C4" library="resistor" package="C025-050X050" value="" x="-39.878" y="-105.918"/>
 <element name="T1" library="Amplifier_Parts" package="IRFP240" value="IRFP240" x="-51.054" y="-102.87"/>
 <element name="T2" library="Amplifier_Parts" package="IRFP240" value="IRFP240" x="-67.564" y="-102.87"/>
+=======
+<element name="R5" library="resistor" package="0309/12" value="" x="-22.098" y="-98.806"/>
+>>>>>>> Stashed changes:Schematics/PS/PowerSupply.b##
 </elements>
 <signals>
 <signal name="GND">
@@ -2941,13 +2948,6 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="COIL+"/>
 <contactref element="R2" pad="1"/>
 <wire x1="45.658725" y1="39.39528125" x2="39.19525625" y2="38.629" width="0.381" layer="16"/>
-<wire x1="70.620678125" y1="34.528765625" x2="65.917503125" y2="39.844834375" width="0" layer="19" extent="1-1"/>
-<wire x1="58.09415" y1="45.591403125" x2="65.917503125" y2="39.844834375" width="0" layer="19" extent="1-1"/>
-<wire x1="76.623821875" y1="25.116103125" x2="70.620678125" y2="34.528765625" width="0" layer="19" extent="1-1"/>
-<wire x1="45.658725" y1="39.39528125" x2="58.09415" y2="45.591403125" width="0" layer="19" extent="1-1"/>
-<wire x1="44.892303125" y1="30.808921875" x2="45.658725" y2="39.39528125" width="0" layer="19" extent="1-1"/>
-<wire x1="61.9296125" y1="2.109978125" x2="76.623821875" y2="25.116103125" width="0" layer="19" extent="1-1"/>
-<wire x1="56.795371875" y1="3.327840625" x2="61.9296125" y2="2.109978125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="R6" pad="2"/>

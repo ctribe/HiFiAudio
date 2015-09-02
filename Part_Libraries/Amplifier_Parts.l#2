@@ -674,6 +674,7 @@
 <pin name="W2A" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
 </symbol>
 <symbol name="COIL_FORMER">
+<<<<<<< Updated upstream
 <wire x1="-0.508" y1="5.08" x2="-0.508" y2="-17.78" width="0.254" layer="94"/>
 <text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="8.89" size="1.778" layer="96">&gt;VALUE</text>
@@ -755,6 +756,8 @@
 </polygon>
 <pin name="P$1" x="5.08" y="-2.54" visible="off" length="point" direction="nc"/>
 <pin name="P$2" x="5.08" y="-5.08" visible="off" length="point" direction="nc"/>
+=======
+>>>>>>> Stashed changes
 </symbol>
 </symbols>
 <devicesets>
@@ -1111,6 +1114,7 @@
 </device>
 </devices>
 </deviceset>
+<<<<<<< Updated upstream
 <deviceset name="COIL_FORMER" prefix="TRAFO">
 <gates>
 <gate name="G$1" symbol="COIL_FORMER" x="0" y="5.08"/>
@@ -1158,6 +1162,13 @@
 <connect gate="G$1" pin="P$2" pad="P$4"/>
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
+=======
+<deviceset name="COIL_FORMER">
+<gates>
+</gates>
+<devices>
+<device name="">
+>>>>>>> Stashed changes
 <technologies>
 <technology name=""/>
 </technologies>
