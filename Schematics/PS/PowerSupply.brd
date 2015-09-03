@@ -3234,12 +3234,20 @@ design rules under a new name.</description>
 <signal name="VAC+40">
 <contactref element="TRAFO1" pad="P$11"/>
 <contactref element="TRAFO1" pad="P$12"/>
+<contactref element="D5" pad="A"/>
+<contactref element="D8" pad="C"/>
 <wire x1="-120.904" y1="-124.206" x2="-125.984" y2="-124.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-135.684" y1="-290.068" x2="-125.984" y2="-124.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-158.194" y1="-290.068" x2="-135.684" y2="-290.068" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VAC-40">
 <contactref element="TRAFO1" pad="P$14"/>
 <contactref element="TRAFO1" pad="P$15"/>
+<contactref element="D9" pad="A"/>
+<contactref element="D10" pad="C"/>
 <wire x1="-105.664" y1="-124.206" x2="-110.744" y2="-124.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-168.704" y1="-290.068" x2="-110.744" y2="-124.206" width="0" layer="19" extent="1-1"/>
+<wire x1="-191.214" y1="-290.068" x2="-168.704" y2="-290.068" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VAC+15">
 <contactref element="TRAFO1" pad="P$16"/>
@@ -3355,16 +3363,6 @@ design rules under a new name.</description>
 <wire x1="-115.824" y1="-287.782" x2="-115.316" y2="-280.416" width="0" layer="19" extent="1-1"/>
 <wire x1="-128.778" y1="-288.798" x2="-115.824" y2="-287.782" width="0" layer="19" extent="1-1"/>
 <wire x1="-129.286" y1="-270.51" x2="-118.618" y2="-280.416" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$9">
-<contactref element="D5" pad="A"/>
-<contactref element="D8" pad="C"/>
-<wire x1="-135.684" y1="-290.068" x2="-158.194" y2="-290.068" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$24">
-<contactref element="D9" pad="A"/>
-<contactref element="D10" pad="C"/>
-<wire x1="-168.704" y1="-290.068" x2="-191.214" y2="-290.068" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
