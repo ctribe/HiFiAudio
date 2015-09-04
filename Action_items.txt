@@ -1,7 +1,12 @@
-use this file to list all the tasks we need to resolve
+Iuse this file to list all the tasks we need to resolve
 
-- need a BOM with digikey part numbers and prices
-- start design of SMPS
-- create eagle parts
-	check footprint on 390Ohm R on slow start
+- need a BOM with digikey part numbers and price (work in progress)s
+- keep testing PS
+- finish schematic and board for PS
+	- create eagle parts
+- need to decide on connectors for power distribution
+	- maybe use similar connectors from filter brd but 6 positions
+		(+/-40V, +/-15V, GND, mute)
+- work on PA schematic and board
+
 

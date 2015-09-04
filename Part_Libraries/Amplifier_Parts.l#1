@@ -184,8 +184,8 @@
 <pad name="2'" x="0" y="0" drill="1"/>
 <pad name="3" x="2" y="0" drill="1"/>
 <pad name="3'" x="4" y="0" drill="1"/>
-<hole x="-7.15" y="3.3" drill="3.3"/>
-<hole x="7.15" y="3.3" drill="3.3"/>
+<hole x="-7.15" y="3.3" drill="2.2"/>
+<hole x="7.15" y="3.3" drill="2.2"/>
 <wire x1="-9" y1="6" x2="9" y2="6" width="0.127" layer="51"/>
 <wire x1="9" y1="6" x2="9" y2="-2" width="0.127" layer="51"/>
 <wire x1="9" y1="-2" x2="-9" y2="-2" width="0.127" layer="51"/>
@@ -400,6 +400,17 @@
 <wire x1="5.009153125" y1="16.181071875" x2="8.009153125" y2="16.181071875" width="0.127" layer="21"/>
 <pad name="P$3" x="-5.070846875" y="3.631071875" drill="2.36" diameter="4"/>
 <pad name="P$4" x="5.089153125" y="3.631071875" drill="2.36" diameter="4"/>
+</package>
+<package name="1N4004">
+<wire x1="3.318" y1="0.762" x2="2.302" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.302" y1="0" x2="3.318" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="2.302" y1="0.762" x2="2.302" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.302" y1="0" x2="1.54" y2="0" width="0.1524" layer="51"/>
+<wire x1="2.302" y1="0" x2="2.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="4.08" y1="0" x2="3.318" y2="0" width="0.1524" layer="51"/>
+<wire x1="3.318" y1="-0.762" x2="3.318" y2="0.762" width="0.1524" layer="21"/>
+<pad name="A" x="4.08" y="0" drill="1"/>
+<pad name="C" x="1.54" y="0" drill="1"/>
 </package>
 </packages>
 <symbols>
@@ -639,6 +650,7 @@
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="NC@1" x="-2.54" y="-5.08" visible="off" length="point" direction="nc"/>
 <pin name="NC@2" x="-2.54" y="-7.62" visible="off" length="point" direction="nc"/>
+<text x="0" y="2.54" size="1.778" layer="104">&gt;name</text>
 </symbol>
 <symbol name="POTENTIOMETER">
 <wire x1="2.54" y1="0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>
@@ -676,19 +688,11 @@
 <wire x1="-0.508" y1="5.08" x2="-0.508" y2="-17.78" width="0.254" layer="94"/>
 <text x="-3.81" y="6.35" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="8.89" size="1.778" layer="96">&gt;VALUE</text>
-<<<<<<< Updated upstream
 <pin name="P1" x="-7.62" y="5.08" visible="off" length="middle" direction="pas"/>
 <pin name="P2" x="-7.62" y="-5.08" visible="off" length="middle" direction="pas"/>
 <pin name="SEC30V+" x="7.62" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="GND30" x="7.62" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="SEC30-" x="7.62" y="-5.08" visible="off" length="middle" direction="pas" rot="R180"/>
-=======
-<pin name="BLK@1" x="-7.62" y="5.08" visible="off" length="middle" direction="pas"/>
-<pin name="BLK@2" x="-7.62" y="-5.08" visible="off" length="middle" direction="pas"/>
-<pin name="GRN@1" x="7.62" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="GRN/YEL" x="7.62" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="GRN@2" x="7.62" y="-5.08" visible="off" length="middle" direction="pas" rot="R180"/>
->>>>>>> Stashed changes
 <wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
@@ -703,15 +707,9 @@
 <text x="4.572" y="5.461" size="1.016" layer="94">Grn</text>
 <text x="4.572" y="-4.699" size="1.016" layer="94">Grn</text>
 <text x="2.921" y="0.381" size="1.016" layer="94">Grn/Yel</text>
-<<<<<<< Updated upstream
 <pin name="SEC15+" x="7.62" y="-7.62" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="GND15" x="7.62" y="-12.7" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="SEC15-" x="7.62" y="-17.78" visible="off" length="middle" direction="pas" rot="R180"/>
-=======
-<pin name="GRN@3" x="7.62" y="-7.62" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="GRN/YEL1" x="7.62" y="-12.7" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="GRN@4" x="7.62" y="-17.78" visible="off" length="middle" direction="pas" rot="R180"/>
->>>>>>> Stashed changes
 <wire x1="2.54" y1="-12.7" x2="2.54" y2="-10.16" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="-10.16" x2="2.54" y2="-7.62" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="-15.24" x2="2.54" y2="-12.7" width="0.254" layer="94" curve="-180"/>
@@ -719,7 +717,6 @@
 <text x="4.572" y="-7.239" size="1.016" layer="94">Grn</text>
 <text x="4.572" y="-17.399" size="1.016" layer="94">Grn</text>
 <text x="2.921" y="-12.319" size="1.016" layer="94">Grn/Yel</text>
-<<<<<<< Updated upstream
 <pin name="P12" x="-7.62" y="2.54" visible="off" length="short"/>
 <pin name="P13" x="-7.62" y="0" visible="off" length="short"/>
 <pin name="P14" x="-7.62" y="-2.54" visible="off" length="short"/>
@@ -769,8 +766,16 @@
 </polygon>
 <pin name="P$1" x="5.08" y="-2.54" visible="off" length="point" direction="nc"/>
 <pin name="P$2" x="5.08" y="-5.08" visible="off" length="point" direction="nc"/>
-=======
->>>>>>> Stashed changes
+</symbol>
+<symbol name="1N4004">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
