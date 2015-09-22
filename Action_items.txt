@@ -4,9 +4,8 @@ Iuse this file to list all the tasks we need to resolve
 - keep testing PS
 - finish schematic and board for PS
 	- create eagle parts
-- need to decide on connectors for power distribution
-	- maybe use similar connectors from filter brd but 6 positions
-		(+/-40V, +/-15V, GND, mute)
 - work on PA schematic and board
 
-
+things we need to double check on filter board.
+-check DC blocking cap after volume stage
+	is this what we have on prototyped
