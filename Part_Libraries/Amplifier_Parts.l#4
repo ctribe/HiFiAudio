@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -308,8 +308,8 @@
 <wire x1="3" y1="7" x2="5" y2="7" width="0.127" layer="21"/>
 <wire x1="5" y1="7" x2="5" y2="19" width="0.127" layer="21"/>
 <wire x1="5" y1="19" x2="8" y2="19" width="0.127" layer="21"/>
-<pad name="P$3" x="-5.08" y="6.45" drill="2.36" diameter="4"/>
-<pad name="P$4" x="5.08" y="6.45" drill="2.36" diameter="4"/>
+<pad name="NOC1" x="-5.08" y="6.45" drill="2.36" diameter="4"/>
+<pad name="NOC2" x="5.08" y="6.45" drill="2.36" diameter="4"/>
 </package>
 <package name="3_PIN_AMPCONN">
 <pad name="2" x="0" y="0" drill="0.89"/>
@@ -423,6 +423,20 @@
 <wire x1="25.17" y1="7.89" x2="-26.08" y2="7.89" width="0.127" layer="21"/>
 <wire x1="-26.08" y1="7.89" x2="-26.08" y2="-5.11" width="0.127" layer="21"/>
 <pad name="P$1" x="20.36" y="-1.81" drill="2"/>
+</package>
+<package name="4_PIN_AMPCON">
+<pad name="2" x="-1.27" y="0" drill="0.89"/>
+<pad name="1" x="1.27" y="0" drill="0.89"/>
+<pad name="3" x="-3.81" y="0" drill="0.89"/>
+<wire x1="-4.87" y1="0" x2="-4.87" y2="3.6" width="0.127" layer="21"/>
+<wire x1="-4.87" y1="3.6" x2="4.87" y2="3.6" width="0.127" layer="21"/>
+<wire x1="4.87" y1="3.6" x2="4.87" y2="0" width="0.127" layer="21"/>
+<wire x1="4.87" y1="0" x2="5.27" y2="0" width="0.127" layer="21"/>
+<wire x1="5.27" y1="0" x2="5.27" y2="-1" width="0.127" layer="21"/>
+<wire x1="5.27" y1="-1" x2="-5.27" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5.27" y1="-1" x2="-5.27" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.27" y1="0" x2="-4.87" y2="0" width="0.127" layer="21"/>
+<pad name="4" x="3.81" y="0" drill="0.89"/>
 </package>
 </packages>
 <symbols>
@@ -691,10 +705,10 @@
 <text x="-3.81" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="1.651" x2="3.81" y2="3.429" layer="94"/>
 <rectangle x1="-3.81" y1="-3.429" x2="3.81" y2="-1.651" layer="94"/>
-<pin name="W1E" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="W1A" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="W2E" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
-<pin name="W2A" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
+<pin name="PASS12" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="PASS1" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="PASS22" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="PASS2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
 </symbol>
 <symbol name="COIL_FORMER">
 <wire x1="-0.508" y1="5.08" x2="-0.508" y2="-17.78" width="0.254" layer="94"/>
@@ -803,6 +817,20 @@
 <pin name="S5" x="-2.54" y="-7.62" visible="off" length="short" direction="pas"/>
 <wire x1="1.27" y1="-12.7" x2="0" y2="-12.7" width="0.6096" layer="94"/>
 <pin name="S6" x="-2.54" y="-12.7" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="PIN">
+<pin name="TAB" x="0" y="0" visible="pin" length="short" direction="pas" rot="R270"/>
+</symbol>
+<symbol name="4PINCON_100MIL">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pin" length="middle" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="4" x="5.08" y="-5.08" visible="pin" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -953,6 +981,8 @@
 <gates>
 <gate name="A" symbol="TONE_POT_2GANG" x="0" y="0" addlevel="always"/>
 <gate name="B" symbol="TONE_POT_2GANG" x="17.78" y="0" swaplevel="1"/>
+<gate name="G$1" symbol="PIN" x="25.4" y="-7.62" addlevel="request"/>
+<gate name="G$2" symbol="PIN" x="27.94" y="-7.62" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="TONE_POT_2GANG">
@@ -963,6 +993,8 @@
 <connect gate="B" pin="1_1" pad="1'"/>
 <connect gate="B" pin="1_2" pad="2'"/>
 <connect gate="B" pin="1_3" pad="3'"/>
+<connect gate="G$1" pin="TAB" pad="P$3"/>
+<connect gate="G$2" pin="TAB" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1094,8 +1126,8 @@
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="NC@1" pad="P$3"/>
-<connect gate="G$1" pin="NC@2" pad="P$4"/>
+<connect gate="G$1" pin="NC@1" pad="NOC1"/>
+<connect gate="G$1" pin="NC@2" pad="NOC2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1107,6 +1139,8 @@
 <gates>
 <gate name="A" symbol="POTENTIOMETER" x="0" y="5.08"/>
 <gate name="B" symbol="POTENTIOMETER" x="17.78" y="5.08"/>
+<gate name="G$1" symbol="PIN" x="22.86" y="-2.54" addlevel="request"/>
+<gate name="G$2" symbol="PIN" x="25.4" y="-2.54" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="TONE_POT_2GANG">
@@ -1117,6 +1151,8 @@
 <connect gate="B" pin="1_1" pad="1'"/>
 <connect gate="B" pin="1_2" pad="2'"/>
 <connect gate="B" pin="1_3" pad="3'"/>
+<connect gate="G$1" pin="TAB" pad="P$3"/>
+<connect gate="G$2" pin="TAB" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1148,10 +1184,10 @@
 <devices>
 <device name="" package="CHOKE">
 <connects>
-<connect gate="G$1" pin="W1A" pad="PASS1"/>
-<connect gate="G$1" pin="W1E" pad="PASS2"/>
-<connect gate="G$1" pin="W2A" pad="PASS12"/>
-<connect gate="G$1" pin="W2E" pad="PASS22"/>
+<connect gate="G$1" pin="PASS1" pad="PASS1"/>
+<connect gate="G$1" pin="PASS12" pad="PASS12"/>
+<connect gate="G$1" pin="PASS2" pad="PASS2"/>
+<connect gate="G$1" pin="PASS22" pad="PASS22"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1241,6 +1277,24 @@
 <connect gate="G$1" pin="S4" pad="P$4"/>
 <connect gate="G$1" pin="S5" pad="P$5"/>
 <connect gate="G$1" pin="S6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4_PIN_AMPCONN" prefix="J">
+<gates>
+<gate name="G$1" symbol="4PINCON_100MIL" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="4_PIN_AMPCON">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
