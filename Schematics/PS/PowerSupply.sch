@@ -21144,7 +21144,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="D7" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
 <part name="C26" library="resistor" deviceset="C-EU" device="025-025X050" value="1uF"/>
-<part name="C28" library="rcl" deviceset="C-EU" device="102-064X133" value="1nF"/>
+<part name="C28" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="D19" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="PE10" library="supply1" deviceset="PE" device=""/>
 <part name="L2" library="Amplifier_Parts" deviceset="CHOKE" device=""/>
@@ -21202,7 +21202,7 @@ to save space</text>
 <instance part="R3" gate="G$1" x="78.74" y="60.96" rot="R90"/>
 <instance part="C1" gate="G$1" x="78.74" y="50.8" rot="R180"/>
 <instance part="U$6" gate="G$1" x="27.94" y="76.2"/>
-<instance part="PE7" gate="M" x="-5.08" y="66.04" rot="R90"/>
+<instance part="PE7" gate="M" x="-10.16" y="66.04" rot="R90"/>
 <instance part="C4" gate="G$1" x="71.12" y="66.04" smashed="yes">
 <attribute name="NAME" x="72.644" y="66.421" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.644" y="68.961" size="1.778" layer="96"/>
@@ -21333,8 +21333,9 @@ to save space</text>
 <attribute name="NAME" x="154.559" y="42.164" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="157.099" y="42.164" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C28" gate="G$1" x="-15.24" y="66.04" smashed="yes" rot="R90">
-<attribute name="NAME" x="-11.684" y="63.119" size="1.778" layer="95" rot="R180"/>
+<instance part="C28" gate="G$1" x="-17.78" y="66.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="-16.764" y="63.119" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-16.764" y="70.739" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D19" gate="G$1" x="104.14" y="81.28" smashed="yes">
 <attribute name="NAME" x="96.52" y="78.74" size="1.778" layer="95"/>
@@ -21417,7 +21418,6 @@ to save space</text>
 <segment>
 <pinref part="PE7" gate="M" pin="PE"/>
 <pinref part="C28" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="66.04" x2="-10.16" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="-"/>
@@ -21890,6 +21890,7 @@ to save space</text>
 <pinref part="C14" gate="G$1" pin="-"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <wire x1="172.72" y1="-50.8" x2="172.72" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="172.72" y="-50.8"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -22138,7 +22139,6 @@ to save space</text>
 <segment>
 <pinref part="U$2" gate="G$1" pin="S2"/>
 <pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="66.04" x2="-17.78" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SOMENET" class="0">
