@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -122,10 +122,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="157.48" y2="0" width="0" layer="20"/>
-<wire x1="157.48" y1="0" x2="157.48" y2="127" width="0" layer="20"/>
+<wire x1="0" y1="17.145" x2="157.48" y2="17.145" width="0" layer="20"/>
+<wire x1="157.48" y1="17.145" x2="157.48" y2="127" width="0" layer="20"/>
 <wire x1="157.48" y1="127" x2="0" y2="127" width="0" layer="20"/>
-<wire x1="0" y1="127" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="127" x2="0" y2="17.145" width="0" layer="20"/>
 <text x="114.808" y="83.312" size="1.778" layer="21" font="vector">Slow Start
 CM + CT</text>
 </plain>
@@ -2319,6 +2319,18 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 &lt;/tr&gt;
 &lt;/table&gt;</description>
 <packages>
+<package name="C0805K">
+<description>&lt;b&gt;Ceramic Chip Capacitor KEMET 0805 reflow solder&lt;/b&gt;&lt;p&gt;
+Metric Code Size 2012</description>
+<wire x1="-0.925" y1="0.6" x2="0.925" y2="0.6" width="0.1016" layer="51"/>
+<wire x1="0.925" y1="-0.6" x2="-0.925" y2="-0.6" width="0.1016" layer="51"/>
+<smd name="1" x="-1" y="0" dx="1.3" dy="1.6" layer="1"/>
+<smd name="2" x="1" y="0" dx="1.3" dy="1.6" layer="1"/>
+<text x="-1" y="0.875" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1" y="-1.9" size="1.016" layer="27">&gt;VALUE</text>
+<rectangle x1="-1" y1="-0.65" x2="-0.5" y2="0.65" layer="51"/>
+<rectangle x1="0.5" y1="-0.65" x2="1" y2="0.65" layer="51"/>
+</package>
 <package name="C102-064X133">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
 grid 10.2 mm, outline 6.4 x 13.3 mm</description>
@@ -2631,16 +2643,17 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="GBPC3510W">
-<pad name="V+" x="-4.43" y="3.97" drill="1.1" diameter="2"/>
-<pad name="AC1" x="6.97" y="3.97" drill="1.1" diameter="2"/>
-<pad name="AC2" x="-11.13" y="-14.13" drill="1.1" diameter="2"/>
-<pad name="V-" x="6.97" y="-14.13" drill="1.1" diameter="2"/>
-<wire x1="15.77" y1="9.42" x2="15.77" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="15.77" y1="-19.58" x2="-13.23" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="-13.23" y1="9.42" x2="-13.23" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="15.77" y1="9.42" x2="-13.23" y2="9.42" width="0.127" layer="21"/>
-<text x="-2.13" y="11.72" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-2.13" y="10.12" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<pad name="+" x="0" y="0" drill="1.1" diameter="2"/>
+<text x="-2.13" y="26.22" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.13" y="24.62" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<pad name="AC2" x="11" y="0" drill="1.1" diameter="2"/>
+<pad name="-" x="11" y="18" drill="1.1" diameter="2"/>
+<pad name="AC1" x="-7" y="18" drill="1.1" diameter="2"/>
+<wire x1="16.5" y1="23.5" x2="-12.5" y2="23.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="23.5" x2="-12.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-3" x2="-10" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="16.5" y1="23.5" x2="16.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="16.5" y1="-5.5" x2="-10" y2="-5.5" width="0.127" layer="21"/>
 </package>
 <package name="IRFP240">
 <wire x1="-6.985" y1="-5.08" x2="6.985" y2="-5.08" width="0.1524" layer="21"/>
@@ -3054,11 +3067,11 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <element name="R1" library="rcl" package="0204V" value="10k" x="82.85811875" y="68.83659375" rot="R180"/>
 <element name="U$4" library="Amplifier_Parts" package="FUSE_PADS" value="FUSE" x="9.779" y="76.564571875"/>
 <element name="U$2" library="Amplifier_Parts" package="SCREW_TERMINAL_5" value="SCREW_TERMINAL_5" x="2.794" y="104.902" rot="R270"/>
-<element name="U$3" library="Amplifier_Parts" package="SCREW_TERMINAL_6" value="SCREW_TERMINAL_6" x="28.114225" y="23.138425" rot="R180"/>
+<element name="U$3" library="Amplifier_Parts" package="SCREW_TERMINAL_6" value="SCREW_TERMINAL_6" x="28.114225" y="26.313425" rot="R180"/>
 <element name="U$5" library="Amplifier_Parts" package="IRS2153D" value="IRS2153D" x="89.154" y="103.3145" rot="R270"/>
 <element name="R3" library="rcl" package="0204V" value="" x="82.042" y="105.9815" rot="R90"/>
 <element name="C1" library="resistor" package="C025-025X050" value="" x="89.154" y="95.885"/>
-<element name="U$6" library="Amplifier_Parts" package="GBPC3510W" value="GBPC3510W" x="50.038" y="110.744" rot="R90"/>
+<element name="U$6" library="Amplifier_Parts" package="GBPC3510W" value="GBPC3510W" x="53.594" y="102.997"/>
 <element name="C4" library="rcl" package="E2,5-6" value="100uF" x="79.1845" y="101.1555" smashed="yes" rot="R270">
 <attribute name="NAME" x="75.184" y="97.536" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="76.5175" y="98.4885" size="1.27" layer="27" ratio="10" rot="R270"/>
@@ -3091,37 +3104,37 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <element name="D5" library="Amplifier_Parts" package="VS-ETL1506-M3" value="VS-ETL1506-M3" x="71.45126875" y="52.730653125" rot="R90"/>
 <element name="D8" library="Amplifier_Parts" package="VS-ETL1506-M3" value="VS-ETL1506-M3" x="87.828596875" y="41.528728125" rot="R180"/>
 <element name="D9" library="Amplifier_Parts" package="VS-ETL1506-M3" value="VS-ETL1506-M3" x="123.597346875" y="41.53228125" rot="R180"/>
-<element name="IC1" library="v-reg" package="DPACK" value="LM317MABDT" x="137.756959375" y="23.6471375" rot="R180"/>
-<element name="D11" library="Amplifier_Parts" package="1N4004" value="1N4004" x="170.21358125" y="17.550425"/>
-<element name="D12" library="Amplifier_Parts" package="1N4004" value="1N4004" x="211.05804375" y="70.620703125"/>
-<element name="R19" library="rcl" package="0204V" value="10k" x="197.597134375" y="73.31785625"/>
-<element name="R20" library="rcl" package="0204V" value="10k" x="178.531709375" y="27.24790625"/>
-<element name="C6" library="resistor" package="C025-025X050" value="10uF" x="200.446584375" y="61.8919625"/>
+<element name="IC1" library="v-reg" package="DPACK" value="LM317MABDT" x="137.809659375" y="27.06104375" rot="R90"/>
+<element name="D11" library="Amplifier_Parts" package="1N4004" value="1N4004" x="146.0256875" y="31.1901875" rot="R270"/>
+<element name="D12" library="Amplifier_Parts" package="1N4004" value="1N4004" x="147.60016875" y="20.948165625" rot="R90"/>
+<element name="R19" library="rcl" package="0204V" value="10k" x="147.000615625" y="19.693478125"/>
+<element name="R20" library="rcl" package="0204V" value="10k" x="152.216559375" y="25.17390625" rot="R180"/>
+<element name="C6" library="resistor" package="C025-025X050" value="10uF" x="143.111490625" y="22.441559375" rot="R180"/>
 <element name="C18" library="rcl" package="C102-064X133" value="0.1uF" x="137.92896875" y="37.884103125" rot="R270"/>
 <element name="C20" library="rcl" package="C102-064X133" value="0.1uF" x="148.706125" y="41.45679375" rot="R180"/>
 <element name="D13" library="Amplifier_Parts" package="1N4004" value="1N4004" x="144.509628125" y="47.482384375" rot="R180"/>
 <element name="D14" library="Amplifier_Parts" package="1N4004" value="1N4004" x="137.829096875" y="46.109178125" rot="R90"/>
 <element name="D15" library="Amplifier_Parts" package="1N4004" value="1N4004" x="145.5971625" y="46.2231875" rot="R90"/>
-<element name="C21" library="rcl" package="E2,5-6" value="1uF" x="144.82340625" y="34.973359375" rot="R270"/>
+<element name="C21" library="rcl" package="E2,5-6" value="1uF" x="145.74569375" y="34.67994375"/>
 <element name="C22" library="rcl" package="E2,5-6" value="1uF" x="152.8702125" y="34.801840625"/>
 <element name="D16" library="Amplifier_Parts" package="1N4004" value="1N4004" x="144.6261" y="51.034096875" rot="R180"/>
 <element name="IC2" library="Amplifier_Parts" package="LM337" value="LM337" x="73.168321875" y="33.759971875" rot="R270"/>
 <element name="R21" library="rcl" package="0204V" value="10k" x="62.94360625" y="35.653715625" rot="R180"/>
-<element name="C16" library="rcl" package="E2,5-6" value="1uF" x="171.282365625" y="6.140471875"/>
+<element name="C16" library="rcl" package="E2,5-6" value="1uF" x="150.425259375" y="28.9810875" rot="R90"/>
 <element name="C23" library="rcl" package="E2,5-6" value="1uF" x="76.201503125" y="26.55756875" rot="R90"/>
 <element name="R22" library="rcl" package="0204V" value="10k" x="61.34243125" y="31.02818125" rot="R90"/>
 <element name="D17" library="Amplifier_Parts" package="1N4004" value="1N4004" x="64.747553125" y="33.834" rot="R270"/>
-<element name="C24" library="resistor" package="C025-025X050" value="10uF" x="63.273865625" y="21.15703125" rot="R90"/>
-<element name="D18" library="Amplifier_Parts" package="1N4004" value="1N4004" x="53.97963125" y="6.686346875"/>
+<element name="C24" library="resistor" package="C025-025X050" value="10uF" x="57.080653125" y="28.268796875" rot="R90"/>
+<element name="D18" library="Amplifier_Parts" package="1N4004" value="1N4004" x="67.639578125" y="29.036503125"/>
 <element name="D6" library="Amplifier_Parts" package="1N4004" value="1N4004" x="93.98" y="113.3475"/>
 <element name="D7" library="Amplifier_Parts" package="1N4004" value="1N4004" x="127.381" y="125.6665"/>
-<element name="C14" library="rcl" package="E2,5-6" value="1uF" x="184.464609375" y="79.72679375"/>
+<element name="C14" library="rcl" package="E2,5-6" value="1uF" x="151.970871875" y="20.7677625"/>
 <element name="C26" library="resistor" package="C025-025X050" value="1uF" x="136.6774" y="112.6236" rot="R180"/>
-<element name="C28" library="rcl" package="C102-064X133" value="1nF" x="19.685" y="86.995" rot="R270"/>
+<element name="C28" library="rcl" package="C0805K" value="1nF" x="19.685" y="86.995" rot="R270"/>
 <element name="D19" library="Amplifier_Parts" package="1N4004" value="1N4004" x="93.345" y="110.1725" rot="R180"/>
 <element name="L2" library="Amplifier_Parts" package="CHOKE" value="CHOKE" x="27.645" y="110.49" rot="R180"/>
 <element name="D10" library="Amplifier_Parts" package="VS-ETL1506-M3" value="VS-ETL1506-M3" x="105.290584375" y="41.52356875" rot="R180"/>
-<element name="C3" library="rcl" package="E2,5-6" value="1uF" x="67.89333125" y="8.79834375"/>
+<element name="C3" library="rcl" package="E2,5-6" value="1uF" x="69.078096875" y="24.572784375" rot="R90"/>
 <element name="C13" library="rcl" package="C102-064X133" value="1uF" x="83.639296875" y="81.9386375" rot="R90"/>
 </elements>
 <signals>
@@ -3145,7 +3158,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="R12" pad="2"/>
 <contactref element="C26" pad="1"/>
 <contactref element="C28" pad="2"/>
-<contactref element="U$6" pad="V-"/>
+<contactref element="U$6" pad="-"/>
 <contactref element="C5" pad="-"/>
 <contactref element="R15" pad="1"/>
 <contactref element="R4" pad="1"/>
@@ -3155,8 +3168,13 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="85.344" y1="99.5045" x2="79.1845" y2="99.5045" width="1.27" layer="1"/>
 <wire x1="79.1845" y1="99.5045" x2="79.1845" y2="99.8855" width="1.27" layer="1"/>
 <contactref element="C13" pad="2"/>
-<wire x1="143.1925" y1="112.776" x2="137.9474" y2="112.6236" width="0" layer="19" extent="1-1"/>
-<wire x1="81.0934375" y1="72.432103125" x2="81.32231875" y2="65.180021875" width="0" layer="19" extent="1-1"/>
+<wire x1="19.685" y1="85.995" x2="19.685" y2="83.185" width="1.27" layer="1"/>
+<via x="19.685" y="83.185" extent="1-16" drill="1.016"/>
+<wire x1="19.685" y1="83.185" x2="18.415" y2="81.915" width="1.27" layer="16"/>
+<wire x1="143.1925" y1="112.776" x2="137.9474" y2="112.776" width="1.27" layer="16"/>
+<wire x1="137.9474" y1="112.776" x2="137.9474" y2="112.6236" width="1.27" layer="16"/>
+<wire x1="81.0934375" y1="72.432103125" x2="74.93" y2="72.432103125" width="1.27" layer="16"/>
+<wire x1="74.93" y1="72.432103125" x2="74.93" y2="71.12" width="1.27" layer="16"/>
 </signal>
 <signal name="VCC">
 <contactref element="R6" pad="2"/>
@@ -3187,7 +3205,10 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="50.948675" y1="40.67595" x2="50.948675" y2="47.871175" width="3.81" layer="16"/>
 <wire x1="51.467678125" y1="40.67595" x2="71.470671875" y2="40.67595" width="3.81" layer="16"/>
 <wire x1="71.470671875" y1="40.67595" x2="71.4331125" y2="41.27829375" width="3.81" layer="16"/>
-<wire x1="7.754225" y1="24.948425" x2="50.948675" y2="40.67595" width="0" layer="19" extent="16-16"/>
+<wire x1="50.948675" y1="40.67595" x2="47.625" y2="40.67595" width="5.08" layer="16"/>
+<wire x1="47.625" y1="40.67595" x2="47.625" y2="34.29" width="5.08" layer="16"/>
+<wire x1="47.625" y1="34.29" x2="13.9208" y2="34.29" width="5.08" layer="16"/>
+<wire x1="13.9208" y1="34.29" x2="7.754225" y2="28.123425" width="5.08" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="D1" pad="C"/>
@@ -3239,18 +3260,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="87.6125125" y1="67.2084" x2="87.6125125" y2="59.166953125" width="1.27" layer="1"/>
 <wire x1="83.86231875" y1="65.180021875" x2="84.0105" y2="65.180021875" width="1.27" layer="1"/>
 <wire x1="84.0105" y1="65.180021875" x2="84.0105" y2="67.2084" width="1.27" layer="1"/>
-<wire x1="49.457903125" y1="76.38634375" x2="42.086234375" y2="76.38634375" width="1.27" layer="16"/>
-<wire x1="42.086234375" y1="76.38634375" x2="42.086234375" y2="45.49920625" width="1.27" layer="16"/>
-<wire x1="42.086234375" y1="45.49920625" x2="42.111753125" y2="45.49920625" width="1.27" layer="16"/>
-<wire x1="42.111753125" y1="45.49920625" x2="42.111753125" y2="44.57155" width="1.27" layer="16"/>
-<wire x1="42.111753125" y1="44.57155" x2="46.033846875" y2="44.57155" width="1.27" layer="16"/>
-<wire x1="46.033846875" y1="44.57155" x2="46.033846875" y2="33.4223625" width="1.27" layer="16"/>
-<wire x1="46.033846875" y1="33.4223625" x2="44.97365" y2="33.4223625" width="1.27" layer="16"/>
-<wire x1="44.97365" y1="33.4223625" x2="44.97365" y2="22.915425" width="1.27" layer="16"/>
-<wire x1="44.97365" y1="22.915425" x2="44.98691875" y2="22.915425" width="1.27" layer="16"/>
-<wire x1="44.98691875" y1="22.915425" x2="44.98691875" y2="20.74003125" width="1.27" layer="16"/>
-<wire x1="44.98691875" y1="20.74003125" x2="16.004225" y2="20.74003125" width="1.27" layer="16"/>
-<wire x1="16.004225" y1="20.74003125" x2="16.004225" y2="24.948425" width="1.27" layer="16"/>
+<wire x1="49.457903125" y1="76.38634375" x2="49.53" y2="76.38634375" width="1.27" layer="1"/>
+<wire x1="49.53" y1="76.38634375" x2="49.53" y2="69.215" width="1.27" layer="1"/>
+<wire x1="49.53" y1="69.215" x2="1.905" y2="69.215" width="1.27" layer="1"/>
+<wire x1="1.905" y1="69.215" x2="1.905" y2="22.86" width="1.27" layer="1"/>
+<wire x1="1.905" y1="22.86" x2="16.004225" y2="22.86" width="1.27" layer="1"/>
+<wire x1="16.004225" y1="22.86" x2="16.004225" y2="28.123425" width="1.27" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R3" pad="1"/>
@@ -3407,7 +3422,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 </signal>
 <signal name="V+">
 <contactref element="T1" pad="D"/>
-<contactref element="U$6" pad="V+"/>
+<contactref element="U$6" pad="+"/>
 <contactref element="C5" pad="+"/>
 <contactref element="R15" pad="2"/>
 <contactref element="R4" pad="2"/>
@@ -3426,10 +3441,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="73.66" y1="113.8555" x2="73.66" y2="113.9825" width="5.08" layer="1"/>
 <wire x1="73.66" y1="113.9825" x2="73.0885" y2="113.9825" width="5.08" layer="1"/>
 <wire x1="73.0885" y1="113.9825" x2="73.0885" y2="108.966" width="5.08" layer="1"/>
-<wire x1="73.0885" y1="108.966" x2="45.4025" y2="108.966" width="5.08" layer="1"/>
-<wire x1="45.4025" y1="108.966" x2="45.4025" y2="106.3625" width="5.08" layer="1"/>
-<wire x1="45.4025" y1="106.3625" x2="46.068" y2="106.3625" width="5.08" layer="1"/>
-<wire x1="46.068" y1="106.3625" x2="46.068" y2="106.314" width="5.08" layer="1"/>
+<wire x1="73.0885" y1="108.966" x2="53.594" y2="108.966" width="5.08" layer="1"/>
+<wire x1="53.594" y1="108.966" x2="53.594" y2="102.997" width="5.08" layer="1"/>
 </signal>
 <signal name="N$17">
 <contactref element="R5" pad="1"/>
@@ -3454,10 +3467,10 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="C17" pad="2"/>
 <contactref element="U$6" pad="AC2"/>
 <wire x1="49.6514" y1="94.61909375" x2="64.168" y2="94.61909375" width="5.08" layer="16"/>
-<wire x1="64.168" y1="94.61909375" x2="64.168" y2="99.614" width="5.08" layer="16"/>
 <wire x1="74.741696875" y1="83.110078125" x2="74.93" y2="83.110078125" width="5.08" layer="16"/>
 <wire x1="74.93" y1="83.110078125" x2="74.93" y2="94.615" width="5.08" layer="16"/>
-<wire x1="74.93" y1="94.615" x2="64.168" y2="94.615" width="5.08" layer="16"/>
+<wire x1="74.93" y1="94.615" x2="64.77" y2="94.615" width="5.08" layer="16"/>
+<wire x1="64.77" y1="94.615" x2="64.168" y2="94.615" width="5.08" layer="16"/>
 <wire x1="64.168" y1="94.615" x2="64.168" y2="94.61909375" width="5.08" layer="16"/>
 <wire x1="31.983978125" y1="83.615234375" x2="38.907159375" y2="83.615234375" width="1.778" layer="1"/>
 <wire x1="38.907159375" y1="83.615234375" x2="38.907159375" y2="83.7344125" width="1.778" layer="1"/>
@@ -3466,6 +3479,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="46.06359375" y1="83.741671875" x2="52.07" y2="83.741671875" width="1.778" layer="1"/>
 <wire x1="52.07" y1="83.741671875" x2="52.07" y2="94.61909375" width="1.778" layer="1"/>
 <wire x1="52.07" y1="94.61909375" x2="49.6514" y2="94.61909375" width="1.778" layer="1"/>
+<wire x1="64.594" y1="102.997" x2="64.77" y2="102.997" width="5.08" layer="16"/>
+<wire x1="64.77" y1="102.997" x2="64.77" y2="94.615" width="5.08" layer="16"/>
 </signal>
 <signal name="N$1">
 <contactref element="R1" pad="1"/>
@@ -3512,7 +3527,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="110.8075" y1="74.93" x2="136.271" y2="74.93" width="6.35" layer="16"/>
 <wire x1="136.271" y1="74.93" x2="136.271" y2="60.452" width="6.35" layer="16"/>
 <contactref element="C3" pad="+"/>
-<polygon width="0.254" layer="16" isolate="2.032">
+<polygon width="0.254" layer="16" isolate="0.762">
 <vertex x="0" y="50.8"/>
 <vertex x="155.3337" y="50.8"/>
 <vertex x="155.3337" y="2.54"/>
@@ -3532,15 +3547,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="136.4742" y1="60.452" x2="136.4742" y2="55.8927" width="5.08" layer="1"/>
 <wire x1="136.4742" y1="55.8927" x2="153.4668" y2="55.8927" width="5.08" layer="1"/>
 <wire x1="153.4668" y1="55.8927" x2="153.4668" y2="48.1457" width="5.08" layer="1"/>
-<wire x1="172.552365625" y1="6.140471875" x2="177.261709375" y2="27.24790625" width="0" layer="19" extent="1-1"/>
-<wire x1="151.6002125" y1="34.801840625" x2="177.261709375" y2="27.24790625" width="0" layer="19" extent="1-1"/>
-<wire x1="185.734609375" y1="79.72679375" x2="153.4668" y2="55.8927" width="0" layer="19" extent="1-1"/>
-<wire x1="201.716584375" y1="61.8919625" x2="185.734609375" y2="79.72679375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R18" pad="1"/>
 <contactref element="C10" pad="1"/>
-<wire x1="16.146453125" y1="50.270890625" x2="16.191821875" y2="54.042453125" width="0" layer="19" extent="1-1"/>
+<wire x1="16.191821875" y1="54.042453125" x2="16.146453125" y2="54.042453125" width="1.27" layer="16"/>
+<wire x1="16.146453125" y1="54.042453125" x2="16.146453125" y2="50.270890625" width="1.27" layer="16"/>
 </signal>
 <signal name="VEE">
 <contactref element="C8" pad="2"/>
@@ -3566,7 +3578,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="16.146453125" y1="41.333396875" x2="16.146453125" y2="40.110890625" width="3.81" layer="1"/>
 <wire x1="16.146453125" y1="40.110890625" x2="6.8882375" y2="40.110890625" width="3.81" layer="1"/>
 <wire x1="6.8882375" y1="40.110890625" x2="6.8882375" y2="36.30111875" width="3.81" layer="1"/>
-<wire x1="24.2609125" y1="33.8953625" x2="24.254225" y2="24.948425" width="0" layer="19" extent="1-1"/>
+<wire x1="24.254225" y1="28.123425" x2="24.2609125" y2="28.1301125" width="5.08" layer="1"/>
+<wire x1="24.2609125" y1="28.1301125" x2="24.2609125" y2="33.8953625" width="5.08" layer="1"/>
 </signal>
 <signal name="V15+">
 <contactref element="U$3" pad="P$2"/>
@@ -3575,11 +3588,20 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="IC1" pad="4"/>
 <contactref element="D12" pad="C"/>
 <contactref element="C14" pad="+"/>
-<wire x1="137.756959375" y1="21.2671375" x2="174.29358125" y2="17.550425" width="0" layer="19" extent="1-1"/>
-<wire x1="198.867134375" y1="73.31785625" x2="174.29358125" y2="17.550425" width="0" layer="19" extent="1-1"/>
-<wire x1="212.59804375" y1="70.620703125" x2="198.867134375" y2="73.31785625" width="0" layer="19" extent="1-1"/>
-<wire x1="183.194609375" y1="79.72679375" x2="198.867134375" y2="73.31785625" width="0" layer="19" extent="1-1"/>
-<wire x1="40.754225" y1="24.948425" x2="137.756959375" y2="21.2671375" width="0" layer="19" extent="1-1"/>
+<wire x1="147.60016875" y1="22.488165625" x2="149.320571875" y2="20.7677625" width="1.27" layer="16"/>
+<wire x1="149.320571875" y1="20.7677625" x2="150.700871875" y2="20.7677625" width="1.27" layer="16"/>
+<wire x1="148.270615625" y1="19.693478125" x2="149.320571875" y2="20.108434375" width="1.27" layer="16"/>
+<wire x1="149.320571875" y1="20.108434375" x2="149.320571875" y2="20.7677625" width="1.27" layer="16"/>
+<wire x1="135.429659375" y1="27.06104375" x2="80.645" y2="27.06104375" width="1.27" layer="1"/>
+<wire x1="80.645" y1="27.06104375" x2="80.645" y2="20.955" width="1.27" layer="1"/>
+<wire x1="80.645" y1="20.955" x2="40.754225" y2="20.955" width="1.27" layer="1"/>
+<wire x1="40.754225" y1="20.955" x2="40.754225" y2="28.123425" width="1.27" layer="1"/>
+<wire x1="146.0256875" y1="27.1101875" x2="135.429659375" y2="27.1101875" width="1.27" layer="1"/>
+<wire x1="135.429659375" y1="27.1101875" x2="135.429659375" y2="27.06104375" width="1.27" layer="1"/>
+<wire x1="146.0256875" y1="27.1101875" x2="146.0256875" y2="26.6456875" width="1.27" layer="16"/>
+<wire x1="146.0256875" y1="26.6456875" x2="144.78" y2="25.4" width="1.27" layer="16"/>
+<wire x1="144.78" y1="25.4" x2="144.78" y2="25.308334375" width="1.27" layer="16"/>
+<wire x1="144.78" y1="25.308334375" x2="147.60016875" y2="22.488165625" width="1.27" layer="16"/>
 </signal>
 <signal name="N$26">
 <contactref element="R20" pad="2"/>
@@ -3587,10 +3609,14 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="R19" pad="1"/>
 <contactref element="C6" pad="1"/>
 <contactref element="D12" pad="A"/>
-<wire x1="199.176584375" y1="61.8919625" x2="179.801709375" y2="27.24790625" width="0" layer="19" extent="1-1"/>
-<wire x1="196.327134375" y1="73.31785625" x2="199.176584375" y2="61.8919625" width="0" layer="19" extent="1-1"/>
-<wire x1="215.13804375" y1="70.620703125" x2="199.176584375" y2="61.8919625" width="0" layer="19" extent="1-1"/>
-<wire x1="140.036959375" y1="28.4471375" x2="179.801709375" y2="27.24790625" width="0" layer="19" extent="1-1"/>
+<wire x1="142.609659375" y1="24.78104375" x2="144.381490625" y2="23.0092125" width="1.27" layer="1"/>
+<wire x1="144.381490625" y1="23.0092125" x2="144.381490625" y2="22.441559375" width="1.27" layer="1"/>
+<wire x1="147.60016875" y1="25.028165625" x2="145.581215625" y2="23.0092125" width="1.27" layer="1"/>
+<wire x1="145.581215625" y1="23.0092125" x2="144.381490625" y2="23.0092125" width="1.27" layer="1"/>
+<wire x1="150.946559375" y1="25.17390625" x2="150.80081875" y2="25.028165625" width="1.27" layer="1"/>
+<wire x1="150.80081875" y1="25.028165625" x2="147.60016875" y2="25.028165625" width="1.27" layer="1"/>
+<wire x1="144.381490625" y1="22.441559375" x2="145.730615625" y2="20.457434375" width="1.27" layer="16"/>
+<wire x1="145.730615625" y1="20.457434375" x2="145.730615625" y2="19.693478125" width="1.27" layer="16"/>
 </signal>
 <signal name="V15UN">
 <contactref element="C18" pad="1"/>
@@ -3602,11 +3628,20 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="C16" pad="+"/>
 <wire x1="145.5971625" y1="47.7631875" x2="143.25043125" y2="47.7631875" width="1.778" layer="16"/>
 <wire x1="143.25043125" y1="47.7631875" x2="142.969628125" y2="47.482384375" width="1.778" layer="16"/>
-<wire x1="137.92896875" y1="42.964103125" x2="142.969628125" y2="47.482384375" width="0" layer="19" extent="1-1"/>
-<wire x1="144.82340625" y1="36.243359375" x2="137.92896875" y2="42.964103125" width="0" layer="19" extent="1-1"/>
-<wire x1="135.476959375" y1="28.4471375" x2="144.82340625" y2="36.243359375" width="0" layer="19" extent="1-1"/>
-<wire x1="171.75358125" y1="17.550425" x2="144.82340625" y2="36.243359375" width="0" layer="19" extent="1-1"/>
-<wire x1="170.012365625" y1="6.140471875" x2="171.75358125" y2="17.550425" width="0" layer="19" extent="1-1"/>
+<wire x1="142.969628125" y1="47.482384375" x2="142.969628125" y2="46.645065625" width="1.27" layer="16"/>
+<wire x1="142.969628125" y1="46.645065625" x2="140.72409375" y2="44.39953125" width="1.27" layer="16"/>
+<wire x1="140.72409375" y1="44.39953125" x2="139.364396875" y2="44.39953125" width="1.27" layer="16"/>
+<wire x1="139.364396875" y1="44.39953125" x2="137.92896875" y2="42.964103125" width="1.27" layer="16"/>
+<wire x1="144.47569375" y1="34.67994375" x2="144.47569375" y2="36.417378125" width="1.27" layer="16"/>
+<wire x1="144.47569375" y1="36.417378125" x2="137.92896875" y2="42.964103125" width="1.27" layer="16"/>
+<wire x1="144.47569375" y1="34.67994375" x2="144.47569375" y2="31.953665625" width="1.27" layer="1"/>
+<wire x1="144.47569375" y1="31.953665625" x2="142.017596875" y2="29.49556875" width="1.27" layer="1"/>
+<wire x1="142.017596875" y1="29.49556875" x2="142.455134375" y2="29.49556875" width="1.27" layer="1"/>
+<wire x1="142.455134375" y1="29.49556875" x2="142.609659375" y2="29.34104375" width="1.27" layer="1"/>
+<wire x1="146.0256875" y1="29.6501875" x2="142.918803125" y2="29.6501875" width="1.27" layer="1"/>
+<wire x1="142.918803125" y1="29.6501875" x2="142.609659375" y2="29.34104375" width="1.27" layer="1"/>
+<wire x1="150.425259375" y1="27.7110875" x2="148.486159375" y2="29.6501875" width="1.27" layer="1"/>
+<wire x1="148.486159375" y1="29.6501875" x2="146.0256875" y2="29.6501875" width="1.27" layer="1"/>
 </signal>
 <signal name="V-15UN">
 <contactref element="C20" pad="2"/>
@@ -3619,15 +3654,25 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="137.829096875" y1="50.189178125" x2="139.70118125" y2="50.189178125" width="1.778" layer="16"/>
 <wire x1="139.70118125" y1="50.189178125" x2="140.5461" y2="51.034096875" width="1.778" layer="16"/>
 <wire x1="137.829096875" y1="50.189178125" x2="133.1757" y2="50.189178125" width="1.778" layer="1"/>
-<wire x1="133.1757" y1="50.189178125" x2="133.1757" y2="29.81718125" width="1.778" layer="1"/>
-<wire x1="133.1757" y1="29.81718125" x2="79.606109375" y2="29.81718125" width="1.778" layer="1"/>
-<wire x1="79.606109375" y1="29.81718125" x2="79.606109375" y2="33.409484375" width="1.778" layer="1"/>
-<wire x1="79.606109375" y1="33.409484375" x2="74.54978125" y2="33.409484375" width="1.778" layer="1"/>
 <wire x1="74.54978125" y1="33.409484375" x2="75.548321875" y2="33.759971875" width="1.778" layer="1"/>
-<wire x1="143.626125" y1="41.45679375" x2="154.1402125" y2="34.801840625" width="0" layer="19" extent="1-1"/>
-<wire x1="139.70118125" y1="50.189178125" x2="143.626125" y2="41.45679375" width="0" layer="19" extent="16-16"/>
-<wire x1="76.201503125" y1="27.82756875" x2="79.606109375" y2="29.81718125" width="0" layer="19" extent="1-1"/>
-<wire x1="58.05963125" y1="6.686346875" x2="76.201503125" y2="27.82756875" width="0" layer="19" extent="1-1"/>
+<wire x1="71.719578125" y1="29.036503125" x2="74.99256875" y2="29.036503125" width="1.27" layer="16"/>
+<wire x1="74.99256875" y1="29.036503125" x2="76.201503125" y2="27.82756875" width="1.27" layer="16"/>
+<wire x1="133.1757" y1="50.189178125" x2="133.1757" y2="39.758778125" width="1.27" layer="1"/>
+<wire x1="133.1757" y1="39.758778125" x2="133.1757" y2="34.391690625" width="1.27" layer="1"/>
+<wire x1="133.1757" y1="34.391690625" x2="128.5919375" y2="29.807928125" width="1.27" layer="1"/>
+<wire x1="143.626125" y1="41.45679375" x2="140.727021875" y2="41.45679375" width="1.27" layer="1"/>
+<wire x1="140.727021875" y1="41.45679375" x2="139.3859875" y2="40.115759375" width="1.27" layer="1"/>
+<wire x1="139.3859875" y1="40.115759375" x2="133.53268125" y2="40.115759375" width="1.27" layer="1"/>
+<wire x1="133.53268125" y1="40.115759375" x2="133.1757" y2="39.758778125" width="1.27" layer="1"/>
+<wire x1="128.5919375" y1="29.807928125" x2="79.606109375" y2="29.807928125" width="1.27" layer="1"/>
+<wire x1="74.54978125" y1="33.409484375" x2="78.621028125" y2="33.409484375" width="1.27" layer="1"/>
+<wire x1="78.621028125" y1="33.409484375" x2="78.621028125" y2="29.833115625" width="1.27" layer="1"/>
+<wire x1="78.621028125" y1="29.833115625" x2="79.606109375" y2="29.833115625" width="1.27" layer="1"/>
+<wire x1="79.606109375" y1="29.833115625" x2="79.606109375" y2="29.807928125" width="1.27" layer="1"/>
+<wire x1="76.201503125" y1="27.82756875" x2="78.621028125" y2="27.82756875" width="1.27" layer="1"/>
+<wire x1="78.621028125" y1="27.82756875" x2="78.621028125" y2="29.833115625" width="1.27" layer="1"/>
+<wire x1="143.626125" y1="41.45679375" x2="147.485259375" y2="41.45679375" width="1.27" layer="1"/>
+<wire x1="147.485259375" y1="41.45679375" x2="154.1402125" y2="34.801840625" width="1.27" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="IC2" pad="1"/>
@@ -3635,10 +3680,14 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="R22" pad="2"/>
 <contactref element="C24" pad="2"/>
 <contactref element="D17" pad="C"/>
-<wire x1="64.21360625" y1="35.653715625" x2="68.368321875" y2="36.039971875" width="0" layer="19" extent="1-1"/>
-<wire x1="64.747553125" y1="32.294" x2="64.21360625" y2="35.653715625" width="0" layer="19" extent="1-1"/>
-<wire x1="61.34243125" y1="32.29818125" x2="64.747553125" y2="32.294" width="0" layer="19" extent="1-1"/>
-<wire x1="63.273865625" y1="22.42703125" x2="64.747553125" y2="32.294" width="0" layer="19" extent="1-1"/>
+<wire x1="68.368321875" y1="36.039971875" x2="64.21360625" y2="36.039971875" width="1.27" layer="1"/>
+<wire x1="64.21360625" y1="36.039971875" x2="64.21360625" y2="35.653715625" width="1.27" layer="1"/>
+<wire x1="64.21360625" y1="35.653715625" x2="64.747553125" y2="35.653715625" width="1.27" layer="16"/>
+<wire x1="64.747553125" y1="35.653715625" x2="64.747553125" y2="32.29818125" width="1.27" layer="16"/>
+<wire x1="61.34243125" y1="32.29818125" x2="64.747553125" y2="32.29818125" width="1.27" layer="16"/>
+<wire x1="64.747553125" y1="32.29818125" x2="64.747553125" y2="32.294" width="1.27" layer="16"/>
+<wire x1="61.34243125" y1="32.29818125" x2="57.080653125" y2="32.29818125" width="1.27" layer="16"/>
+<wire x1="57.080653125" y1="32.29818125" x2="57.080653125" y2="29.538796875" width="1.27" layer="16"/>
 </signal>
 <signal name="V15-">
 <contactref element="IC2" pad="3"/>
@@ -3647,11 +3696,20 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="D18" pad="C"/>
 <contactref element="U$3" pad="P$4"/>
 <contactref element="C3" pad="-"/>
-<wire x1="64.747553125" y1="29.754" x2="68.368321875" y2="31.479971875" width="0" layer="19" extent="1-1"/>
-<wire x1="61.34243125" y1="29.75818125" x2="64.747553125" y2="29.754" width="0" layer="19" extent="1-1"/>
-<wire x1="49.004225" y1="24.948425" x2="61.34243125" y2="29.75818125" width="0" layer="19" extent="1-1"/>
-<wire x1="55.51963125" y1="6.686346875" x2="49.004225" y2="24.948425" width="0" layer="19" extent="1-1"/>
-<wire x1="69.16333125" y1="8.79834375" x2="55.51963125" y2="6.686346875" width="0" layer="19" extent="1-1"/>
+<wire x1="68.368321875" y1="31.479971875" x2="69.179578125" y2="31.479971875" width="1.27" layer="1"/>
+<wire x1="69.179578125" y1="31.479971875" x2="69.179578125" y2="29.036503125" width="1.27" layer="1"/>
+<wire x1="69.179578125" y1="29.036503125" x2="64.747553125" y2="29.036503125" width="1.27" layer="16"/>
+<wire x1="64.747553125" y1="29.036503125" x2="64.747553125" y2="29.754" width="1.27" layer="16"/>
+<wire x1="61.34243125" y1="29.75818125" x2="65.262334375" y2="29.75818125" width="1.27" layer="16"/>
+<wire x1="65.262334375" y1="29.75818125" x2="65.262334375" y2="29.68344375" width="1.27" layer="16"/>
+<wire x1="65.262334375" y1="29.68344375" x2="64.747553125" y2="29.68344375" width="1.27" layer="16"/>
+<wire x1="64.747553125" y1="29.68344375" x2="64.747553125" y2="29.754" width="1.27" layer="16"/>
+<wire x1="69.179578125" y1="29.036503125" x2="69.179578125" y2="25.944265625" width="1.27" layer="16"/>
+<wire x1="69.179578125" y1="25.944265625" x2="69.078096875" y2="25.842784375" width="1.27" layer="16"/>
+<wire x1="61.34243125" y1="29.75818125" x2="61.34243125" y2="25.4785625" width="1.27" layer="1"/>
+<wire x1="61.34243125" y1="25.4785625" x2="60.823775" y2="24.95990625" width="1.27" layer="1"/>
+<wire x1="60.823775" y1="24.95990625" x2="49.01570625" y2="24.95990625" width="1.27" layer="1"/>
+<wire x1="49.01570625" y1="24.95990625" x2="49.004225" y2="28.123425" width="1.27" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="TRAFO1" pad="P$6"/>
@@ -3673,10 +3731,10 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <signal name="N$4">
 <contactref element="U$6" pad="AC1"/>
 <contactref element="L2" pad="PASS2"/>
-<wire x1="38.145" y1="113.99" x2="38.1" y2="113.99" width="3.81" layer="16"/>
-<wire x1="38.1" y1="113.99" x2="38.1" y2="117.475" width="3.81" layer="16"/>
-<wire x1="38.1" y1="117.475" x2="46.068" y2="117.475" width="3.81" layer="16"/>
-<wire x1="46.068" y1="117.475" x2="46.068" y2="117.714" width="3.81" layer="16"/>
+<wire x1="38.145" y1="113.99" x2="38.1" y2="113.99" width="5.08" layer="16"/>
+<wire x1="38.1" y1="113.99" x2="38.1" y2="121.285" width="5.08" layer="16"/>
+<wire x1="38.1" y1="121.285" x2="46.594" y2="121.285" width="5.08" layer="16"/>
+<wire x1="46.594" y1="121.285" x2="46.594" y2="120.997" width="5.08" layer="16"/>
 </signal>
 <signal name="N$5">
 <contactref element="U$2" pad="P$6"/>
@@ -3712,7 +3770,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <contactref element="U$2" pad="P$3"/>
 <contactref element="C28" pad="1"/>
 <wire x1="4.794" y1="104.212" x2="19.685" y2="104.212" width="1.778" layer="1"/>
-<wire x1="19.685" y1="104.212" x2="19.685" y2="92.075" width="1.778" layer="1"/>
+<wire x1="19.685" y1="104.212" x2="19.685" y2="87.995" width="1.778" layer="1"/>
 </signal>
 <signal name="SOMENET">
 <contactref element="R11" pad="1"/>

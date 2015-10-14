@@ -705,10 +705,10 @@
 <text x="-3.81" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="1.651" x2="3.81" y2="3.429" layer="94"/>
 <rectangle x1="-3.81" y1="-3.429" x2="3.81" y2="-1.651" layer="94"/>
-<pin name="W1E" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="W1A" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="W2E" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
-<pin name="W2A" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
+<pin name="PASS12" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="PASS1" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="PASS22" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2" rot="R180"/>
+<pin name="PASS2" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="2"/>
 </symbol>
 <symbol name="COIL_FORMER">
 <wire x1="-0.508" y1="5.08" x2="-0.508" y2="-17.78" width="0.254" layer="94"/>
@@ -1184,10 +1184,10 @@
 <devices>
 <device name="" package="CHOKE">
 <connects>
-<connect gate="G$1" pin="W1A" pad="PASS1"/>
-<connect gate="G$1" pin="W1E" pad="PASS12"/>
-<connect gate="G$1" pin="W2A" pad="PASS2"/>
-<connect gate="G$1" pin="W2E" pad="PASS22"/>
+<connect gate="G$1" pin="PASS1" pad="PASS1"/>
+<connect gate="G$1" pin="PASS12" pad="PASS12"/>
+<connect gate="G$1" pin="PASS2" pad="PASS2"/>
+<connect gate="G$1" pin="PASS22" pad="PASS22"/>
 </connects>
 <technologies>
 <technology name=""/>
