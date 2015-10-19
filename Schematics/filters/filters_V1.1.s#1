@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -14401,8 +14401,8 @@ NS Package M08A</description>
 <part name="C10" library="rcl" deviceset="C-US" device="050-024X044" value="7.4uF"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-024X044" value="660nF"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-024X044" value="660nF"/>
-<part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="47u"/>
-<part name="C14" library="rcl" deviceset="C-US" device="050-024X044" value="47u"/>
+<part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="100u"/>
+<part name="C14" library="rcl" deviceset="C-US" device="050-024X044" value="100u"/>
 <part name="GND22" library="supply2" deviceset="GND" device=""/>
 <part name="VR1" library="Amplifier_Parts" deviceset="VOL_POT_2GANG" device="" value="10k"/>
 <part name="VR2" library="Amplifier_Parts" deviceset="P140KV1-F25BR" device="" value="10k"/>
