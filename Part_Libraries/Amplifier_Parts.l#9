@@ -1184,10 +1184,17 @@
 <devices>
 <device name="" package="CHOKE">
 <connects>
+<<<<<<< Updated upstream
 <connect gate="G$1" pin="PASS1" pad="PASS1"/>
 <connect gate="G$1" pin="PASS12" pad="PASS12"/>
 <connect gate="G$1" pin="PASS2" pad="PASS2"/>
 <connect gate="G$1" pin="PASS22" pad="PASS22"/>
+=======
+<connect gate="G$1" pin="W1A" pad="PASS22"/>
+<connect gate="G$1" pin="W1E" pad="PASS2"/>
+<connect gate="G$1" pin="W2A" pad="PASS1"/>
+<connect gate="G$1" pin="W2E" pad="PASS12"/>
+>>>>>>> Stashed changes
 </connects>
 <technologies>
 <technology name=""/>

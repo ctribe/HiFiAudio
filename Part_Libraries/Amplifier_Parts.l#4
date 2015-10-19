@@ -675,8 +675,13 @@
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <text x="0" y="2.54" size="1.778" layer="104">&gt;name</text>
+<<<<<<< Updated upstream
 <pin name="NOC1" x="0" y="-2.54" visible="off" length="point" direction="nc"/>
 <pin name="NOC2" x="-2.54" y="-2.54" visible="off" length="point" direction="nc"/>
+=======
+<pin name="NOC1" x="-2.54" y="-5.08" length="middle"/>
+<pin name="NOC2" x="-2.54" y="-7.62" length="middle"/>
+>>>>>>> Stashed changes
 </symbol>
 <symbol name="POTENTIOMETER">
 <wire x1="2.54" y1="0.762" x2="-2.54" y2="0.762" width="0.254" layer="94"/>

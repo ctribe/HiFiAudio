@@ -1126,6 +1126,11 @@
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+<<<<<<< Updated upstream
+=======
+<connect gate="G$1" pin="NC@1" pad="NOC1"/>
+<connect gate="G$1" pin="NC@2" pad="NOC2"/>
+>>>>>>> Stashed changes
 </connects>
 <technologies>
 <technology name=""/>
