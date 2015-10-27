@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -13817,8 +13817,8 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <text x="-6.35" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="TONE_POT_2GANG">
-<pad name="1" x="-6" y="0" drill="1"/>
-<pad name="1'" x="-4" y="0" drill="1"/>
+<pad name="1'" x="-6" y="0" drill="1"/>
+<pad name="1" x="-4" y="0" drill="1"/>
 <pad name="2" x="-2" y="0" drill="1"/>
 <pad name="2'" x="0" y="0" drill="1"/>
 <pad name="3" x="2" y="0" drill="1"/>
@@ -14285,23 +14285,23 @@ NS Package M08A</description>
 </classes>
 <parts>
 <part name="C1" library="rcl" deviceset="C-US" device="050-024X044" value="7.4uF"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R34" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R34" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R16" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R17" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="C29" library="rcl" deviceset="C-US" device="050-024X044" value="0.1uF"/>
 <part name="C31" library="rcl" deviceset="C-US" device="050-024X044" value="0.1uF"/>
@@ -14335,25 +14335,24 @@ NS Package M08A</description>
 <part name="GND47" library="supply2" deviceset="GND" device=""/>
 <part name="GND57" library="supply2" deviceset="GND" device=""/>
 <part name="GND58" library="supply2" deviceset="GND" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R29" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R33" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R36" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
-<part name="R37" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R33" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R36" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R37" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="GND4" library="supply2" deviceset="GND" device=""/>
 <part name="GND5" library="supply2" deviceset="GND" device=""/>
 <part name="GND6" library="supply2" deviceset="GND" device=""/>
 <part name="GND7" library="supply2" deviceset="GND" device=""/>
@@ -14401,8 +14400,8 @@ NS Package M08A</description>
 <part name="C10" library="rcl" deviceset="C-US" device="050-024X044" value="7.4uF"/>
 <part name="C11" library="rcl" deviceset="C-US" device="050-024X044" value="660nF"/>
 <part name="C12" library="rcl" deviceset="C-US" device="050-024X044" value="660nF"/>
-<part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="47u"/>
-<part name="C14" library="rcl" deviceset="C-US" device="050-024X044" value="47u"/>
+<part name="C13" library="rcl" deviceset="C-US" device="050-024X044" value="100u"/>
+<part name="C14" library="rcl" deviceset="C-US" device="050-024X044" value="100u"/>
 <part name="GND22" library="supply2" deviceset="GND" device=""/>
 <part name="VR1" library="Amplifier_Parts" deviceset="VOL_POT_2GANG" device="" value="10k"/>
 <part name="VR2" library="Amplifier_Parts" deviceset="P140KV1-F25BR" device="" value="10k"/>
@@ -14424,7 +14423,6 @@ NS Package M08A</description>
 <part name="R44" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="R45" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="R46" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
-<part name="R47" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="R48" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND23" library="supply2" deviceset="GND" device=""/>
@@ -14432,6 +14430,8 @@ NS Package M08A</description>
 <part name="GND25" library="supply2" deviceset="GND" device=""/>
 <part name="J2" library="Amplifier_Parts" deviceset="4_PIN_AMPCONN" device=""/>
 <part name="GND27" library="supply2" deviceset="GND" device=""/>
+<part name="R47" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
+<part name="GND4" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14521,7 +14521,6 @@ NS Package M08A</description>
 <instance part="R36" gate="G$1" x="276.86" y="88.9"/>
 <instance part="R37" gate="G$1" x="304.8" y="88.9" rot="R90"/>
 <instance part="R38" gate="G$1" x="264.16" y="83.82"/>
-<instance part="GND4" gate="GND" x="312.42" y="147.32"/>
 <instance part="GND5" gate="GND" x="312.42" y="101.6"/>
 <instance part="GND6" gate="GND" x="312.42" y="60.96"/>
 <instance part="GND7" gate="GND" x="256.54" y="81.28"/>
@@ -14611,7 +14610,6 @@ NS Package M08A</description>
 <instance part="R44" gate="G$1" x="312.42" y="279.4" rot="R270"/>
 <instance part="R45" gate="G$1" x="312.42" y="236.22" rot="R90"/>
 <instance part="R46" gate="G$1" x="312.42" y="195.58" rot="R90"/>
-<instance part="R47" gate="G$1" x="312.42" y="152.4" rot="R90"/>
 <instance part="R48" gate="G$1" x="312.42" y="111.76" rot="R90"/>
 <instance part="R49" gate="G$1" x="312.42" y="68.58" rot="R90"/>
 <instance part="VR2" gate="G$1" x="342.9" y="398.78" rot="R180"/>
@@ -14625,6 +14623,8 @@ NS Package M08A</description>
 <instance part="GND25" gate="GND" x="358.14" y="393.7"/>
 <instance part="J2" gate="G$1" x="482.6" y="180.34" rot="MR0"/>
 <instance part="GND27" gate="GND" x="474.98" y="170.18"/>
+<instance part="R47" gate="G$1" x="312.42" y="152.4" rot="R90"/>
+<instance part="GND4" gate="GND" x="320.04" y="147.32"/>
 </instances>
 <busses>
 </busses>
@@ -15224,6 +15224,7 @@ NS Package M08A</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="A" pin="+IN"/>
 <wire x1="264.16" y1="287.02" x2="271.78" y2="287.02" width="0.1524" layer="91"/>
+<junction x="264.16" y="281.94"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -15458,6 +15459,7 @@ NS Package M08A</description>
 <wire x1="330.2" y1="78.74" x2="330.2" y2="88.9" width="0.1524" layer="91"/>
 <junction x="330.2" y="88.9"/>
 <pinref part="R92" gate="G$1" pin="1"/>
+<junction x="330.2" y="78.74"/>
 </segment>
 </net>
 <net name="N$57" class="0">
@@ -15493,6 +15495,7 @@ NS Package M08A</description>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="IC3" gate="A" pin="+IN"/>
 <wire x1="271.78" y1="78.74" x2="264.16" y2="78.74" width="0.1524" layer="91"/>
+<junction x="264.16" y="73.66"/>
 </segment>
 </net>
 <net name="N$60" class="0">
@@ -15688,8 +15691,8 @@ NS Package M08A</description>
 <net name="N$49" class="0">
 <segment>
 <pinref part="IC7" gate="B" pin="+IN"/>
-<pinref part="R47" gate="G$1" pin="2"/>
 <wire x1="314.96" y1="157.48" x2="312.42" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -15710,6 +15713,23 @@ NS Package M08A</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,226.06,403.86,IC1P,V+,+12V,,,"/>
+<approved hash="104,1,226.06,388.62,IC1P,V-,-12V,,,"/>
+<approved hash="104,1,208.28,403.86,IC2P,V+,+12V,,,"/>
+<approved hash="104,1,208.28,388.62,IC2P,V-,-12V,,,"/>
+<approved hash="104,1,312.42,403.86,IC3P,V+,+12V,,,"/>
+<approved hash="104,1,312.42,388.62,IC3P,V-,-12V,,,"/>
+<approved hash="104,1,243.84,403.86,IC4P,V+,+12V,,,"/>
+<approved hash="104,1,243.84,388.62,IC4P,V-,-12V,,,"/>
+<approved hash="104,1,294.64,403.86,IC5P,V+,+12V,,,"/>
+<approved hash="104,1,294.64,388.62,IC5P,V-,-12V,,,"/>
+<approved hash="104,1,259.08,403.86,IC6P,V+,+12V,,,"/>
+<approved hash="104,1,259.08,388.62,IC6P,V-,-12V,,,"/>
+<approved hash="104,1,276.86,403.86,IC7P,V+,+12V,,,"/>
+<approved hash="104,1,276.86,388.62,IC7P,V-,-12V,,,"/>
+<approved hash="113,1,279.296,215.796,FRAME2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
