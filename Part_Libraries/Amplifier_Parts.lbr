@@ -439,6 +439,16 @@
 <wire x1="-5.27" y1="0" x2="-4.87" y2="0" width="0.127" layer="21"/>
 <pad name="4" x="3.81" y="0" drill="0.89"/>
 </package>
+<package name="SCREW_TERMINAL_4">
+<pad name="2" x="-5.02" y="0.73" drill="2"/>
+<pad name="3" x="3.23" y="0.73" drill="2"/>
+<pad name="1" x="-13.27" y="0.73" drill="2"/>
+<pad name="4" x="11.48" y="0.73" drill="2"/>
+<wire x1="-18.46" y1="-2.57" x2="16.92" y2="-2.57" width="0.127" layer="21"/>
+<wire x1="16.92" y1="-2.57" x2="16.92" y2="10.43" width="0.127" layer="21"/>
+<wire x1="16.92" y1="10.43" x2="-18.46" y2="10.43" width="0.127" layer="21"/>
+<wire x1="-18.46" y1="10.43" x2="-18.46" y2="-2.57" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BRIDGE_RECTIFIER">
@@ -832,6 +842,19 @@
 <pin name="3" x="5.08" y="-2.54" visible="pin" length="middle" direction="pas" rot="R180"/>
 <text x="-2.54" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <pin name="4" x="5.08" y="-5.08" visible="pin" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="SCRE_TEMINA_4">
+</symbol>
+<symbol name="SCREW_TERMINAL_4">
+<text x="5.08" y="14.478" size="1.524" layer="95">&gt;NAME</text>
+<wire x1="3.81" y1="10.16" x2="2.54" y2="10.16" width="0.6096" layer="94"/>
+<pin name="S1" x="0" y="10.16" visible="off" length="short" direction="pas"/>
+<wire x1="3.81" y1="5.08" x2="2.54" y2="5.08" width="0.6096" layer="94"/>
+<pin name="S2" x="0" y="5.08" visible="off" length="short" direction="pas"/>
+<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<pin name="S3" x="0" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="3.81" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<pin name="S4" x="0" y="-5.08" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1296,6 +1319,24 @@
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCREW_TERMINAL_4">
+<gates>
+<gate name="G$1" symbol="SCREW_TERMINAL_4" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SCREW_TERMINAL_4">
+<connects>
+<connect gate="G$1" pin="S1" pad="1"/>
+<connect gate="G$1" pin="S2" pad="2"/>
+<connect gate="G$1" pin="S3" pad="3"/>
+<connect gate="G$1" pin="S4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
