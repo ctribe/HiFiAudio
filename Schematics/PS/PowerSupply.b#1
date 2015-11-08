@@ -3765,7 +3765,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="4.794" y1="120.712" x2="17.145" y2="120.712" width="3.81" layer="16"/>
 <wire x1="17.145" y1="120.712" x2="17.145" y2="113.99" width="3.81" layer="16"/>
 </signal>
-<signal name="N$15">
+<signal name="LINE">
 <contactref element="L2" pad="PASS12"/>
 <contactref element="U$2" pad="P$2"/>
 <wire x1="4.794" y1="112.462" x2="10.16" y2="112.462" width="3.81" layer="16"/>

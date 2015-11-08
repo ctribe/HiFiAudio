@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15531,7 +15531,7 @@ NS Package M08A</description>
 <wire x1="264.16" y1="119.38" x2="274.32" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="RIGHT_IN" class="0">
 <segment>
 <wire x1="99.06" y1="198.12" x2="116.84" y2="198.12" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="198.12" x2="116.84" y2="248.92" width="0.1524" layer="91"/>
@@ -15540,7 +15540,7 @@ NS Package M08A</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$108" class="0">
+<net name="LEFT_IN" class="0">
 <segment>
 <wire x1="99.06" y1="195.58" x2="116.84" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="195.58" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
@@ -15549,7 +15549,7 @@ NS Package M08A</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="RIGHT" class="0">
 <segment>
 <pinref part="R89" gate="G$1" pin="2"/>
 <wire x1="355.6" y1="246.38" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
@@ -15566,7 +15566,7 @@ NS Package M08A</description>
 <pinref part="J2" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$38" class="0">
+<net name="LEFT" class="0">
 <segment>
 <pinref part="R91" gate="G$1" pin="2"/>
 <wire x1="350.52" y1="119.38" x2="365.76" y2="119.38" width="0.1524" layer="91"/>
@@ -15623,7 +15623,7 @@ NS Package M08A</description>
 <junction x="304.8" y="81.28"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="BASS" class="0">
 <segment>
 <pinref part="R90" gate="G$1" pin="2"/>
 <pinref part="R41" gate="G$1" pin="2"/>
