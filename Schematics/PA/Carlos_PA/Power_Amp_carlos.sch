@@ -12653,27 +12653,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <packages>
 <package name="NDN0015A">
 <description>.965 and 1.93 pitch</description>
-<pad name="P1" x="-8.685" y="2.54" drill="0.7"/>
-<pad name="P2" x="-7.72" y="0" drill="0.7"/>
-<pad name="P3" x="-6.755" y="2.54" drill="0.7"/>
-<pad name="P4" x="-5.79" y="0" drill="0.7"/>
-<pad name="P5" x="-4.825" y="2.54" drill="0.7"/>
-<pad name="P6" x="-3.86" y="0" drill="0.7"/>
-<pad name="P7" x="-2.895" y="2.54" drill="0.7"/>
-<pad name="P$8" x="-1.93" y="0" drill="0.7"/>
-<pad name="P9" x="-0.965" y="2.54" drill="0.7"/>
-<pad name="P10" x="0" y="0" drill="0.7"/>
-<pad name="P11" x="0.965" y="2.54" drill="0.7"/>
-<pad name="P12" x="2.895" y="0" drill="0.7"/>
-<pad name="P13" x="4.825" y="2.54" drill="0.7"/>
-<pad name="P14" x="6.755" y="0" drill="0.7"/>
-<pad name="P15" x="8.685" y="2.54" drill="0.7"/>
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="0" width="0.127" layer="21"/>
-<wire x1="10.16" y1="0" x2="-10.16" y2="0" width="0.127" layer="21"/>
-<wire x1="-10.16" y1="0" x2="-10.16" y2="-5.08" width="0.127" layer="21"/>
-<text x="-10.16" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="5.08" size="1.27" layer="27">&gt;VALUE</text>
+<pad name="P1" x="5.08" y="-8.685" drill="0.7" rot="R90"/>
+<pad name="P2" x="2.54" y="-7.72" drill="0.7" rot="R90"/>
+<pad name="P3" x="5.08" y="-6.755" drill="0.7" rot="R90"/>
+<pad name="P4" x="2.54" y="-5.79" drill="0.7" rot="R90"/>
+<pad name="P5" x="5.08" y="-4.825" drill="0.7" rot="R90"/>
+<pad name="P6" x="2.54" y="-3.86" drill="0.7" rot="R90"/>
+<pad name="P7" x="5.08" y="-2.895" drill="0.7" rot="R90"/>
+<pad name="P$8" x="2.54" y="-1.93" drill="0.7" rot="R90"/>
+<pad name="P9" x="5.08" y="-0.965" drill="0.7" rot="R90"/>
+<pad name="P10" x="2.54" y="0" drill="0.7" rot="R90"/>
+<pad name="P11" x="5.08" y="0.965" drill="0.7" rot="R90"/>
+<pad name="P12" x="2.54" y="2.895" drill="0.7" rot="R90"/>
+<pad name="P13" x="5.08" y="4.825" drill="0.7" rot="R90"/>
+<pad name="P14" x="2.54" y="6.755" drill="0.7" rot="R90"/>
+<pad name="P15" x="5.08" y="8.685" drill="0.7" rot="R90"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="10.16" width="0.127" layer="22"/>
+<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.127" layer="22"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="-10.16" width="0.127" layer="22"/>
+<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.127" layer="22"/>
+<text x="-20.32" y="3.81" size="1.27" layer="25">&gt;NAME</text>
+<text x="-20.32" y="7.62" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
