@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -927,6 +927,20 @@
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
 </symbol>
+<symbol name="1984659">
+<pin name="1" x="-5.08" y="10.16" visible="off" length="middle"/>
+<pin name="2" x="-5.08" y="5.08" visible="off" length="middle"/>
+<pin name="3" x="-5.08" y="0" visible="off" length="middle"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="10.16" radius="1.27" width="0.254" layer="94"/>
+<pin name="4" x="-5.08" y="-5.08" visible="off" length="middle"/>
+<pin name="5" x="-5.08" y="-10.16" visible="off" length="middle"/>
+<pin name="6" x="-5.08" y="-15.24" visible="off" length="middle"/>
+<circle x="0" y="-15.24" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GBPC3510W">
@@ -1486,6 +1500,26 @@
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 <connect gate="G$1" pin="3" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1984659" prefix="C">
+<gates>
+<gate name="G$1" symbol="1984659" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="1984659">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>

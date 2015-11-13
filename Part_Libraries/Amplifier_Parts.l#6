@@ -903,9 +903,9 @@
 <pin name="P$1" x="-5.08" y="0" length="middle"/>
 <pin name="P$2" x="-5.08" y="-5.08" length="middle"/>
 <pin name="P$3" x="-5.08" y="-10.16" length="middle"/>
-<circle x="-5.08" y="-5.08" radius="1.27" width="0.254" layer="94"/>
-<circle x="-5.08" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="-5.08" y="-10.16" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="1984620">
 <pin name="P$1" x="-5.08" y="5.08" length="middle"/>

@@ -908,9 +908,9 @@
 <circle x="0" y="-10.16" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="1984620">
-<pin name="P$1" x="-5.08" y="5.08" length="middle"/>
-<pin name="P$2" x="-5.08" y="0" length="middle"/>
-<pin name="P$3" x="-5.08" y="-5.08" length="middle"/>
+<pin name="1" x="-5.08" y="5.08" visible="off" length="middle"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="middle"/>
+<pin name="3" x="-5.08" y="-5.08" visible="off" length="middle"/>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
@@ -1471,9 +1471,9 @@
 <devices>
 <device name="" package="1984620">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -1441,7 +1441,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSTVN03A150">
+<deviceset name="OSTVN03A150" prefix="C">
 <gates>
 <gate name="G$1" symbol="OSTVN03A150" x="5.08" y="5.08"/>
 </gates>
