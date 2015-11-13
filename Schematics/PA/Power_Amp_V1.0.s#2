@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12823,7 +12823,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="R51" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="C6" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
-<part name="R52" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R52" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND22" library="supply2" deviceset="GND" device=""/>
 <part name="GND23" library="supply2" deviceset="GND" device=""/>
 <part name="GND24" library="supply2" deviceset="GND" device=""/>
@@ -12876,8 +12876,8 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="C20" library="rcl" deviceset="C-EU" device="050-024X044" value="22pF"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="050-024X044" value="22pF"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
-<part name="C22" library="rcl" deviceset="C-EU" device="050-024X044" value="22pF"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="0204/2V" value="470"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="050-024X044" value="20pF"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
@@ -12888,7 +12888,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="R8" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C27" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="C28" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
-<part name="R9" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R9" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND2" library="supply2" deviceset="GND" device=""/>
 <part name="GND3" library="supply2" deviceset="GND" device=""/>
 <part name="GND4" library="supply2" deviceset="GND" device=""/>
@@ -12897,19 +12897,19 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="V-" device=""/>
-<part name="C29" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
-<part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="C29" library="rcl" deviceset="C-EU" device="050-024X044" value="22pF"/>
+<part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="6.8k"/>
 <part name="GND6" library="supply2" deviceset="GND" device=""/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
-<part name="C30" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="270"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="270"/>
+<part name="C30" library="rcl" deviceset="C-EU" device="050-024X044" value="200uF"/>
 <part name="GND7" library="supply2" deviceset="GND" device=""/>
-<part name="R13" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R13" library="rcl" deviceset="R-US_" device="0204/2V" value="6.8k"/>
 <part name="GND8" library="supply2" deviceset="GND" device=""/>
 <part name="GND9" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="V-" device=""/>
 <part name="GND10" library="supply2" deviceset="GND" device=""/>
-<part name="P+3" library="supply2" deviceset="V+" device=""/>
+<part name="P+3" library="supply2" deviceset="V+" device="" value="V+"/>
 <part name="PR1" library="Power Resistors" deviceset="SQM" device=""/>
 <part name="PR2" library="Power Resistors" deviceset="SQM" device=""/>
 <part name="U$1" library="Amplifier_Parts" deviceset="SIGNAL_ARROW" device=""/>
@@ -12943,7 +12943,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="R19" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C42" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="C43" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND11" library="supply2" deviceset="GND" device=""/>
 <part name="GND12" library="supply2" deviceset="GND" device=""/>
 <part name="GND13" library="supply2" deviceset="GND" device=""/>
@@ -12999,7 +12999,7 @@ footprint</text>
 <text x="469.9" y="223.52" size="1.778" layer="97">change
 footprint</text>
 <text x="434.34" y="299.72" size="6.4516" layer="97">Right Amp</text>
-<text x="469.9" y="231.14" size="1.778" layer="97">altleast .5W</text>
+<text x="469.9" y="231.14" size="1.778" layer="97">altleast 2W</text>
 <text x="414.02" y="127" size="1.778" layer="97">Vbe multiplier</text>
 <text x="454.66" y="134.62" size="1.778" layer="97">MOSFET_n</text>
 <text x="454.66" y="88.9" size="1.778" layer="97">MOSFET_p</text>
@@ -13007,6 +13007,9 @@ footprint</text>
 footprint</text>
 <text x="434.34" y="180.34" size="6.4516" layer="97">Right Amp</text>
 <text x="469.9" y="111.76" size="1.778" layer="97">altleast .5W</text>
+<text x="381" y="294.64" size="1.778" layer="97">20k pot</text>
+<text x="391.16" y="241.3" size="1.778" layer="97">10k pot</text>
+<text x="467.36" y="215.9" size="1.778" layer="97">250V</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="353.06" y="332.74" smashed="yes" rot="R180">
