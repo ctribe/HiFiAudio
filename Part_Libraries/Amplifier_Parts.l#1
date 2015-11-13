@@ -1564,7 +1564,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="1725724">
+<deviceset name="1725724" prefix="J">
 <gates>
 <gate name="G$1" symbol="9-PIN_CONN" x="0" y="0"/>
 </gates>

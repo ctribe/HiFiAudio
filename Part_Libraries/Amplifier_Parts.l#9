@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -918,6 +918,7 @@
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="1984620">
 <pin name="1" x="-5.08" y="5.08" visible="off" length="middle"/>
@@ -1473,7 +1474,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSTVN03A150" prefix="C">
+<deviceset name="OSTVN03A150" prefix="J">
 <gates>
 <gate name="G$1" symbol="OSTVN03A150" x="5.08" y="5.08"/>
 </gates>
