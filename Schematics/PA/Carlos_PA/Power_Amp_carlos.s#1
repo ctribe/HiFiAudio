@@ -12286,6 +12286,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="16.92" y1="-2.57" x2="16.92" y2="10.43" width="0.127" layer="21"/>
 <wire x1="16.92" y1="10.43" x2="-18.46" y2="10.43" width="0.127" layer="21"/>
 <wire x1="-18.46" y1="10.43" x2="-18.46" y2="-2.57" width="0.127" layer="21"/>
+<text x="-17.78" y="12.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984620">
 <wire x1="0" y1="0" x2="10.5" y2="0" width="0.127" layer="21"/>
@@ -12304,6 +12305,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
 <pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>
+<text x="0" y="7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984659">
 <wire x1="0" y1="0" x2="21" y2="0" width="0.127" layer="21"/>
@@ -12382,6 +12384,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+<text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="1984659">
 <pin name="1" x="-5.08" y="10.16" visible="off" length="middle"/>
@@ -12446,7 +12449,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCREW_TERMINAL_4">
+<deviceset name="SCREW_TERMINAL_4" prefix="J">
 <gates>
 <gate name="G$1" symbol="SCREW_TERMINAL_4" x="0" y="-2.54"/>
 </gates>
@@ -12481,7 +12484,7 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSTVN03A150" prefix="C">
+<deviceset name="OSTVN03A150" prefix="J">
 <gates>
 <gate name="G$1" symbol="OSTVN03A150" x="5.08" y="5.08"/>
 </gates>
@@ -12668,12 +12671,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <pad name="P13" x="5.08" y="4.825" drill="0.7" rot="R90"/>
 <pad name="P14" x="2.54" y="6.755" drill="0.7" rot="R90"/>
 <pad name="P15" x="5.08" y="8.685" drill="0.7" rot="R90"/>
-<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="10.16" width="0.127" layer="22"/>
-<wire x1="-2.54" y1="10.16" x2="2.54" y2="10.16" width="0.127" layer="22"/>
-<wire x1="2.54" y1="10.16" x2="2.54" y2="-10.16" width="0.127" layer="22"/>
-<wire x1="2.54" y1="-10.16" x2="-2.54" y2="-10.16" width="0.127" layer="22"/>
-<text x="-20.32" y="3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-20.32" y="7.62" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="1.27" y1="-10.16" x2="1.27" y2="10.16" width="0.127" layer="21"/>
+<wire x1="1.27" y1="10.16" x2="3.81" y2="10.16" width="0.127" layer="21"/>
+<wire x1="3.81" y1="10.16" x2="3.81" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-10.16" x2="1.27" y2="-10.16" width="0.127" layer="21"/>
+<text x="-1.27" y="13.97" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="11.43" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

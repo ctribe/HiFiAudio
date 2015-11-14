@@ -12289,19 +12289,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <text x="-17.78" y="12.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984620">
-<wire x1="0" y1="0" x2="10.5" y2="0" width="0.127" layer="21"/>
-<wire x1="10.5" y1="0" x2="10.5" y2="7.6" width="0.127" layer="21"/>
-<wire x1="10.5" y1="7.6" x2="0" y2="7.6" width="0.127" layer="21"/>
-<wire x1="0" y1="7.6" x2="0" y2="0" width="0.127" layer="21"/>
 <pad name="P$1" x="1.75" y="4.4" drill="1.3"/>
 <pad name="P$2" x="5.25" y="4.4" drill="1.3"/>
 <pad name="P$3" x="8.75" y="4.4" drill="1.3"/>
 </package>
 <package name="OSTVN03A150">
-<wire x1="0" y1="0" x2="8.08" y2="0" width="0.127" layer="21"/>
-<wire x1="8.08" y1="0" x2="8.08" y2="6.5" width="0.127" layer="21"/>
-<wire x1="8.08" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
-<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
 <pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>

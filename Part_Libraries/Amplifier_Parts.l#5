@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -465,35 +465,45 @@
 <text x="-1.27" y="1.27" size="0.889" layer="25" font="vector">&gt;NAME</text>
 </package>
 <package name="OSTVN03A150">
-<wire x1="0" y1="0" x2="8.08" y2="0" width="0.127" layer="21"/>
-<wire x1="8.08" y1="0" x2="8.08" y2="6.5" width="0.127" layer="21"/>
-<wire x1="8.08" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
-<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
 <pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>
 <text x="0" y="7" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984620">
-<wire x1="0" y1="0" x2="10.5" y2="0" width="0.127" layer="21"/>
-<wire x1="10.5" y1="0" x2="10.5" y2="7.6" width="0.127" layer="21"/>
-<wire x1="10.5" y1="7.6" x2="0" y2="7.6" width="0.127" layer="21"/>
-<wire x1="0" y1="7.6" x2="0" y2="0" width="0.127" layer="21"/>
 <pad name="P$1" x="1.75" y="4.4" drill="1.3"/>
 <pad name="P$2" x="5.25" y="4.4" drill="1.3"/>
 <pad name="P$3" x="8.75" y="4.4" drill="1.3"/>
 </package>
 <package name="1984659">
-<wire x1="0" y1="0" x2="21" y2="0" width="0.127" layer="21"/>
-<wire x1="21" y1="0" x2="21" y2="7.6" width="0.127" layer="21"/>
-<wire x1="21" y1="7.6" x2="0" y2="7.6" width="0.127" layer="21"/>
-<wire x1="0" y1="7.6" x2="0" y2="0" width="0.127" layer="21"/>
 <pad name="P$1" x="1.75" y="4.4" drill="1.3"/>
 <pad name="P$2" x="5.25" y="4.4" drill="1.3"/>
 <pad name="P$3" x="8.75" y="4.4" drill="1.3"/>
 <pad name="P$4" x="12.25" y="4.4" drill="1.3"/>
 <pad name="P$5" x="15.75" y="4.4" drill="1.3"/>
 <pad name="P$6" x="19.25" y="4.4" drill="1.3"/>
+</package>
+<package name="1725724">
+<pad name="P$1" x="-12.7" y="0" drill="1.1"/>
+<pad name="P$2" x="-10.16" y="0" drill="1.1"/>
+<pad name="P$3" x="-7.62" y="0" drill="1.1"/>
+<pad name="P$4" x="-5.08" y="0" drill="1.1"/>
+<pad name="P$5" x="-2.54" y="0" drill="1.1"/>
+<pad name="P$6" x="0" y="0" drill="1.1"/>
+<pad name="P$7" x="2.54" y="0" drill="1.1"/>
+<pad name="P$8" x="5.08" y="0" drill="1.1"/>
+<pad name="P$9" x="7.62" y="0" drill="1.1"/>
+<wire x1="-14.2" y1="1.55" x2="-14.2" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="9.12" y1="1.55" x2="9.12" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="9.12" y1="-1.55" x2="-14.21830625" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-14.21830625" y1="-1.55" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="21"/>
+<wire x1="9.12" y1="1.55" x2="-14.195759375" y2="1.55" width="0.127" layer="21"/>
+<wire x1="-14.195759375" y1="1.55" x2="-14.195759375" y2="1.551825" width="0.127" layer="21"/>
+<text x="-13.14" y="3.1" size="1.27" layer="26">&gt;NAME</text>
+</package>
+<package name="2TERMINAL_SPEAKER">
+<pad name="P$1" x="-2.06" y="0.59" drill="1.3"/>
+<pad name="P$2" x="1.44" y="0.59" drill="1.3"/>
 </package>
 </packages>
 <symbols>
@@ -942,6 +952,28 @@
 <pin name="6" x="-5.08" y="-15.24" visible="off" length="middle"/>
 <circle x="0" y="-15.24" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-10.16" radius="1.27" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="9-PIN_CONN">
+<pin name="1" x="-5.08" y="20.32" visible="off" length="middle" direction="pas"/>
+<pin name="2" x="-5.08" y="15.24" visible="off" length="middle" direction="pas"/>
+<pin name="3" x="-5.08" y="10.16" visible="off" length="middle" direction="pas"/>
+<text x="-7.62" y="25.4" size="1.778" layer="95">&gt;NAME</text>
+<pin name="4" x="-5.08" y="5.08" visible="off" length="middle" direction="pas"/>
+<pin name="5" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
+<pin name="6" x="-5.08" y="-5.08" visible="off" length="middle" direction="pas"/>
+<pin name="7" x="-5.08" y="-10.16" visible="off" length="middle" direction="pas"/>
+<pin name="8" x="-5.08" y="-15.24" visible="off" length="middle" direction="pas"/>
+<pin name="9" x="-5.08" y="-20.32" visible="off" length="middle" direction="pas"/>
+<wire x1="-2.54" y1="22.86" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-22.86" x2="2.54" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-22.86" x2="2.54" y2="22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="22.86" x2="-2.54" y2="22.86" width="0.254" layer="94"/>
+</symbol>
+<symbol name="2TERMINAL_SPEAKER">
+<pin name="P$1" x="-5.08" y="0" length="middle"/>
+<pin name="P$2" x="-5.08" y="-5.08" length="middle"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
@@ -1523,6 +1555,45 @@
 <connect gate="G$1" pin="4" pad="P$4"/>
 <connect gate="G$1" pin="5" pad="P$5"/>
 <connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1725724" prefix="J">
+<gates>
+<gate name="G$1" symbol="9-PIN_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1725724">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2TERMINAL_SPEAKER">
+<gates>
+<gate name="G$1" symbol="2TERMINAL_SPEAKER" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="2TERMINAL_SPEAKER">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
