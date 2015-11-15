@@ -12299,13 +12299,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>
 <text x="0" y="7" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="1984659">
-<pad name="P$1" x="1.75" y="4.4" drill="1.3"/>
-<pad name="P$2" x="5.25" y="4.4" drill="1.3"/>
-<pad name="P$3" x="8.75" y="4.4" drill="1.3"/>
-<pad name="P$4" x="12.25" y="4.4" drill="1.3"/>
-<pad name="P$5" x="15.75" y="4.4" drill="1.3"/>
-<pad name="P$6" x="19.25" y="4.4" drill="1.3"/>
+<package name="2TERMINAL_SPEAKER">
+<pad name="P$1" x="-2.06" y="0.59" drill="1.3"/>
+<pad name="P$2" x="1.44" y="0.59" drill="1.3"/>
 </package>
 </packages>
 <symbols>
@@ -12374,18 +12370,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 <text x="-7.62" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="1984659">
-<pin name="1" x="-5.08" y="10.16" visible="off" length="middle"/>
-<pin name="2" x="-5.08" y="5.08" visible="off" length="middle"/>
-<pin name="3" x="-5.08" y="0" visible="off" length="middle"/>
+<symbol name="2TERMINAL_SPEAKER">
+<pin name="P$1" x="-5.08" y="0" length="middle"/>
+<pin name="P$2" x="-5.08" y="-5.08" length="middle"/>
 <circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="10.16" radius="1.27" width="0.254" layer="94"/>
-<pin name="4" x="-5.08" y="-5.08" visible="off" length="middle"/>
-<pin name="5" x="-5.08" y="-10.16" visible="off" length="middle"/>
-<pin name="6" x="-5.08" y="-15.24" visible="off" length="middle"/>
-<circle x="0" y="-15.24" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="-10.16" radius="1.27" width="0.254" layer="94"/>
 <circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
@@ -12489,19 +12477,15 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1984659" prefix="C">
+<deviceset name="2TERMINAL_SPEAKER">
 <gates>
-<gate name="G$1" symbol="1984659" x="0" y="2.54"/>
+<gate name="G$1" symbol="2TERMINAL_SPEAKER" x="2.54" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="1984659">
+<device name="" package="2TERMINAL_SPEAKER">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12914,7 +12898,9 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="C52" library="Amplifier_Parts" deviceset="1984620" device=""/>
 <part name="C53" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
 <part name="C54" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
-<part name="C55" library="Amplifier_Parts" deviceset="1984659" device=""/>
+<part name="U$6" library="Amplifier_Parts" deviceset="2TERMINAL_SPEAKER" device=""/>
+<part name="U$7" library="Amplifier_Parts" deviceset="2TERMINAL_SPEAKER" device=""/>
+<part name="U$8" library="Amplifier_Parts" deviceset="2TERMINAL_SPEAKER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13261,7 +13247,9 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <instance part="C52" gate="G$1" x="452.12" y="91.44"/>
 <instance part="C53" gate="G$1" x="426.72" y="233.68"/>
 <instance part="C54" gate="G$1" x="426.72" y="114.3"/>
-<instance part="C55" gate="G$1" x="556.26" y="233.68"/>
+<instance part="U$6" gate="G$1" x="556.26" y="243.84"/>
+<instance part="U$7" gate="G$1" x="556.26" y="233.68"/>
+<instance part="U$8" gate="G$1" x="556.26" y="223.52"/>
 </instances>
 <busses>
 </busses>
@@ -13398,7 +13386,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <junction x="477.52" y="373.38"/>
 <wire x1="497.84" y1="243.84" x2="551.18" y2="243.84" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="ONSENSE"/>
-<pinref part="C55" gate="G$1" pin="1"/>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$84" class="0">
@@ -13487,9 +13475,9 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <wire x1="551.18" y1="238.76" x2="543.56" y2="238.76" width="0.1524" layer="91"/>
 <wire x1="543.56" y1="238.76" x2="543.56" y2="228.6" width="0.1524" layer="91"/>
 <junction x="543.56" y="228.6"/>
-<pinref part="C55" gate="G$1" pin="2"/>
-<pinref part="C55" gate="G$1" pin="4"/>
-<pinref part="C55" gate="G$1" pin="6"/>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
+<pinref part="U$7" gate="G$1" pin="P$2"/>
+<pinref part="U$8" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="4"/>
@@ -13905,7 +13893,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <wire x1="477.52" y1="114.3" x2="497.84" y2="114.3" width="0.1524" layer="91"/>
 <junction x="477.52" y="114.3"/>
 <pinref part="U3" gate="G$1" pin="ONSENSE"/>
-<pinref part="C55" gate="G$1" pin="5"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -14037,7 +14025,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <junction x="477.52" y="233.68"/>
 <wire x1="477.52" y1="233.68" x2="551.18" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="ONSENSE"/>
-<pinref part="C55" gate="G$1" pin="3"/>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$13" class="0">

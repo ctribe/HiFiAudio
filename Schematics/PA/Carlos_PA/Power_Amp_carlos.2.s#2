@@ -12288,20 +12288,23 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="-18.46" y1="10.43" x2="-18.46" y2="-2.57" width="0.127" layer="21"/>
 <text x="-17.78" y="12.7" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="1984620">
-<pad name="P$1" x="1.75" y="4.4" drill="1.3"/>
-<pad name="P$2" x="5.25" y="4.4" drill="1.3"/>
-<pad name="P$3" x="8.75" y="4.4" drill="1.3"/>
-</package>
 <package name="OSTVN03A150">
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
 <pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>
 <text x="0" y="7" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="0" y1="0" x2="8.08" y2="0" width="0.127" layer="21"/>
+<wire x1="8.08" y1="0" x2="8.08" y2="6.5" width="0.127" layer="21"/>
+<wire x1="8.08" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
+<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
 </package>
 <package name="2TERMINAL_SPEAKER">
-<pad name="P$1" x="-2.06" y="0.59" drill="1.3"/>
-<pad name="P$2" x="1.44" y="0.59" drill="1.3"/>
+<pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
+<pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
+<wire x1="0" y1="0" x2="5.54" y2="0" width="0.127" layer="21"/>
+<wire x1="5.54" y1="0" x2="5.54" y2="6.5" width="0.127" layer="21"/>
+<wire x1="5.54" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
+<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -12352,14 +12355,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pin name="S3" x="0" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="3.81" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
 <pin name="S4" x="0" y="-5.08" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="1984620">
-<pin name="1" x="-5.08" y="5.08" visible="off" length="middle"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="3" x="-5.08" y="-5.08" visible="off" length="middle"/>
-<circle x="0" y="-5.08" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
-<circle x="0" y="5.08" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 <symbol name="OSTVN03A150">
 <pin name="1" x="-5.08" y="5.08" visible="off" length="middle"/>
@@ -12436,23 +12431,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connect gate="G$1" pin="S2" pad="2"/>
 <connect gate="G$1" pin="S3" pad="3"/>
 <connect gate="G$1" pin="S4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1984620" prefix="C">
-<gates>
-<gate name="G$1" symbol="1984620" x="5.08" y="0"/>
-</gates>
-<devices>
-<device name="" package="1984620">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12889,13 +12867,13 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="U2" library="LME49830_1" deviceset="LME49830" device=""/>
 <part name="U3" library="LME49830_1" deviceset="LME49830" device=""/>
 <part name="U$5" library="Amplifier_Parts" deviceset="SCREW_TERMINAL_4" device=""/>
-<part name="C47" library="Amplifier_Parts" deviceset="1984620" device=""/>
-<part name="C48" library="Amplifier_Parts" deviceset="1984620" device=""/>
+<part name="C47" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
+<part name="C48" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
 <part name="C46" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
-<part name="C49" library="Amplifier_Parts" deviceset="1984620" device=""/>
-<part name="C50" library="Amplifier_Parts" deviceset="1984620" device=""/>
-<part name="C51" library="Amplifier_Parts" deviceset="1984620" device=""/>
-<part name="C52" library="Amplifier_Parts" deviceset="1984620" device=""/>
+<part name="C49" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
+<part name="C50" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
+<part name="C51" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
+<part name="C52" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
 <part name="C53" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
 <part name="C54" library="Amplifier_Parts" deviceset="OSTVN03A150" device=""/>
 <part name="U$6" library="Amplifier_Parts" deviceset="2TERMINAL_SPEAKER" device=""/>
