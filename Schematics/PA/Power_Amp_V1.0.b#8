@@ -109,9 +109,11 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="50.47" y2="0" width="0" layer="20"/>
-<wire x1="50.47" y1="0" x2="50.47" y2="76.825" width="0" layer="20"/>
-<wire x1="50.47" y1="76.825" x2="0" y2="76.825" width="0" layer="20"/>
-<wire x1="0" y1="76.825" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="50.47" y1="0" x2="50.47" y2="76.835" width="0" layer="20"/>
+<wire x1="50.47" y1="76.835" x2="1.27" y2="76.835" width="0" layer="20"/>
+<wire x1="0" y1="75.565" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="75.565" x2="0.635" y2="76.2" width="0" layer="20" curve="-90"/>
+<wire x1="0.635" y1="76.2" x2="1.27" y2="76.835" width="0" layer="20" curve="-90"/>
 </plain>
 <libraries>
 <library name="Amplifier_Parts">
@@ -2160,7 +2162,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="16.2405" y="74.435115625" extent="1-16" drill="0.381"/>
 <via x="11.11460625" y="74.6018" extent="1-16" drill="0.381"/>
 <via x="3.279909375" y="74.810159375" extent="1-16" drill="0.381"/>
-<via x="1.321234375" y="65.892396875" extent="1-16" drill="0.381"/>
+<via x="1.293215625" y="65.878390625" extent="1-16" drill="0.381"/>
 <via x="1.612953125" y="55.891165625" extent="1-16" drill="0.381"/>
 <via x="1.6963" y="52.3490625" extent="1-16" drill="0.381"/>
 <via x="5.32193125" y="43.097925" extent="1-16" drill="0.381"/>
@@ -2186,7 +2188,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="48.146571875" y="1.69838125" extent="1-16" drill="0.381"/>
 <via x="44.2286625" y="1.615009375" extent="1-16" drill="0.381"/>
 <via x="32.308215625" y="2.57380625" extent="1-16" drill="0.381"/>
-<via x="30.599340625" y="0.739590625" extent="1-16" drill="0.381"/>
+<via x="30.4928625" y="0.97303125" extent="1-16" drill="0.381"/>
 <via x="28.557025" y="2.44874375" extent="1-16" drill="0.381"/>
 <via x="20.804565625" y="3.115734375" extent="1-16" drill="0.381"/>
 <via x="18.97065" y="1.406578125" extent="1-16" drill="0.381"/>
@@ -2522,9 +2524,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="44.1325" y1="75.8825" x2="20.32" y2="75.8825" width="0.254" layer="1"/>
 <wire x1="20.955" y1="74.041" x2="20.955" y2="75.2475" width="0.254" layer="1"/>
 <wire x1="20.955" y1="75.2475" x2="20.32" y2="75.8825" width="0.254" layer="1"/>
-<wire x1="20.32" y1="75.8825" x2="0.9525" y2="75.8825" width="0.254" layer="1"/>
-<wire x1="0.9525" y1="75.8825" x2="0.635" y2="75.565" width="0.254" layer="1"/>
-<wire x1="0.635" y1="75.565" x2="0.635" y2="51.1175" width="0.254" layer="1"/>
+<wire x1="20.32" y1="75.8825" x2="1.27" y2="75.8825" width="0.254" layer="1"/>
+<wire x1="1.27" y1="75.8825" x2="0.635" y2="75.2475" width="0.254" layer="1"/>
+<wire x1="0.635" y1="75.2475" x2="0.635" y2="51.1175" width="0.254" layer="1"/>
 <wire x1="20.32" y1="48.5775" x2="20.32" y2="49.53" width="0.254" layer="1"/>
 <wire x1="20.32" y1="49.53" x2="20.0025" y2="49.8475" width="0.254" layer="1"/>
 <wire x1="20.0025" y1="49.8475" x2="9.2075" y2="49.8475" width="0.254" layer="1"/>

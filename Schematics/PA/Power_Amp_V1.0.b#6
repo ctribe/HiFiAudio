@@ -114,8 +114,9 @@
 <wire x1="0" y1="75.565" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="75.565" x2="0.635" y2="76.2" width="0" layer="20" curve="-90"/>
 <wire x1="0.635" y1="76.2" x2="1.27" y2="76.835" width="0" layer="20" curve="-90"/>
-<text x="42.34375" y="46.933025" size="0.889" layer="20" font="vector" ratio="15" rot="R270">3 Channel Power Amplifier</text>
-<text x="49.977146875" y="36.91199375" size="0.889" layer="20" font="vector" ratio="15" rot="R90">CT Nov, 2015
+<text x="49.6775875" y="36.208928125" size="0.889" layer="21" font="vector" ratio="15" rot="R90">3 Channel 
+Power Amplifier</text>
+<text x="44.455865625" y="37.606578125" size="0.889" layer="21" font="vector" ratio="15" rot="R90">CT Nov, 2015
 CM</text>
 </plain>
 <libraries>
