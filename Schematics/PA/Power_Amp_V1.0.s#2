@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12247,9 +12247,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="2" x="-1.27" y="0" drill="0.89"/>
 <pad name="1" x="1.27" y="0" drill="0.89"/>
 <pad name="3" x="-3.81" y="0" drill="0.89"/>
-<wire x1="-4.87" y1="0" x2="-4.87" y2="3.6" width="0.127" layer="21"/>
-<wire x1="-4.87" y1="3.6" x2="4.87" y2="3.6" width="0.127" layer="21"/>
-<wire x1="4.87" y1="3.6" x2="4.87" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.87" y1="0" x2="-4.87" y2="12" width="0.127" layer="21"/>
+<wire x1="-4.87" y1="12" x2="4.87" y2="12" width="0.127" layer="21"/>
+<wire x1="4.87" y1="12" x2="4.87" y2="0" width="0.127" layer="21"/>
 <wire x1="4.87" y1="0" x2="5.27" y2="0" width="0.127" layer="21"/>
 <wire x1="5.27" y1="0" x2="5.27" y2="-1" width="0.127" layer="21"/>
 <wire x1="5.27" y1="-1" x2="-5.27" y2="-1" width="0.127" layer="21"/>
@@ -12277,12 +12277,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="P$7" x="2.54" y="0" drill="1.1"/>
 <pad name="P$8" x="5.08" y="0" drill="1.1"/>
 <pad name="P$9" x="7.62" y="0" drill="1.1"/>
-<wire x1="-14.2" y1="1.55" x2="-14.2" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="9.12" y1="2.82" x2="9.12" y2="-2.82" width="0.127" layer="21"/>
-<wire x1="9.12" y1="-2.82" x2="-14.21830625" y2="-2.82" width="0.127" layer="21"/>
-<wire x1="-14.21830625" y1="-2.82" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="21"/>
-<wire x1="9.12" y1="2.82" x2="-14.195759375" y2="2.82" width="0.127" layer="21"/>
-<wire x1="-14.195759375" y1="2.82" x2="-14.195759375" y2="1.551825" width="0.127" layer="21"/>
+<wire x1="-14.2" y1="1.55" x2="-14.2" y2="-1.55" width="0.127" layer="22"/>
+<wire x1="9.12" y1="2.82" x2="9.12" y2="-2.82" width="0.127" layer="22"/>
+<wire x1="9.12" y1="-2.82" x2="-14.21830625" y2="-2.82" width="0.127" layer="22"/>
+<wire x1="-14.21830625" y1="-2.82" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="22"/>
+<wire x1="9.12" y1="2.82" x2="-14.195759375" y2="2.82" width="0.127" layer="22"/>
+<wire x1="-14.195759375" y1="2.82" x2="-14.195759375" y2="1.551825" width="0.127" layer="22"/>
 <text x="-13.14" y="3.1" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984633">
@@ -13437,7 +13437,7 @@ footprint</text>
 <label x="515.62" y="388.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="RIGHT_OUT" class="0">
 <segment>
 <wire x1="447.04" y1="373.38" x2="447.04" y2="375.92" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="2"/>
@@ -13900,7 +13900,7 @@ footprint</text>
 <wire x1="581.66" y1="167.64" x2="586.74" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RIGHT" class="0">
+<net name="RIGHT_IN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -13930,7 +13930,7 @@ footprint</text>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="LEFT" class="0">
+<net name="LEFT_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="231.14" x2="228.6" y2="231.14" width="0.1524" layer="91"/>
@@ -13939,7 +13939,7 @@ footprint</text>
 <wire x1="228.6" y1="114.3" x2="307.34" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$77" class="0">
+<net name="LEFT_OUT" class="0">
 <segment>
 <wire x1="497.84" y1="114.3" x2="497.84" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="223.52" x2="551.18" y2="223.52" width="0.1524" layer="91"/>
@@ -14107,7 +14107,7 @@ footprint</text>
 <label x="607.06" y="289.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="BASS_OUT" class="0">
 <segment>
 <wire x1="447.04" y1="233.68" x2="447.04" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -14482,7 +14482,7 @@ footprint</text>
 <label x="518.16" y="363.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BASS_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="2"/>
