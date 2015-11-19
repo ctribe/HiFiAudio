@@ -248,6 +248,12 @@ CM</text>
 <wire x1="38.8617875" y1="43.9192" x2="39.038278125" y2="44.095690625" width="2.032" layer="30"/>
 <wire x1="43.156515625" y1="38.11846875" x2="43.156515625" y2="28.969115625" width="2.032" layer="30"/>
 <wire x1="43.156515625" y1="28.969115625" x2="44.055784375" y2="28.069846875" width="2.032" layer="30"/>
+<text x="0.6966625" y="68.89460625" size="1.524" layer="21">G</text>
+<text x="0.69286875" y="44.244184375" size="1.524" layer="21">G</text>
+<text x="0.6555625" y="21.02028125" size="1.524" layer="21">G</text>
+<text x="2.078409375" y="44.707784375" size="0.762" layer="21">B</text>
+<text x="2.0277" y="69.377984375" size="0.762" layer="21">R</text>
+<text x="2.018378125" y="21.4403375" size="0.762" layer="21">L</text>
 </plain>
 <libraries>
 <library name="Amplifier_Parts">
@@ -1688,7 +1694,7 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" package="C050-024X044" value="0.1uF" x="6.0325" y="68.326" smashed="yes">
-<attribute name="NAME" x="2.3103125" y="69.144253125" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="1.446625" y="67.23285625" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="3.8735" y="65.659" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C10" library="rcl" package="C050-024X044" value="22pF" x="24.4475" y="58.801" smashed="yes" rot="R90">
@@ -1772,7 +1778,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="18.512140625" y="45.286034375" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C29" library="rcl" package="C050-024X044" value="22pF" x="6.0325" y="43.815" smashed="yes">
-<attribute name="NAME" x="0.4726125" y="43.46060625" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="0.615975" y="42.37134375" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="3.8735" y="41.148" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C3" library="rcl" package="C050-024X044" value="0.1uF" x="20.32" y="63.246" smashed="yes" rot="R180">
