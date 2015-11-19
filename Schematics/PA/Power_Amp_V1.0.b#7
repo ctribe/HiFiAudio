@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -232,6 +232,11 @@ CM
 <wire x1="42.909178125" y1="61.11535625" x2="42.997178125" y2="61.20335625" width="2.032" layer="30"/>
 <wire x1="34.7848125" y1="67.302559375" x2="38.268178125" y2="67.302559375" width="2.032" layer="30"/>
 <wire x1="38.268178125" y1="67.302559375" x2="39.397478125" y2="68.431859375" width="2.032" layer="30"/>
+<text x="10.633434375" y="1.030003125" size="0.762" layer="21">&lt;-GRBL</text>
+<text x="42.618134375" y="71.365584375" size="1.524" layer="21" rot="R90">GM-+</text>
+<text x="49.4960125" y="3.1652375" size="1.778" layer="21" rot="R90">L</text>
+<text x="43.940765625" y="28.18754375" size="1.778" layer="21" rot="R90">B</text>
+<text x="46.546840625" y="45.110309375" size="1.778" layer="21" rot="R90">R</text>
 </plain>
 <libraries>
 <library name="Amplifier_Parts">
@@ -2038,7 +2043,7 @@ type 0617, grid 5 mm</description>
 <attribute name="NAME" x="40.0182375" y="25.945825" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="J2" library="Amplifier_Parts" package="1984633" value="1984633" x="50.4825" y="62.865" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.4609375" y="75.105478125" size="0.889" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="NAME" x="42.23409375" y="63.622340625" size="0.889" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="J3" library="Amplifier_Parts" package="2TERMINAL_SPEAKER" value="2TERMINAL_SPEAKER" x="40.9575" y="52.705" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.00081875" y="52.927465625" size="0.889" layer="25" font="vector" ratio="15"/>
@@ -2169,7 +2174,7 @@ type 0617, grid 5 mm</description>
 <wire x1="32.0675" y1="55.245" x2="32.7025" y2="54.61" width="0.762" layer="16"/>
 <wire x1="32.7025" y1="54.61" x2="34.6075" y2="54.61" width="0.762" layer="16"/>
 </signal>
-<signal name="N$75">
+<signal name="RIGHT_OUT">
 <contactref element="R51" pad="2"/>
 <contactref element="R56" pad="1"/>
 <contactref element="PR5" pad="2"/>
@@ -2631,7 +2636,7 @@ type 0617, grid 5 mm</description>
 <wire x1="25.986775" y1="6.177140625" x2="29.382859375" y2="6.177140625" width="1.27" layer="1"/>
 <wire x1="29.382859375" y1="6.177140625" x2="30.48" y2="5.08" width="1.27" layer="1"/>
 </signal>
-<signal name="RIGHT">
+<signal name="RIGHT_IN">
 <contactref element="R1" pad="2"/>
 <contactref element="J1" pad="1"/>
 <wire x1="6.0325" y1="73.406" x2="1.016" y2="73.406" width="0.254" layer="16"/>
@@ -2671,7 +2676,7 @@ type 0617, grid 5 mm</description>
 <wire x1="1.27" y1="25.7175" x2="0.635" y2="26.3525" width="0.254" layer="1"/>
 <wire x1="0.635" y1="26.3525" x2="0.635" y2="51.1175" width="0.254" layer="1"/>
 </signal>
-<signal name="LEFT">
+<signal name="LEFT_IN">
 <contactref element="J1" pad="3"/>
 <contactref element="R22" pad="2"/>
 <wire x1="6.6675" y1="24.4475" x2="2.54" y2="24.4475" width="0.254" layer="16"/>
@@ -2683,7 +2688,7 @@ type 0617, grid 5 mm</description>
 <wire x1="7.62" y1="11.1125" x2="7.62" y2="7.3025" width="0.254" layer="16"/>
 <wire x1="7.62" y1="7.3025" x2="9.2075" y2="5.3975" width="0.254" layer="16"/>
 </signal>
-<signal name="N$77">
+<signal name="LEFT_OUT">
 <contactref element="R19" pad="2"/>
 <contactref element="R24" pad="1"/>
 <contactref element="PR3" pad="2"/>
@@ -2860,7 +2865,7 @@ type 0617, grid 5 mm</description>
 <wire x1="39.0525" y1="30.7975" x2="36.195" y2="33.655" width="2.032" layer="16"/>
 <wire x1="36.195" y1="33.655" x2="34.6075" y2="33.655" width="2.032" layer="16"/>
 </signal>
-<signal name="N$12">
+<signal name="BASS_OUT">
 <contactref element="R8" pad="2"/>
 <contactref element="R13" pad="1"/>
 <contactref element="PR1" pad="2"/>
@@ -3218,7 +3223,7 @@ type 0617, grid 5 mm</description>
 <wire x1="34.6075" y1="67.31" x2="38.1" y2="67.31" width="2.032" layer="16"/>
 <wire x1="38.1" y1="67.31" x2="39.4335" y2="68.453" width="2.032" layer="16"/>
 </signal>
-<signal name="N$1">
+<signal name="BASS_IN">
 <contactref element="J1" pad="2"/>
 <contactref element="R11" pad="2"/>
 <wire x1="6.35" y1="48.895" x2="1.5875" y2="48.895" width="0.254" layer="16"/>

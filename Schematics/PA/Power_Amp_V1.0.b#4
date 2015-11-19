@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1592,6 +1592,9 @@ type 0617, grid 5 mm</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2071,7 +2074,7 @@ type 0617, grid 5 mm</description>
 <element name="J5" library="Amplifier_Parts" package="2TERMINAL_SPEAKER" value="2TERMINAL_SPEAKER" x="40.9575" y="5.715" smashed="yes" rot="R270">
 <attribute name="NAME" x="40.435215625" y="5.917165625" size="0.889" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="U$17" library="PersonalLogos" package="MUSHROOM" value="" x="34.854378125" y="75.410053125" rot="R180"/>
+<element name="U$17" library="PersonalLogos" package="MUSHROOM" value="" x="33.0208125" y="75.410053125" rot="R180"/>
 </elements>
 <signals>
 <signal name="R_VBE_C">
