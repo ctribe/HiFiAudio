@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.003125" unitdist="mic" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -300,11 +300,11 @@ CM</text>
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
 <pad name="P$2" x="4.04" y="3.2" drill="1.3"/>
 <pad name="P$3" x="6.58" y="3.2" drill="1.3"/>
-<text x="0" y="7" size="1.27" layer="25">&gt;NAME</text>
-<wire x1="0" y1="0" x2="8.08" y2="0" width="0.127" layer="21"/>
-<wire x1="8.08" y1="0" x2="8.08" y2="6.5" width="0.127" layer="21"/>
-<wire x1="8.08" y1="6.5" x2="0" y2="6.5" width="0.127" layer="21"/>
-<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="0" y="7" size="1.27" layer="26">&gt;NAME</text>
+<wire x1="0" y1="0" x2="8.08" y2="0" width="0.127" layer="22"/>
+<wire x1="8.08" y1="0" x2="8.08" y2="6.5" width="0.127" layer="22"/>
+<wire x1="8.08" y1="6.5" x2="0" y2="6.5" width="0.127" layer="22"/>
+<wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="22"/>
 </package>
 </packages>
 </library>

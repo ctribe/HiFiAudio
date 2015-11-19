@@ -540,8 +540,8 @@
 <circle x="0.16" y="-0.35" radius="4.064" width="0.1524" layer="22"/>
 <pad name="-1" x="1.938" y="-0.35" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <pad name="+1" x="-1.618" y="-0.35" drill="0.8128" diameter="1.6002"/>
-<text x="3.462" y="2.444" size="1.27" layer="22" ratio="10">&gt;NAME</text>
-<text x="-2.126" y="-3.398" size="1.27" layer="22" ratio="10">&gt;VALUE</text>
+<text x="3.462" y="2.444" size="1.27" layer="26" ratio="10">&gt;NAME</text>
+<text x="-2.126" y="-3.398" size="1.27" layer="26" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.414" y1="-1.62" x2="0.922" y2="0.92" layer="22"/>
 </package>
 </packages>

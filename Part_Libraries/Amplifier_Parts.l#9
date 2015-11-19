@@ -503,7 +503,7 @@
 <wire x1="-14.21830625" y1="-2.82" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="21"/>
 <wire x1="9.12" y1="2.82" x2="-14.195759375" y2="2.82" width="0.127" layer="21"/>
 <wire x1="-14.195759375" y1="2.82" x2="-14.195759375" y2="1.551825" width="0.127" layer="21"/>
-<text x="-13.14" y="3.1" size="1.27" layer="26">&gt;NAME</text>
+<text x="-13.14" y="3.1" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="2TERMINAL_SPEAKER">
 <pad name="P$1" x="1.5" y="3.2" drill="1.3"/>
