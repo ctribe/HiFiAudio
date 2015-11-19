@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -233,7 +233,7 @@ CM</text>
 <hole x="3.175" y="75.2475" drill="2.286"/>
 <wire x1="0" y1="76.5175" x2="0.635" y2="77.1525" width="0" layer="20" curve="-90"/>
 <wire x1="0.635" y1="77.1525" x2="1.27" y2="77.7875" width="0" layer="20" curve="-90"/>
-<text x="46.6725" y="39.37" size="0.889" layer="21" font="vector" ratio="15" rot="R90">Nov, 2015</text>
+<text x="46.955534375" y="39.879403125" size="0.889" layer="21" font="vector" ratio="15" rot="R90">Nov, 2015</text>
 <wire x1="34.6075" y1="5.08" x2="36.5125" y2="5.08" width="2.159" layer="29"/>
 <wire x1="30.48" y1="5.08" x2="34.6075" y2="5.08" width="2.159" layer="30"/>
 <wire x1="34.6075" y1="52.07" x2="32.691559375" y2="52.07" width="2.159" layer="30"/>
@@ -1881,7 +1881,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="J1" library="Amplifier_Parts" package="4_PIN_AMPCON" value="4_PIN_AMPCONN" x="5.3975" y="4.445" smashed="yes" rot="R180"/>
 <element name="PR1" library="rcl" package="0617V" value="" x="39.0525" y="41.5925" smashed="yes" rot="R270">
-<attribute name="NAME" x="42.4424875" y="44.68348125" size="0.889" layer="25" font="vector" ratio="15"/>
+<attribute name="NAME" x="42.15945" y="45.617384375" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="36.4363" y="40.9575" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="PR2" library="rcl" package="0617V" value="" x="39.0525" y="31.75" smashed="yes" rot="R270">
@@ -2612,7 +2612,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="36.5125" y1="28.575" x2="36.83" y2="28.8925" width="2.032" layer="1"/>
 <wire x1="36.83" y1="28.8925" x2="36.83" y2="30.7975" width="2.032" layer="1"/>
 <wire x1="36.83" y1="30.7975" x2="37.465" y2="31.4325" width="2.032" layer="1"/>
-<wire x1="46.355" y1="33.3375" x2="48.621853125" y2="35.569815625" width="2.032" layer="1"/>
 <wire x1="29.845" y1="27.6225" x2="30.7975" y2="27.6225" width="2.032" layer="16"/>
 <wire x1="30.7975" y1="27.6225" x2="31.75" y2="28.575" width="2.032" layer="16"/>
 <wire x1="31.75" y1="28.575" x2="34.6075" y2="28.575" width="2.032" layer="16"/>
@@ -2661,10 +2660,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.0965" y1="51.1175" x2="8.763" y2="52.451" width="1.27" layer="1"/>
 <wire x1="37.465" y1="31.4325" x2="41.5925" y2="31.4325" width="2.032" layer="1"/>
 <wire x1="41.5925" y1="31.4325" x2="43.4975" y2="33.3375" width="2.032" layer="1"/>
-<wire x1="43.4975" y1="33.3375" x2="46.355" y2="33.3375" width="2.032" layer="1"/>
-<wire x1="48.5775" y1="57.4675" x2="48.5775" y2="9.8841125" width="2.032" layer="1"/>
+<wire x1="43.4975" y1="33.3375" x2="47.0405625" y2="33.3375" width="2.032" layer="1"/>
+<wire x1="48.5775" y1="57.4675" x2="48.5775" y2="34.8744375" width="2.032" layer="1"/>
+<wire x1="48.5775" y1="34.8744375" x2="48.5775" y2="9.8841125" width="2.032" layer="1"/>
 <wire x1="48.5775" y1="9.8841125" x2="48.41105625" y2="9.71766875" width="2.032" layer="1"/>
-<wire x1="9.8425" y1="8.255" x2="12.065" y2="26.035" width="0" layer="19" extent="16-16"/>
+<wire x1="47.0405625" y1="33.3375" x2="48.5775" y2="34.8744375" width="2.032" layer="1"/>
 </signal>
 <signal name="RIGHT_IN">
 <contactref element="R1" pad="2"/>
