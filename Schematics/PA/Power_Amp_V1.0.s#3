@@ -13437,7 +13437,7 @@ footprint</text>
 <label x="515.62" y="388.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$75" class="0">
+<net name="RIGHT_OUT" class="0">
 <segment>
 <wire x1="447.04" y1="373.38" x2="447.04" y2="375.92" width="0.1524" layer="91"/>
 <pinref part="R51" gate="G$1" pin="2"/>
@@ -13900,7 +13900,7 @@ footprint</text>
 <wire x1="581.66" y1="167.64" x2="586.74" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RIGHT" class="0">
+<net name="RIGHT_IN" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -13930,7 +13930,7 @@ footprint</text>
 <pinref part="J2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="LEFT" class="0">
+<net name="LEFT_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="231.14" x2="228.6" y2="231.14" width="0.1524" layer="91"/>
@@ -13939,7 +13939,7 @@ footprint</text>
 <wire x1="228.6" y1="114.3" x2="307.34" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$77" class="0">
+<net name="LEFT_OUT" class="0">
 <segment>
 <wire x1="497.84" y1="114.3" x2="497.84" y2="223.52" width="0.1524" layer="91"/>
 <wire x1="497.84" y1="223.52" x2="551.18" y2="223.52" width="0.1524" layer="91"/>
@@ -14107,7 +14107,7 @@ footprint</text>
 <label x="607.06" y="289.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="BASS_OUT" class="0">
 <segment>
 <wire x1="447.04" y1="233.68" x2="447.04" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -14482,7 +14482,7 @@ footprint</text>
 <label x="518.16" y="363.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="BASS_IN" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
 <pinref part="R11" gate="G$1" pin="2"/>

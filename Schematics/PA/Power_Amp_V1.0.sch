@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12315,23 +12315,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="0" y1="6.5" x2="0" y2="0" width="0.127" layer="21"/>
 <text x="0" y="7.62" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="8MM_CAP_BSILK">
-<wire x1="-3.269" y1="0.793" x2="-2.507" y2="0.793" width="0.1524" layer="22"/>
-<wire x1="-2.888" y1="0.412" x2="-2.888" y2="1.174" width="0.1524" layer="22"/>
-<wire x1="-1.491" y1="-0.35" x2="-0.602" y2="-0.35" width="0.1524" layer="22"/>
-<wire x1="-0.602" y1="-0.35" x2="-0.602" y2="-1.62" width="0.1524" layer="22"/>
-<wire x1="-0.602" y1="-1.62" x2="-0.094" y2="-1.62" width="0.1524" layer="22"/>
-<wire x1="-0.094" y1="-1.62" x2="-0.094" y2="0.92" width="0.1524" layer="22"/>
-<wire x1="-0.094" y1="0.92" x2="-0.602" y2="0.92" width="0.1524" layer="22"/>
-<wire x1="-0.602" y1="0.92" x2="-0.602" y2="-0.35" width="0.1524" layer="22"/>
-<wire x1="0.795" y1="-0.35" x2="1.811" y2="-0.35" width="0.1524" layer="22"/>
-<circle x="0.16" y="-0.35" radius="4.064" width="0.1524" layer="22"/>
-<pad name="-1" x="1.938" y="-0.35" drill="0.8128" diameter="1.6002" shape="octagon"/>
-<pad name="+1" x="-1.618" y="-0.35" drill="0.8128" diameter="1.6002"/>
-<text x="3.462" y="2.444" size="1.27" layer="26" ratio="10">&gt;NAME</text>
-<text x="-2.126" y="-3.398" size="1.27" layer="26" ratio="10">&gt;VALUE</text>
-<rectangle x1="0.414" y1="-1.62" x2="0.922" y2="0.92" layer="22"/>
-</package>
 </packages>
 <symbols>
 <symbol name="4PINCON_100MIL">
@@ -12408,18 +12391,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
 <text x="-5.08" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="8MM_CAP_BSILK">
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.016" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202"/>
-<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341"/>
-<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
-<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
-<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
-<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12520,22 +12491,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="8MM_CAP_BSILK">
-<gates>
-<gate name="G$1" symbol="8MM_CAP_BSILK" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="8MM_CAP_BSILK">
-<connects>
-<connect gate="G$1" pin="+" pad="+1"/>
-<connect gate="G$1" pin="-" pad="-1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12807,7 +12762,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="C13" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="R51" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
-<part name="C6" library="Amplifier_Parts" deviceset="8MM_CAP_BSILK" device="" value="1000uF"/>
+<part name="C6" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="R52" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND22" library="supply2" deviceset="GND" device=""/>
 <part name="GND23" library="supply2" deviceset="GND" device=""/>
@@ -12861,7 +12816,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="C26" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C27" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
-<part name="C28" library="Amplifier_Parts" deviceset="8MM_CAP_BSILK" device="" value="1000uF"/>
+<part name="C28" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND2" library="supply2" deviceset="GND" device=""/>
 <part name="GND3" library="supply2" deviceset="GND" device=""/>
@@ -12907,7 +12862,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <part name="C41" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0309/V" value="10"/>
 <part name="C42" library="rcl" deviceset="C-EU" device="050-024X044" value="0.1uF"/>
-<part name="C43" library="Amplifier_Parts" deviceset="8MM_CAP_BSILK" device="" value="100uF"/>
+<part name="C43" library="rcl" deviceset="CPOL-US" device="E2.5-6" value="100uF"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="4.7k"/>
 <part name="GND11" library="supply2" deviceset="GND" device=""/>
 <part name="GND12" library="supply2" deviceset="GND" device=""/>

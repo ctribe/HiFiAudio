@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -12247,9 +12247,9 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="2" x="-1.27" y="0" drill="0.89"/>
 <pad name="1" x="1.27" y="0" drill="0.89"/>
 <pad name="3" x="-3.81" y="0" drill="0.89"/>
-<wire x1="-4.87" y1="0" x2="-4.87" y2="3.6" width="0.127" layer="21"/>
-<wire x1="-4.87" y1="3.6" x2="4.87" y2="3.6" width="0.127" layer="21"/>
-<wire x1="4.87" y1="3.6" x2="4.87" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.87" y1="0" x2="-4.87" y2="12" width="0.127" layer="21"/>
+<wire x1="-4.87" y1="12" x2="4.87" y2="12" width="0.127" layer="21"/>
+<wire x1="4.87" y1="12" x2="4.87" y2="0" width="0.127" layer="21"/>
 <wire x1="4.87" y1="0" x2="5.27" y2="0" width="0.127" layer="21"/>
 <wire x1="5.27" y1="0" x2="5.27" y2="-1" width="0.127" layer="21"/>
 <wire x1="5.27" y1="-1" x2="-5.27" y2="-1" width="0.127" layer="21"/>
@@ -12277,12 +12277,12 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pad name="P$7" x="2.54" y="0" drill="1.1"/>
 <pad name="P$8" x="5.08" y="0" drill="1.1"/>
 <pad name="P$9" x="7.62" y="0" drill="1.1"/>
-<wire x1="-14.2" y1="1.55" x2="-14.2" y2="-1.55" width="0.127" layer="21"/>
-<wire x1="9.12" y1="2.82" x2="9.12" y2="-2.82" width="0.127" layer="21"/>
-<wire x1="9.12" y1="-2.82" x2="-14.21830625" y2="-2.82" width="0.127" layer="21"/>
-<wire x1="-14.21830625" y1="-2.82" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="21"/>
-<wire x1="9.12" y1="2.82" x2="-14.195759375" y2="2.82" width="0.127" layer="21"/>
-<wire x1="-14.195759375" y1="2.82" x2="-14.195759375" y2="1.551825" width="0.127" layer="21"/>
+<wire x1="-14.2" y1="1.55" x2="-14.2" y2="-1.55" width="0.127" layer="22"/>
+<wire x1="9.12" y1="2.82" x2="9.12" y2="-2.82" width="0.127" layer="22"/>
+<wire x1="9.12" y1="-2.82" x2="-14.21830625" y2="-2.82" width="0.127" layer="22"/>
+<wire x1="-14.21830625" y1="-2.82" x2="-14.21830625" y2="-1.543171875" width="0.127" layer="22"/>
+<wire x1="9.12" y1="2.82" x2="-14.195759375" y2="2.82" width="0.127" layer="22"/>
+<wire x1="-14.195759375" y1="2.82" x2="-14.195759375" y2="1.551825" width="0.127" layer="22"/>
 <text x="-13.14" y="3.1" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="1984633">
