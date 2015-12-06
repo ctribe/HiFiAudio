@@ -3994,7 +3994,7 @@ grid 2.54 mm, diameter 6 mm</description>
 <wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
 <wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
 <wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="2.794" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="4" width="0.1524" layer="21"/>
 <pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
 <pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
 <text x="2.667" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
@@ -12927,6 +12927,7 @@ http://www.ti.com/lit/ds/symlink/lme49830.pdf</description>
 <text x="469.9" y="363.22" size="1.778" layer="97">change
 footprint</text>
 <text x="434.34" y="439.42" size="6.4516" layer="97">Right Amp</text>
+<text x="469.9" y="370.84" size="1.778" layer="97">altleast .5W</text>
 <text x="414.02" y="246.38" size="1.778" layer="97">Vbe multiplier</text>
 <text x="454.66" y="208.28" size="1.778" layer="97">MOSFET_p</text>
 <text x="469.9" y="223.52" size="1.778" layer="97">change
@@ -12939,9 +12940,8 @@ footprint</text>
 <text x="469.9" y="104.14" size="1.778" layer="97">change
 footprint</text>
 <text x="434.34" y="180.34" size="6.4516" layer="97">Left Amp</text>
+<text x="469.9" y="111.76" size="1.778" layer="97">altleast .5W</text>
 <text x="467.36" y="215.9" size="1.778" layer="97">250V</text>
-<text x="469.9" y="111.76" size="1.778" layer="97">altleast 2W</text>
-<text x="467.36" y="370.84" size="1.778" layer="97">altleast 2W</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="353.06" y="332.74" smashed="yes" rot="R180">
