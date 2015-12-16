@@ -1,0 +1,18 @@
+This document describes the coloring scheme used to wire
+the ouput and Vbe multiplier transistors
+
+for MOSFETs
+purple -> gate
+red -> drain
+yellow -> source
+
+for BJTs Carlos
+red -> emitter
+orange -> collector
+blue -> base
+
+for BJTs Cameron
+black -> emitter
+green -> collector
+blue -> base
+
