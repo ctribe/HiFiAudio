@@ -1,0 +1,27 @@
+Web ID	Access ID	Salesorder Number	Shipping Method	Customer Number	Payment Method	
+152203444	94471	45164784	U.S. Postal Service Priority Mail* (2-3 Day Delivery to most US addresses)	7525912	VISA	
+
+Shipping Address
+First Name	Last Name	Company	Mail Stop	Address Line 1	Address Line 2	City	State	Postal Code	Country	Email Address	Telephone	
+CAMERON	TRIBE			17390 SE 82nd Dr		Clackamas	OR	97015	USA	TRIBE.CAMERON@GMAIL.COM	5038696180	
+
+Billing Address
+First Name	Last Name	Company	Mail Stop	Address Line 1	Address Line 2	City	State	Postal Code	Country	Email Address	Telephone	
+Cameron	Tribe	Portland State University		21860 SE Lagene St		Damascus	OR	97089	USA			
+
+Index	Quantity	Part Number	Description	Customer Reference	Available Quantity	Backorder Quantity	Unit Price USD	Extended Price USD	
+1	1	PB303-ND	RELAY GEN PURPOSE SPST 30A 24V		1	0	4.38000	4.38	
+2	3	IRFP240PBF-ND	MOSFET N-CH 200V 20A TO-247AC		3	0	2.09000	6.27	
+3	3	IRFP9240PBF-ND	MOSFET P-CH 200V 12A TO-247AC		3	0	2.54000	7.62	
+4	2	1N5358BRLGOSCT-ND	DIODE ZENER 22V 5W AXIAL		2	0	0.47000	0.94	
+5	2	1N5359BTPMSCT-ND	DIODE ZENER 24V 5W DO15		2	0	0.52000	1.04	
+6	2	1N4740AFSCT-ND	DIODE ZENER 10V 1W DO41		2	0	0.23000	0.46	
+7	2	1497-1023-ND	LED GRN DIFF 5MM ROUND T/H		2	0	0.38000	0.76	
+8	5	1N5231BFSCT-ND	DIODE ZENER 5.1V 500MW DO35		5	0	0.12000	0.60	
+9	2	2EZ20D5-TPMSCT-ND	DIODE ZENER 20V 2W DO41		2	0	0.40000	0.80	
+10	2	55J5K0E-ND	RES 5K OHM 5W 5% AXIAL	1 CARLOS	2	0	0.83000	1.66	
+11	2	55J10KE-ND	RES 10K OHM 5W 5% AXIAL	1 CARLOS	2	0	0.83000	1.66	
+						Subtotal	26.19
+						Shipping	unknown
+						Estimated Sales Tax	0.00
+						Total	unknown
