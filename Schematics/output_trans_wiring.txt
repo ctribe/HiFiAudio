@@ -1,6 +1,8 @@
 This document describes the coloring scheme used to wire
 the ouput and Vbe multiplier transistors
 
+
+This are teh colors of the wires of each individual trasistor
 for MOSFETs
 purple -> gate
 red -> drain
@@ -15,4 +17,17 @@ for BJTs Cameron
 black -> emitter
 green -> collector
 blue -> base
+
+
+Carlos
+This are the colors of teh bundle of wires per transsitor
+i.e. gate, drain, source
+PMOS blue tie
+NMOS green tie
+
+This are the colors that tell which transsitors are for what channel
+right - burgandy
+left - purple
+bass - yellow
+
 
