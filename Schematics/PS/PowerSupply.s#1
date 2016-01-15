@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -23143,7 +23143,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE6" library="supply1" deviceset="PE" device=""/>
 <part name="PE8" library="supply1" deviceset="PE" device=""/>
 <part name="U$5" library="Amplifier_Parts" deviceset="IRS2153D" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="30k"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="025-025X050" value="390pF"/>
 <part name="U$6" library="Amplifier_Parts" deviceset="GBPC3510W" device=""/>
 <part name="PE7" library="supply1" deviceset="PE" device=""/>
@@ -23153,8 +23153,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE12" library="supply1" deviceset="PE" device=""/>
 <part name="T1" library="Amplifier_Parts" deviceset="IRFP240" device=""/>
 <part name="T2" library="Amplifier_Parts" deviceset="IRFP240" device=""/>
-<part name="R13" library="resistor" deviceset="R-US_" device="0204/2V"/>
-<part name="R14" library="resistor" deviceset="R-US_" device="0204/2V"/>
+<part name="R13" library="resistor" deviceset="R-US_" device="0204/2V" value="10"/>
+<part name="R14" library="resistor" deviceset="R-US_" device="0204/2V" value="10"/>
 <part name="TRAFO1" library="Amplifier_Parts" deviceset="COIL_FORMER" device=""/>
 <part name="PE13" library="supply1" deviceset="PE" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="V+" device=""/>
@@ -23234,13 +23234,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE10" library="supply1" deviceset="PE" device=""/>
 <part name="L2" library="Amplifier_Parts" deviceset="CHOKE" device=""/>
 <part name="D10" library="Amplifier_Parts" deviceset="VS-ETL1506-M3" device=""/>
-<part name="PE15" library="supply1" deviceset="PE" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
 <part name="PE4" library="supply1" deviceset="PE" device=""/>
 <part name="R23" library="pot" deviceset="TRIM_EU-" device="B25P"/>
 <part name="R24" library="pot" deviceset="TRIM_EU-" device="B25P"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="390"/>
+<part name="SGND5" library="supply2" deviceset="GND5" device="" value="SGND"/>
 </parts>
 <sheets>
 <sheet>
@@ -23258,6 +23259,10 @@ to save space</text>
 <text x="137.16" y="7.62" size="1.778" layer="97">2X</text>
 <text x="119.38" y="27.94" size="1.778" layer="97">stack 2k
 resistors</text>
+<text x="177.8" y="73.66" size="1.778" layer="97">PRI: fill bobin
+SEC: half bobin
+TRI: quarter bobin</text>
+<text x="101.6" y="50.8" size="1.778" layer="97">100kHz</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>
@@ -23271,7 +23276,7 @@ resistors</text>
 <instance part="D1" gate="G$1" x="25.4" y="0" rot="R180"/>
 <instance part="D2" gate="G$1" x="-10.16" y="-7.62" rot="R90"/>
 <instance part="D3" gate="G$1" x="-10.16" y="-20.32" rot="R90"/>
-<instance part="D4" gate="G$1" x="10.16" y="-5.08" rot="R90"/>
+<instance part="D4" gate="G$1" x="2.54" y="-5.08" rot="R90"/>
 <instance part="R10" gate="G$1" x="25.4" y="48.26"/>
 <instance part="R11" gate="G$1" x="25.4" y="55.88"/>
 <instance part="SUPPLY3" gate="G$1" x="-10.16" y="20.32"/>
@@ -23287,7 +23292,7 @@ resistors</text>
 <instance part="PE3" gate="M" x="15.24" y="-33.02"/>
 <instance part="U$2" gate="G$1" x="-22.86" y="68.58" rot="R180"/>
 <instance part="U$3" gate="G$1" x="200.66" y="2.54"/>
-<instance part="PE6" gate="M" x="10.16" y="-12.7"/>
+<instance part="PE6" gate="M" x="2.54" y="-12.7"/>
 <instance part="PE8" gate="M" x="30.48" y="-5.08"/>
 <instance part="U$5" gate="G$1" x="96.52" y="71.12"/>
 <instance part="R3" gate="G$1" x="78.74" y="60.96" rot="R90"/>
@@ -23324,7 +23329,7 @@ resistors</text>
 </instance>
 <instance part="R5" gate="G$1" x="71.12" y="76.2" rot="R90"/>
 <instance part="C2" gate="G$1" x="121.92" y="73.66" rot="R180"/>
-<instance part="R7" gate="G$1" x="0" y="0" rot="R180"/>
+<instance part="R7" gate="G$1" x="-2.54" y="0" rot="R180"/>
 <instance part="SGND" gate="G$1" x="205.74" y="40.64"/>
 <instance part="R12" gate="G$1" x="205.74" y="50.8"/>
 <instance part="SUPPLY5" gate="G$1" x="182.88" y="60.96"/>
@@ -23434,7 +23439,6 @@ resistors</text>
 <instance part="PE10" gate="M" x="45.72" y="63.5"/>
 <instance part="L2" gate="G$1" x="5.08" y="66.04" rot="R180"/>
 <instance part="D10" gate="G$1" x="76.2" y="12.7"/>
-<instance part="PE15" gate="M" x="30.48" y="-38.1"/>
 <instance part="P-1" gate="1" x="172.72" y="-101.6"/>
 <instance part="C3" gate="G$1" x="172.72" y="-88.9" smashed="yes">
 <attribute name="NAME" x="174.244" y="-88.519" size="1.778" layer="95"/>
@@ -23444,6 +23448,8 @@ resistors</text>
 <instance part="PE4" gate="M" x="20.32" y="-12.7"/>
 <instance part="R23" gate="1" x="144.78" y="-55.88"/>
 <instance part="R24" gate="1" x="144.78" y="-71.12"/>
+<instance part="R25" gate="G$1" x="20.32" y="5.08" rot="R90"/>
+<instance part="SGND5" gate="G$1" x="30.48" y="-38.1"/>
 </instances>
 <busses>
 </busses>
@@ -23453,15 +23459,6 @@ resistors</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="-27.94" x2="7.62" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="PE2" gate="M" pin="PE"/>
-</segment>
-<segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="27.94" y1="0" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="0" x2="30.48" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="-2.54" x2="30.48" y2="0" width="0.1524" layer="91"/>
-<junction x="30.48" y="0"/>
-<pinref part="U$1" gate="G$1" pin="COIL+"/>
-<pinref part="PE8" gate="M" pin="PE"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="COM"/>
@@ -23479,11 +23476,6 @@ resistors</text>
 <wire x1="142.24" y1="45.72" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PE6" gate="M" pin="PE"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="PE1" gate="M" pin="PE"/>
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="-10.16" y1="-22.86" x2="-10.16" y2="-27.94" width="0.1524" layer="91"/>
@@ -23492,11 +23484,6 @@ resistors</text>
 <pinref part="PE3" gate="M" pin="PE"/>
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="-27.94" x2="15.24" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="30.48" y1="-33.02" x2="30.48" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="PE15" gate="M" pin="PE"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -23540,6 +23527,19 @@ resistors</text>
 <pinref part="PE4" gate="M" pin="PE"/>
 <wire x1="20.32" y1="-10.16" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="COIL+"/>
+<wire x1="30.48" y1="10.16" x2="30.48" y2="0" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="30.48" y1="0" x2="27.94" y2="0" width="0.1524" layer="91"/>
+<pinref part="PE8" gate="M" pin="PE"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-2.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="PE6" gate="M" pin="PE"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -23576,29 +23576,10 @@ resistors</text>
 <pinref part="SUPPLY13" gate="G$1" pin="VCC"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="22.86" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
-<junction x="20.32" y="0"/>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="17.78" y1="0" x2="10.16" y2="0" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="0" width="0.1524" layer="91"/>
-<junction x="10.16" y="0"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="0" width="0.1524" layer="91"/>
-<junction x="17.78" y="0"/>
-<pinref part="U$1" gate="G$1" pin="COIL-"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="0" x2="-10.16" y2="0" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="0" x2="-10.16" y2="0" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="0" x2="-10.16" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <wire x1="-10.16" y1="0" x2="-10.16" y2="-5.08" width="0.1524" layer="91"/>
@@ -23992,6 +23973,11 @@ resistors</text>
 <wire x1="149.86" y1="-71.12" x2="149.86" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="149.86" y="-63.5"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="30.48" y1="-33.02" x2="30.48" y2="-35.56" width="0.1524" layer="91"/>
+<pinref part="SGND5" gate="G$1" pin="GND5"/>
+</segment>
 </net>
 <net name="N$25" class="0">
 <segment>
@@ -24280,6 +24266,29 @@ resistors</text>
 <pinref part="R21" gate="G$1" pin="2"/>
 <pinref part="R24" gate="1" pin="A"/>
 <junction x="144.78" y="-76.2"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="2.54" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="22.86" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="0" x2="17.78" y2="0" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="0" x2="17.78" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="2.54" y="0"/>
+<junction x="17.78" y="0"/>
+<pinref part="R25" gate="G$1" pin="1"/>
+<junction x="20.32" y="0"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="COIL-"/>
+<pinref part="R25" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

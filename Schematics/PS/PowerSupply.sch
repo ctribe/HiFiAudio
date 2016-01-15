@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,16 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -23143,7 +23143,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE6" library="supply1" deviceset="PE" device=""/>
 <part name="PE8" library="supply1" deviceset="PE" device=""/>
 <part name="U$5" library="Amplifier_Parts" deviceset="IRS2153D" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="30k"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="025-025X050" value="390pF"/>
 <part name="U$6" library="Amplifier_Parts" deviceset="GBPC3510W" device=""/>
 <part name="PE7" library="supply1" deviceset="PE" device=""/>
@@ -23153,8 +23153,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE12" library="supply1" deviceset="PE" device=""/>
 <part name="T1" library="Amplifier_Parts" deviceset="IRFP240" device=""/>
 <part name="T2" library="Amplifier_Parts" deviceset="IRFP240" device=""/>
-<part name="R13" library="resistor" deviceset="R-US_" device="0204/2V"/>
-<part name="R14" library="resistor" deviceset="R-US_" device="0204/2V"/>
+<part name="R13" library="resistor" deviceset="R-US_" device="0204/2V" value="10"/>
+<part name="R14" library="resistor" deviceset="R-US_" device="0204/2V" value="10"/>
 <part name="TRAFO1" library="Amplifier_Parts" deviceset="COIL_FORMER" device=""/>
 <part name="PE13" library="supply1" deviceset="PE" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="V+" device=""/>
@@ -23199,21 +23199,21 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
 <part name="SGND2" library="supply2" deviceset="GND5" device="" value="SGND"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="1nF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="1nF"/>
 <part name="D13" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D14" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D15" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="SGND3" library="supply2" deviceset="GND5" device="" value="SGND"/>
 <part name="SUPPLY2" library="supply2" deviceset="V--&gt;" device="" value="VAC-15"/>
-<part name="C21" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
-<part name="C22" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C21" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
+<part name="C22" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
 <part name="MUTE" library="supply2" deviceset="V--&gt;" device="" value="MUTE"/>
 <part name="D16" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="IC2" library="Amplifier_Parts" deviceset="LM337" device=""/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
-<part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
-<part name="C23" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
+<part name="C23" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="120"/>
 <part name="D17" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="C24" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
@@ -23227,7 +23227,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="MUTE1" library="supply2" deviceset="V--&gt;" device="" value="MUTE"/>
 <part name="D6" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D7" library="Amplifier_Parts" deviceset="1N4004" device=""/>
-<part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
 <part name="C26" library="resistor" deviceset="C-EU" device="025-025X050" value="1uF"/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="D19" library="Amplifier_Parts" deviceset="1N4004" device=""/>
@@ -23235,11 +23235,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="L2" library="Amplifier_Parts" deviceset="CHOKE" device=""/>
 <part name="D10" library="Amplifier_Parts" deviceset="VS-ETL1506-M3" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
 <part name="PE4" library="supply1" deviceset="PE" device=""/>
-<part name="R23" library="pot" deviceset="TRIM_EU-" device="B25P"/>
-<part name="R24" library="pot" deviceset="TRIM_EU-" device="B25P"/>
+<part name="R23" library="pot" deviceset="TRIM_EU-" device="B25P" value="5k"/>
+<part name="R24" library="pot" deviceset="TRIM_EU-" device="B25P" value="5k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="390"/>
 <part name="SGND5" library="supply2" deviceset="GND5" device="" value="SGND"/>
 </parts>
@@ -23259,6 +23259,12 @@ to save space</text>
 <text x="137.16" y="7.62" size="1.778" layer="97">2X</text>
 <text x="119.38" y="27.94" size="1.778" layer="97">stack 2k
 resistors</text>
+<text x="177.8" y="73.66" size="1.778" layer="97">PRI: fill bobin
+SEC: half bobin
+TRI: quarter bobin</text>
+<text x="101.6" y="50.8" size="1.778" layer="97">100kHz</text>
+<text x="114.3" y="-27.94" size="1.778" layer="97">DNP</text>
+<text x="114.3" y="-40.64" size="1.778" layer="97">DNP</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>
@@ -24185,14 +24191,14 @@ resistors</text>
 <wire x1="15.24" y1="68.58" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="NUTRAL" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="S5"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="-20.32" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SWITCH1" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 <wire x1="-2.54" y1="81.28" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
@@ -24200,7 +24206,7 @@ resistors</text>
 <wire x1="-2.54" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SWITCH2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="S3"/>
 <wire x1="-20.32" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
