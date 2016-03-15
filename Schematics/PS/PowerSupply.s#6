@@ -21111,12 +21111,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="SUPPLY1" library="supply2" deviceset="V--&gt;" device="" value="VAC+15"/>
 <part name="D11" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D12" library="Amplifier_Parts" deviceset="1N4004" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="120\"/>
+<part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
 <part name="SGND2" library="supply2" deviceset="GND5" device="" value="SGND"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="0.1uF"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="0.1uF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
 <part name="D13" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D14" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D15" library="Amplifier_Parts" deviceset="1N4004" device=""/>
@@ -21127,10 +21127,10 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <part name="MUTE" library="supply2" deviceset="V--&gt;" device="" value="MUTE"/>
 <part name="D16" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="IC2" library="Amplifier_Parts" deviceset="LM337" device=""/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
 <part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
 <part name="C23" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
-<part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="120"/>
 <part name="D17" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="C24" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
 <part name="D18" library="Amplifier_Parts" deviceset="1N4004" device=""/>
@@ -21168,6 +21168,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 to save space</text>
 <text x="101.6" y="5.08" size="1.778" layer="97">removed large caps 
 to save space</text>
+<text x="63.5" y="91.44" size="1.778" layer="97">claculate new vlaue and note 5W</text>
+<text x="124.46" y="-15.24" size="1.778" layer="97">fix footprint</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>

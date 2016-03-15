@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3023,9 +3023,6 @@ Beckman Helitrim 25</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -3161,7 +3158,7 @@ Beckman Helitrim 25</description>
 <element name="R4" library="rcl" package="0617V" value="47k" x="99.314" y="120.904" rot="R270"/>
 <element name="R5" library="rcl" package="0617V" value="23.5k" x="73.0885" y="106.426" rot="R90"/>
 <element name="C2" library="rcl" package="C050-035X075" value="" x="83.3755" y="93.1545" rot="R90"/>
-<element name="R7" library="rcl" package="0309V" value="33" x="93.0579875" y="70.982825" rot="R180"/>
+<element name="R7" library="rcl" package="0309V" value="330" x="93.0579875" y="70.982825" rot="R180"/>
 <element name="R12" library="resistor" package="0207/15" value="100" x="153.4668" y="55.7657" rot="R90"/>
 <element name="R2" library="rcl" package="VTA52" value="2k" x="35.527175" y="56.395471875"/>
 <element name="R16" library="rcl" package="VTA52" value="2k" x="6.8882375" y="51.54111875" rot="R90"/>

@@ -3141,7 +3141,7 @@ Beckman Helitrim 25</description>
 <element name="U$2" library="Amplifier_Parts" package="SCREW_TERMINAL_5" value="SCREW_TERMINAL_5" x="2.794" y="104.902" rot="R270"/>
 <element name="U$3" library="Amplifier_Parts" package="SCREW_TERMINAL_6" value="SCREW_TERMINAL_6" x="28.114225" y="26.313425" rot="R180"/>
 <element name="U$5" library="Amplifier_Parts" package="IRS2153D" value="IRS2153D" x="89.154" y="103.3145" rot="R270"/>
-<element name="R3" library="rcl" package="0204V" value="" x="82.042" y="105.9815" rot="R90"/>
+<element name="R3" library="rcl" package="0204V" value="30k" x="82.042" y="105.9815" rot="R90"/>
 <element name="C1" library="resistor" package="C025-025X050" value="390pF" x="89.154" y="95.885"/>
 <element name="U$6" library="Amplifier_Parts" package="GBPC3510W" value="GBPC3510W" x="52.76455625" y="103.188453125"/>
 <element name="C4" library="rcl" package="E2,5-6" value="100uF" x="79.1845" y="101.1555" smashed="yes" rot="R270">

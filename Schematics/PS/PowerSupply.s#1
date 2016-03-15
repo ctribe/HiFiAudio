@@ -23199,21 +23199,21 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
 <part name="SGND2" library="supply2" deviceset="GND5" device="" value="SGND"/>
-<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
-<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="102-064X133" value="1nF"/>
+<part name="C20" library="rcl" deviceset="C-EU" device="102-064X133" value="1nF"/>
 <part name="D13" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D14" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D15" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="SGND3" library="supply2" deviceset="GND5" device="" value="SGND"/>
 <part name="SUPPLY2" library="supply2" deviceset="V--&gt;" device="" value="VAC-15"/>
-<part name="C21" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
-<part name="C22" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C21" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
+<part name="C22" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
 <part name="MUTE" library="supply2" deviceset="V--&gt;" device="" value="MUTE"/>
 <part name="D16" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="IC2" library="Amplifier_Parts" deviceset="LM337" device=""/>
 <part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="680"/>
-<part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
-<part name="C23" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C16" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
+<part name="C23" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="0.1uF"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="120"/>
 <part name="D17" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="C24" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
@@ -23227,7 +23227,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="MUTE1" library="supply2" deviceset="V--&gt;" device="" value="MUTE"/>
 <part name="D6" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="D7" library="Amplifier_Parts" deviceset="1N4004" device=""/>
-<part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
 <part name="C26" library="resistor" deviceset="C-EU" device="025-025X050" value="1uF"/>
 <part name="C28" library="rcl" deviceset="C-EU" device="C0805K" value="1nF"/>
 <part name="D19" library="Amplifier_Parts" deviceset="1N4004" device=""/>
@@ -23235,11 +23235,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="L2" library="Amplifier_Parts" deviceset="CHOKE" device=""/>
 <part name="D10" library="Amplifier_Parts" deviceset="VS-ETL1506-M3" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
-<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="1uF"/>
+<part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
 <part name="C13" library="rcl" deviceset="C-EU" device="102-064X133" value="1uF"/>
 <part name="PE4" library="supply1" deviceset="PE" device=""/>
-<part name="R23" library="pot" deviceset="TRIM_EU-" device="B25P"/>
-<part name="R24" library="pot" deviceset="TRIM_EU-" device="B25P"/>
+<part name="R23" library="pot" deviceset="TRIM_EU-" device="B25P" value="5k"/>
+<part name="R24" library="pot" deviceset="TRIM_EU-" device="B25P" value="5k"/>
 <part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="390"/>
 <part name="SGND5" library="supply2" deviceset="GND5" device="" value="SGND"/>
 </parts>
@@ -23263,6 +23263,8 @@ resistors</text>
 SEC: half bobin
 TRI: quarter bobin</text>
 <text x="101.6" y="50.8" size="1.778" layer="97">100kHz</text>
+<text x="114.3" y="-27.94" size="1.778" layer="97">DNP</text>
+<text x="114.3" y="-40.64" size="1.778" layer="97">DNP</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>
@@ -24189,14 +24191,14 @@ TRI: quarter bobin</text>
 <wire x1="15.24" y1="68.58" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="NUTRAL" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="S5"/>
 <pinref part="U$4" gate="G$1" pin="P$1"/>
 <wire x1="-20.32" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SWITCH1" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="P$2"/>
 <wire x1="-2.54" y1="81.28" x2="-2.54" y2="76.2" width="0.1524" layer="91"/>
@@ -24204,7 +24206,7 @@ TRI: quarter bobin</text>
 <wire x1="-2.54" y1="76.2" x2="-20.32" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="SWITCH2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="S3"/>
 <wire x1="-20.32" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>

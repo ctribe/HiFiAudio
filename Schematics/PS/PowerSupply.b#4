@@ -30,16 +30,16 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
@@ -49,21 +49,21 @@
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -77,7 +77,7 @@
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
@@ -3207,6 +3207,7 @@ Beckman Helitrim 25</description>
 <element name="C13" library="rcl" package="C102-064X133" value="1uF" x="83.639296875" y="81.9386375" rot="R90"/>
 <element name="R23" library="pot" package="B25P" value="" x="129.182609375" y="18.006696875"/>
 <element name="R24" library="pot" package="B25P" value="" x="86.43841875" y="18.074346875"/>
+<element name="R25" library="rcl" package="0204V" value="390" x="75.10999375" y="62.54574375" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -3217,15 +3218,11 @@ Beckman Helitrim 25</description>
 <vertex x="157.48" y="127"/>
 <vertex x="0" y="127"/>
 </polygon>
-<contactref element="D1" pad="A"/>
-<contactref element="U$1" pad="COIL+"/>
 <contactref element="U$5" pad="4"/>
 <contactref element="C1" pad="1"/>
 <contactref element="T2" pad="S"/>
-<contactref element="D4" pad="A"/>
 <contactref element="D3" pad="A"/>
 <contactref element="C15" pad="2"/>
-<contactref element="LED2" pad="K"/>
 <contactref element="R12" pad="2"/>
 <contactref element="C26" pad="1"/>
 <contactref element="C28" pad="2"/>
@@ -3246,6 +3243,9 @@ Beckman Helitrim 25</description>
 <wire x1="137.9474" y1="112.776" x2="137.9474" y2="112.6236" width="1.27" layer="16"/>
 <wire x1="81.0934375" y1="72.432103125" x2="74.93" y2="72.432103125" width="1.524" layer="16"/>
 <wire x1="74.93" y1="72.432103125" x2="74.93" y2="71.12" width="1.27" layer="16"/>
+<contactref element="U$1" pad="COIL+"/>
+<contactref element="D1" pad="A"/>
+<contactref element="D4" pad="A"/>
 </signal>
 <signal name="VCC">
 <contactref element="R6" pad="2"/>
@@ -3280,27 +3280,6 @@ Beckman Helitrim 25</description>
 <wire x1="47.625" y1="40.67595" x2="47.625" y2="34.29" width="5.08" layer="16"/>
 <wire x1="47.625" y1="34.29" x2="13.9208" y2="34.29" width="5.08" layer="16"/>
 <wire x1="13.9208" y1="34.29" x2="7.754225" y2="28.123425" width="5.08" layer="16"/>
-</signal>
-<signal name="N$10">
-<contactref element="D1" pad="C"/>
-<contactref element="D4" pad="C"/>
-<contactref element="U$1" pad="COIL-"/>
-<contactref element="R7" pad="1"/>
-<contactref element="C13" pad="1"/>
-<wire x1="94.3279875" y1="70.982825" x2="95.3262" y2="70.982825" width="1.778" layer="1"/>
-<wire x1="95.3262" y1="70.982825" x2="95.3262" y2="74.7522" width="1.778" layer="1"/>
-<wire x1="95.3262" y1="74.7522" x2="93.6218375" y2="74.7522" width="1.778" layer="1"/>
-<wire x1="93.6218375" y1="74.7522" x2="93.6218375" y2="74.611140625" width="1.778" layer="1"/>
-<wire x1="93.6218375" y1="74.7522" x2="93.6218375" y2="80.9142625" width="1.27" layer="1"/>
-<wire x1="93.6218375" y1="80.9142625" x2="93.6117" y2="80.9244" width="1.27" layer="1"/>
-<wire x1="93.6117" y1="80.9244" x2="90.947240625" y2="80.9244" width="1.27" layer="1"/>
-<wire x1="90.947240625" y1="80.9244" x2="90.41514375" y2="80.956115625" width="1.27" layer="1"/>
-<wire x1="83.639296875" y1="76.8586375" x2="90.41514375" y2="76.8586375" width="1.27" layer="1"/>
-<wire x1="90.41514375" y1="76.8586375" x2="90.41514375" y2="80.956115625" width="1.27" layer="1"/>
-<wire x1="83.639296875" y1="76.8586375" x2="83.3247" y2="76.8586375" width="1.27" layer="16"/>
-<wire x1="83.3247" y1="76.8586375" x2="83.3247" y2="74.4093" width="1.27" layer="16"/>
-<wire x1="83.3247" y1="74.4093" x2="70.931696875" y2="74.4093" width="1.27" layer="16"/>
-<wire x1="70.931696875" y1="74.4093" x2="70.931696875" y2="67.870078125" width="1.27" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="R6" pad="1"/>
@@ -3621,6 +3600,13 @@ Beckman Helitrim 25</description>
 <contactref element="C14" pad="-"/>
 <contactref element="C3" pad="+"/>
 <contactref element="R24" pad="S"/>
+<contactref element="LED2" pad="K"/>
+<wire x1="89.599121875" y1="86.521103125" x2="89.599121875" y2="91.03035" width="0.508" layer="1"/>
+<wire x1="89.599121875" y1="91.03035" x2="90.678253125" y2="92.10948125" width="0.508" layer="1"/>
+<wire x1="90.678253125" y1="92.10948125" x2="97.9367" y2="92.10948125" width="0.508" layer="1"/>
+<wire x1="97.9367" y1="92.10948125" x2="100.31884375" y2="89.7273375" width="0.508" layer="1"/>
+<wire x1="100.31884375" y1="89.7273375" x2="100.31884375" y2="71.00415625" width="0.508" layer="1"/>
+<wire x1="100.31884375" y1="71.00415625" x2="110.871" y2="60.452" width="0.508" layer="1"/>
 </signal>
 <signal name="N$25">
 <contactref element="R18" pad="1"/>
@@ -3887,6 +3873,40 @@ Beckman Helitrim 25</description>
 <wire x1="52.97894375" y1="35.825725" x2="52.97894375" y2="18.0564875" width="0.508" layer="16"/>
 <wire x1="52.97894375" y1="18.0564875" x2="83.89841875" y2="18.0564875" width="0.508" layer="16"/>
 <wire x1="83.89841875" y1="18.0564875" x2="83.89841875" y2="18.074346875" width="0.508" layer="16"/>
+</signal>
+<signal name="N$16">
+<contactref element="R7" pad="1"/>
+<contactref element="D4" pad="C"/>
+<contactref element="D1" pad="C"/>
+<wire x1="95.3262" y1="70.982825" x2="95.3262" y2="74.7522" width="1.778" layer="1"/>
+<wire x1="95.3262" y1="74.7522" x2="93.6218375" y2="74.7522" width="1.778" layer="1"/>
+<wire x1="93.6218375" y1="74.7522" x2="93.6218375" y2="80.9142625" width="1.27" layer="1"/>
+<wire x1="93.6218375" y1="80.9142625" x2="93.6117" y2="80.9244" width="1.27" layer="1"/>
+<wire x1="93.6117" y1="80.9244" x2="90.947240625" y2="80.9244" width="1.27" layer="1"/>
+<wire x1="90.947240625" y1="80.9244" x2="90.41514375" y2="80.956115625" width="1.27" layer="1"/>
+<wire x1="90.41514375" y1="76.8586375" x2="90.41514375" y2="80.956115625" width="1.27" layer="1"/>
+<contactref element="C13" pad="1"/>
+<contactref element="R25" pad="1"/>
+<wire x1="90.41514375" y1="76.8586375" x2="83.639296875" y2="76.8586375" width="1.27" layer="1"/>
+<wire x1="83.639296875" y1="76.8586375" x2="76.340121875" y2="76.8586375" width="0.762" layer="16"/>
+<wire x1="76.340121875" y1="76.8586375" x2="76.340121875" y2="75.97803125" width="0.762" layer="16"/>
+<wire x1="76.340121875" y1="75.97803125" x2="69.706571875" y2="75.97803125" width="0.762" layer="16"/>
+<wire x1="69.706571875" y1="75.97803125" x2="65.39099375" y2="71.662453125" width="0.762" layer="16"/>
+<via x="65.39099375" y="71.662453125" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="65.39099375" y1="71.662453125" x2="65.39099375" y2="65.502915625" width="0.762" layer="1"/>
+<wire x1="65.39099375" y1="65.502915625" x2="70.513234375" y2="60.380675" width="0.762" layer="1"/>
+<wire x1="70.513234375" y1="60.380675" x2="76.379478125" y2="60.380675" width="0.762" layer="1"/>
+<wire x1="76.379478125" y1="60.380675" x2="76.418865625" y2="60.4200625" width="0.762" layer="1"/>
+<wire x1="76.418865625" y1="60.4200625" x2="76.418865625" y2="62.506871875" width="0.762" layer="1"/>
+<wire x1="76.418865625" y1="62.506871875" x2="76.37999375" y2="62.54574375" width="0.762" layer="1"/>
+<wire x1="95.3262" y1="70.982825" x2="94.3279875" y2="70.982825" width="2.032" layer="1"/>
+<wire x1="93.6218375" y1="74.7522" x2="93.6218375" y2="74.611140625" width="2.032" layer="1"/>
+</signal>
+<signal name="N$10">
+<contactref element="U$1" pad="COIL-"/>
+<contactref element="R25" pad="2"/>
+<wire x1="73.83999375" y1="62.54574375" x2="73.83999375" y2="64.96178125" width="0.762" layer="1"/>
+<wire x1="73.83999375" y1="64.96178125" x2="70.931696875" y2="67.870078125" width="0.762" layer="1"/>
 </signal>
 </signals>
 </board>

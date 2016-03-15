@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -23165,7 +23165,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R4" library="rcl" deviceset="R-US_" device="0617/5V" value="47k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0617/5V" value="23.5k"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="050-035X075"/>
-<part name="R7" library="rcl" deviceset="R-US_" device="0309/V" value="33"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0309/V" value="330"/>
 <part name="SGND" library="supply2" deviceset="GND5" device="" value="SGND"/>
 <part name="R12" library="resistor" deviceset="R-US_" device="0207/15" value="100"/>
 <part name="SUPPLY5" library="supply2" deviceset="V--&gt;" device="" value="VAC+40"/>
@@ -23265,6 +23265,16 @@ TRI: quarter bobin</text>
 <text x="101.6" y="50.8" size="1.778" layer="97">100kHz</text>
 <text x="114.3" y="-27.94" size="1.778" layer="97">DNP</text>
 <text x="114.3" y="-40.64" size="1.778" layer="97">DNP</text>
+<text x="152.4" y="-73.66" size="1.778" layer="97">carlos 
+1k</text>
+<text x="152.4" y="-58.42" size="1.778" layer="97">carlos 
+1k</text>
+<text x="-33.02" y="-25.4" size="1.778" layer="97">this is
+not necessary</text>
+<text x="-22.86" y="-7.62" size="1.778" layer="97">carlos
+28V</text>
+<text x="2.54" y="2.54" size="1.778" layer="97">carlos
+24V</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>

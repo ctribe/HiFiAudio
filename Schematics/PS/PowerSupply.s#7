@@ -22128,7 +22128,7 @@ to save space</text>
 <wire x1="-2.54" y1="71.12" x2="-2.54" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="LINE" class="0">
 <segment>
 <pinref part="L2" gate="G$1" pin="PASS12"/>
 <wire x1="-2.54" y1="63.5" x2="-2.54" y2="60.96" width="0.1524" layer="91"/>

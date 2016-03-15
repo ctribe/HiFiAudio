@@ -14109,16 +14109,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="GBPC3510W">
-<pad name="V+" x="-4.43" y="3.97" drill="1.1" diameter="2"/>
-<pad name="AC1" x="6.97" y="3.97" drill="1.1" diameter="2"/>
-<pad name="AC2" x="-11.13" y="-14.13" drill="1.1" diameter="2"/>
-<pad name="V-" x="6.97" y="-14.13" drill="1.1" diameter="2"/>
-<wire x1="15.77" y1="9.42" x2="15.77" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="15.77" y1="-19.58" x2="-13.23" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="-13.23" y1="9.42" x2="-13.23" y2="-19.58" width="0.127" layer="21"/>
-<wire x1="15.77" y1="9.42" x2="-13.23" y2="9.42" width="0.127" layer="21"/>
-<text x="-2.13" y="11.72" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-2.13" y="10.12" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<pad name="+" x="0" y="0" drill="1.1" diameter="2"/>
+<text x="-2.13" y="26.22" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-2.13" y="24.62" size="1.27" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<pad name="AC2" x="11" y="0" drill="1.1" diameter="2"/>
+<pad name="-" x="11" y="18" drill="1.1" diameter="2"/>
+<pad name="AC1" x="-7" y="18" drill="1.1" diameter="2"/>
+<wire x1="16.5" y1="23.5" x2="-12.5" y2="23.5" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="23.5" x2="-12.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-12.5" y1="-3" x2="-10" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="16.5" y1="23.5" x2="16.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="16.5" y1="-5.5" x2="-10" y2="-5.5" width="0.127" layer="21"/>
 </package>
 <package name="IRFP240">
 <wire x1="-6.985" y1="-5.08" x2="6.985" y2="-5.08" width="0.1524" layer="21"/>
@@ -14589,8 +14590,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <devices>
 <device name="" package="GBPC3510W">
 <connects>
-<connect gate="G$1" pin="+" pad="V+"/>
-<connect gate="G$1" pin="-" pad="V-"/>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 <connect gate="G$1" pin="AC1" pad="AC1"/>
 <connect gate="G$1" pin="AC2" pad="AC2"/>
 </connects>

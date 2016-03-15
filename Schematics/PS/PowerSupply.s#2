@@ -23143,7 +23143,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PE6" library="supply1" deviceset="PE" device=""/>
 <part name="PE8" library="supply1" deviceset="PE" device=""/>
 <part name="U$5" library="Amplifier_Parts" deviceset="IRS2153D" device=""/>
-<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="30k"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="025-025X050" value="390pF"/>
 <part name="U$6" library="Amplifier_Parts" deviceset="GBPC3510W" device=""/>
 <part name="PE7" library="supply1" deviceset="PE" device=""/>
@@ -23262,6 +23262,7 @@ resistors</text>
 <text x="177.8" y="73.66" size="1.778" layer="97">PRI: fill bobin
 SEC: half bobin
 TRI: quarter bobin</text>
+<text x="101.6" y="50.8" size="1.778" layer="97">100kHz</text>
 </plain>
 <instances>
 <instance part="R6" gate="G$1" x="-10.16" y="7.62" rot="R90"/>
