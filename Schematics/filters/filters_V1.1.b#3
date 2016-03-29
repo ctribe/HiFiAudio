@@ -2490,6 +2490,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="78.105" y="7.9375" extent="1-16" drill="0.381"/>
 <contactref element="J2" pad="4"/>
 <via x="5.715" y="13.0175" extent="1-16" drill="0.381"/>
+<contactref element="R47" pad="1"/>
 </signal>
 <signal name="-12V">
 <contactref element="C29" pad="1"/>

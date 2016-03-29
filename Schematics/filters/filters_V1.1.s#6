@@ -13817,8 +13817,8 @@ grid 2.5 mm, outline 2.4 x 4.4 mm</description>
 <text x="-6.35" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="TONE_POT_2GANG">
-<pad name="1" x="-6" y="0" drill="1"/>
-<pad name="1'" x="-4" y="0" drill="1"/>
+<pad name="1'" x="-6" y="0" drill="1"/>
+<pad name="1" x="-4" y="0" drill="1"/>
 <pad name="2" x="-2" y="0" drill="1"/>
 <pad name="2'" x="0" y="0" drill="1"/>
 <pad name="3" x="2" y="0" drill="1"/>
@@ -14285,23 +14285,23 @@ NS Package M08A</description>
 </classes>
 <parts>
 <part name="C1" library="rcl" deviceset="C-US" device="050-024X044" value="7.4uF"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R9" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R10" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R13" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="R14" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R15" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R34" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R34" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R3" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R16" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R17" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
-<part name="R18" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R16" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R17" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R18" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R5" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="C29" library="rcl" deviceset="C-US" device="050-024X044" value="0.1uF"/>
 <part name="C31" library="rcl" deviceset="C-US" device="050-024X044" value="0.1uF"/>
@@ -14335,23 +14335,23 @@ NS Package M08A</description>
 <part name="GND47" library="supply2" deviceset="GND" device=""/>
 <part name="GND57" library="supply2" deviceset="GND" device=""/>
 <part name="GND58" library="supply2" deviceset="GND" device=""/>
-<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
+<part name="R19" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
-<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R21" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R23" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R24" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
+<part name="R24" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R25" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
 <part name="R26" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="R27" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R28" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R29" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
-<part name="R30" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R29" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
+<part name="R30" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
 <part name="R32" library="rcl" deviceset="R-US_" device="0204/2V" value="50"/>
-<part name="R33" library="rcl" deviceset="R-US_" device="0204/2V" value="10k"/>
-<part name="R36" library="rcl" deviceset="R-US_" device="0204/2V" value="500"/>
-<part name="R37" library="rcl" deviceset="R-US_" device="0204/2V" value="2k"/>
+<part name="R33" library="rcl" deviceset="R-US_" device="0204/2V" value="12k"/>
+<part name="R36" library="rcl" deviceset="R-US_" device="0204/2V" value="1.2k"/>
+<part name="R37" library="rcl" deviceset="R-US_" device="0204/2V" value="2.7k"/>
 <part name="R38" library="rcl" deviceset="R-US_" device="0204/2V" value="1k"/>
 <part name="GND4" library="supply2" deviceset="GND" device=""/>
 <part name="GND5" library="supply2" deviceset="GND" device=""/>

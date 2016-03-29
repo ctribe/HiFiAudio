@@ -14624,7 +14624,7 @@ NS Package M08A</description>
 <instance part="J2" gate="G$1" x="482.6" y="180.34" rot="MR0"/>
 <instance part="GND27" gate="GND" x="474.98" y="170.18"/>
 <instance part="R47" gate="G$1" x="312.42" y="152.4" rot="R90"/>
-<instance part="GND4" gate="GND" x="320.04" y="147.32"/>
+<instance part="GND4" gate="GND" x="312.42" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -15092,6 +15092,10 @@ NS Package M08A</description>
 <wire x1="474.98" y1="172.72" x2="474.98" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="474.98" y1="175.26" x2="477.52" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R47" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="-12V" class="0">
