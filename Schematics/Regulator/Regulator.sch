@@ -20276,7 +20276,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="D12" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="R19" library="rcl" deviceset="R-US_" device="0309/V" value="120\"/>
 <part name="R20" library="rcl" deviceset="R-US_" device="0309/V" value="680"/>
-<part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="SGND2" library="supply2" deviceset="GND5" device="" value="SGND"/>
 <part name="C18" library="rcl" deviceset="C-EU" device="025-025X050" value="1nF"/>
 <part name="C20" library="rcl" deviceset="C-EU" device="025-025X050" value="1nF"/>
@@ -20286,7 +20286,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="R21" library="rcl" deviceset="R-US_" device="0309/V" value="680"/>
 <part name="R22" library="rcl" deviceset="R-US_" device="0309/V" value="120"/>
 <part name="D17" library="Amplifier_Parts" deviceset="1N4004" device=""/>
-<part name="C24" library="resistor" deviceset="C-EU" device="025-025X050" value="10uF"/>
+<part name="C24" library="resistor" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="D18" library="Amplifier_Parts" deviceset="1N4004" device=""/>
 <part name="C14" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E2.5-6" value="10uF"/>
