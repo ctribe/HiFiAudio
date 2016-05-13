@@ -1,0 +1,74 @@
+Circuit: *
+
+Warning: Multiple definitions of model "bzx84c15l" Type: Diode
+Direct Newton iteration for .op point succeeded.
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:      d2          d1
+Model:  bzx84c15l   bzx84c15l
+Id:     -1.01e-02   -1.01e-02
+Vd:     -2.24e+01   -2.24e+01
+Req:     1.54e+01    1.54e+01
+CAP:     2.28e-11    2.28e-11
+
+                        --- Bipolar Transistors ---
+Name:       q2          q1
+Model:      pnp         npn
+Ib:      -1.14e-03    1.14e-03
+Ic:      -1.14e-01    1.14e-01
+Vbe:     -8.97e-01    8.97e-01
+Vbc:      2.24e+01   -2.24e+01
+Vce:     -2.33e+01    2.33e+01
+BetaDC:   1.00e+02    1.00e+02
+Gm:       4.39e+00    4.39e+00
+Rpi:      2.28e+01    2.28e+01
+Rx:       0.00e+00    0.00e+00
+Ro:       0.00e+00    0.00e+00
+Cbe:      0.00e+00    0.00e+00
+Cbc:      0.00e+00    0.00e+00
+Cjs:      0.00e+00    0.00e+00
+BetaAC:   1.00e+02    1.00e+02
+Cbx:      0.00e+00    0.00e+00
+Ft:       0.00e+00    0.00e+00
+
+
+Operating Bias Point Solution:
+        V(n001)                 48   voltage
+        V(n005)                -48   voltage
+        V(n003)             25.636   voltage
+        V(n002)            24.7394   voltage
+        V(n004)            -25.636   voltage
+        V(n006)           -24.7394   voltage
+         Ic(Q2)          -0.113594   device_current
+         Ib(Q2)        -0.00113594   device_current
+         Ie(Q2)            0.11473   device_current
+         Ic(Q1)           0.113594   device_current
+         Ib(Q1)         0.00113594   device_current
+         Ie(Q1)           -0.11473   device_current
+          I(D2)         -0.0101024   device_current
+          I(D1)         -0.0101024   device_current
+          I(R4)          -0.123697   device_current
+          I(R3)         0.00896641   device_current
+          I(R2)          -0.123697   device_current
+          I(R1)        -0.00896641   device_current
+          I(V2)          -0.123697   device_current
+          I(V1)          -0.123697   device_current
+
+
+Date: Thu May 12 11:17:55 2016
+Total elapsed time: 0.022 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 38
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1: 418 object code size
+Matrix Compiler2: off
+

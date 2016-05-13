@@ -1,0 +1,21 @@
+*
+V1 N001 0 48
+V2 0 N005 48
+Q1 N001 N003 N002 0 NPN
+R1 N002 N003 100
+R2 0 N002 200
+D1 N003 N001 BZX84C15L
+Q2 N005 N004 N006 0 PNP
+D2 N005 N004 BZX84C15L
+R3 N006 N004 100
+R4 N006 0 200
+.model D D
+.lib /Users/camerontribe/Library/Application Support/LTspice/lib/cmp/standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib /Users/camerontribe/Library/Application Support/LTspice/lib/cmp/standard.bjt
+.model BZX84C15L D(Is=.6n Rs=.5 Cjo=110p nbv=6 bv=22 Ibv=1m Vpk=15 mfg=OnSemi type=Zener)
+.op
+* .step param R 50 1000 10
+.backanno
+.end

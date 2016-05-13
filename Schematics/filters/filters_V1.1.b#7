@@ -116,7 +116,6 @@
 <wire x1="0" y1="39.6875" x2="7.9375" y2="44.1325" width="0" layer="20" curve="-121.502347"/>
 <wire x1="12.3825" y1="47.9425" x2="7.9375" y2="44.1325" width="0" layer="20" curve="81.202602"/>
 <text x="6.35" y="3.175" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">Sept, 2015</text>
-<text x="-5.08" y="1.905" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">Audio HP,BP,LP Filters</text>
 <text x="6.35" y="0.9525" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">CT
 CM</text>
 </plain>
@@ -1592,11 +1591,11 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="46.482" y="34.417" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="45.847" y="33.8455" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="C13" library="rcl" package="C050-024X044" value="47u" x="14.605" y="30.7975" smashed="yes" rot="R90">
+<element name="C13" library="rcl" package="C050-024X044" value="100u" x="14.605" y="30.7975" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.732" y="26.4795" size="0.889" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="17.272" y="29.0195" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C14" library="rcl" package="C050-024X044" value="47u" x="12.7" y="13.0175" smashed="yes" rot="R270">
+<element name="C14" library="rcl" package="C050-024X044" value="100u" x="12.7" y="13.0175" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.287" y="14.478" size="0.889" layer="25" font="vector" ratio="15" rot="R270"/>
 <attribute name="VALUE" x="10.033" y="14.7955" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
